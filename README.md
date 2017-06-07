@@ -27,67 +27,66 @@ N1(config)# no twamp light </pre>
 <h3>1.1.1 reflector-port command
 <h5>reflector-port
 <pre>reflector udp port that receive and response twamp-test packets from any client.</pre>
-<pre>reflector-port \<100-100000\>
+<pre>reflector-port [100-100000]
 no reflector-port</pre>
 
 <h5>Syntax Description
-<pre><h6>None
+<pre>None</pre>
 
 <h5>Default
-<pre><h6>Default is 862.
+<pre>Default is 862.</pre>
 
 <h5>Command Modes
-<pre><h6>Twamp light Mode
+<pre>Twamp light Mode</pre>
 
 <h5>Example
-<pre><h6>N1(config)# twamp light
+<pre>N1(config)# twamp light
 N1(twamp-light)# reflector-port 1000
-N1(twamp-light)# no reflector-port
+N1(twamp-light)# no reflector-port</pre>
 
 
-<h3>1.2. 	**twamp server** command
+<h3>1.2 twamp server command
 <h5>twamp server
-<pre><h6>Start the TWAMP server. By default, the server accepts any connection request from any client.
+<pre>Start the TWAMP server. By default, the server accepts any connection request from any client.</pre>
 
-twamp server
-no twamp server
+<pre>twamp server
+no twamp server</pre>
 
 <h5>Syntax Description
-None
+<pre>None</pre>
 
 <h5>Default
-Default is “no twamp server”.
+<pre>Default is “no twamp server”.</pre>
 
 <h5>Command Modes
-System Configuration Mode
+<pre>System Configuration Mode</pre>
 
 <h5>Example
-N1(config)# twamp server
-N1(config)# no twamp server
+<pre>N1(config)# twamp server
+N1(config)# no twamp server</pre>
 
 
-2.2.1	< control-packet-dscp > command
-control-packet-dscp
-Specify value as the DSCP byte in the IP header of control packets sent from the server.
+<h3>1.2.1	< control-packet-dscp > command
+<h5>control-packet-dscp
+<pre>Specify value as the DSCP byte in the IP header of control packets sent from the server.</pre>
 
-(no) control-packet-dscp <0-255>
+<pre>(no) control-packet-dscp [0-255]</pre>
 
-Syntax Description
-<0-255>
-	DSCP value
+<h5>Syntax Description
+<pre>[0-255] DSCP value</pre>
 
-Default
-Default value is ”zero”.
+<h5>Default
+<pre>Default value is ”zero”.</pre>
 
-Command Modes
-Twamp server Mode
+<h5>Command Modes
+<pre>Twamp server Mode</pre>
 
-Example
-N1(config)# twamp server
+<h5>Example
+<pre>N1(config)# twamp server
 N1(twamp-server)# control-packet-dscp 12
-N1(twamp-server)# no control-packet-dscp
+N1(twamp-server)# no control-packet-dscp</pre>
 
-[Note] DSCP Rule(control and test packet)
+<pre>[Note] DSCP Rule(control and test packet)
 twamp(dec)	bin	TCP/IP Stack(dec)	bin
 0	00000000	0	00000000
 1	00000001	0	00000000
@@ -125,7 +124,7 @@ twamp(dec)	bin	TCP/IP Stack(dec)	bin
 252	11111100	252	11111100
 253	11111101	252	11111100
 254	11111110	252	11111100
-255	11111111	252	11111100
+255	11111111	252	11111100</pre>
 
 
 2.2.2	< maximum-connections > command
