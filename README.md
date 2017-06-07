@@ -855,7 +855,7 @@ N1(twamp-server-control-connection)# no max-connection</pre>
 	Tcp-port number</pre>
 
 <h5>Default
-<pre>22222
+<pre>22222</pre>
 
 <h5>Command Modes
 <pre>twamp client monitor mode</pre>
