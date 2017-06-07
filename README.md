@@ -183,7 +183,7 @@ authenticated
 encrypted
 	encrypted mode
 mixed
-	control packets are encrypted and test packets are unauthenticated.<pre>
+	control packets are encrypted and test packets are unauthenticated.</pre>
 
 <h5>Default
 <pre>Default value is unauthenticated mode.</pre>
@@ -197,135 +197,135 @@ N2(twamp-server)# mode unauthenticated authenticated encrypted mixed
 N2(twamp-server)# no mode unauthenticated authenticated encrypted mixed</pre>
 
 
-2.2.5	< server-tcp-port> command
-port
-Specify number as the TCP port used for control sessions.
+<h3>1.2.5 server-tcp-port command
+<h5>server-tcp-port
+<pre>Specify number as the TCP port used for control sessions.
 
-(no) server-tcp-port <100-100000>
+<pre>(no) server-tcp-port [100-100000]</pre>
 
-Syntax Description
-value
-	number as the TCP port
+<h5>Syntax Description
+<pre>[100-100000]
+	number as the TCP port</pre>
 
-Default
-Default number is “862”.
+<h5>Default
+<pre>Default number is “862”.</pre>
 
-Command Modes
-Twamp server Mode
+<h5>Command Modes
+<pre>Twamp server Mode</pre>
 
-Example
-N1(config)# 
+<h5>Example
+<pre>N1(config)# 
 N1(twamp-server)# server-tcp-port 862
-N1(twamp-server)# no server-tcp-port
+N1(twamp-server)# no server-tcp-port</pre>
 
 
-2.2.6	<max-count> command
-Max-count
-This parameter limits the maximum Count value..
+<h3>1.2.6 max-count command
+<h5>Max-count
+<pre>This parameter limits the maximum Count value.</pre>
 
-(no) max-count <1024-32768>
+<pre>(no) max-count [1024-32768]</pre>
 
-Syntax Description
-<1024-32768>
-	Count value for deriving key. default 32768
+<h5>Syntax Description
+<pre>[1024-32768]
+	Count value for deriving key. default 32768</pre>
 
-Default
-Default number is “32768”.
+<h5>Default
+<pre>Default number is “32768”.</pre>
 
-Command Modes
-Twamp server Mode
+<h5>Command Modes
+<pre>Twamp server Mode</pre>
 
-Example
-N1(config)# 
+<h5>Example
+<pre>N1(config)# 
 N1(twamp-server)# max-count 1024
-N1(twamp-server)# no max-count
+N1(twamp-server)# no max-count</pre>
 
 
-2.2.7	< count > command
-count
-Parameter used in deriving a key from a shared secret as described in Section 3.1 of RFC 4656, and are communicated to the Control-Client as part of the Server Greeting message.
+<h3>1.2.7 count command
+<h5>count
+<pre>Parameter used in deriving a key from a shared secret as described in Section 3.1 of RFC 4656, and are communicated to the Control-Client as part of the Server Greeting message.
 
-(no) count <1024-32768>
+<pre>(no) count [1024-32768]</pre>
 
-Syntax Description
-<1024-32768>
-	Count value for deriving key. default 1024
+<h5>Syntax Description
+<pre>[1024-32768]
+	Count value for deriving key. default 1024</pre>
 
-Default
-Default number is “1024”.
+<h5>Default
+<pre>Default number is “1024”.</pre>
 
-Command Modes
-Twamp server Mode
+<h5>Command Modes
+<pre>Twamp server Mode</pre>
 
-Example
-N1(config)# 
+<h5>Example
+<pre>N1(config)# 
 N1(twamp-server)# count 1024
-N1(twamp-server)# no count
+N1(twamp-server)# no count</pre>
 
 
-2.2.8	< base-test-port > command
-Max-count
-This parameter is the value of dynamic allocated UDP port of test packet.
+<h3>1.2.8 base-test-port command
+<h5>Max-count
+<pre>This parameter is the value of dynamic allocated UDP port of test packet.</pre>
 
-(no) base-test-port <1024-65535>
+<pre>(no) base-test-port [1024-65535]</pre>
 
-Syntax Description
-<1024-65535>
-	UDP port number. default 20000
+<h5>Syntax Description
+<pre>[1024-65535]
+	UDP port number. default 20000</pre>
 
-Default
-Default number is “20000”.
+<h5>Default
+<pre>Default number is “20000”.</pre>
 
-Command Modes
-Twamp server Mode
+<h5>Command Modes
+<pre>Twamp server Mode</pre>
 
-Example
-N1(config)# 
+<h5>Example
+<pre>N1(config)# 
 N1(twamp-server)# base-test-port 20001
-N1(twamp-server)# no base-test-port
+N1(twamp-server)# no base-test-port</pre>
 
 
-2.2.9	< serv-ref-wait > command
-servwait
-Set the timeout value for control-session inactivity in seconds. Indicates that the TWAMP-Control connection to the Control-Client is in SERVWAIT according to RFC 5357 (Section 3.1): [a] Server MAY discontinue any established control connection when no packet associated with that connection has been received within SERVWAIT seconds.
+<h3>1.2.9 serv-ref-wait command
+<h5>servwait
+<pre>Set the timeout value for control-session inactivity in seconds. Indicates that the TWAMP-Control connection to the Control-Client is in SERVWAIT according to RFC 5357 (Section 3.1): [a] Server MAY discontinue any established control connection when no packet associated with that connection has been received within SERVWAIT seconds.</pre>
 
-(no) servwait <1-604800>
+<pre>(no) servwait [1-604800]</pre>
 
-Syntax Description
-value
-	timeout value for control-session
+<h5>Syntax Description
+<pre>[1-604800]
+	timeout value for control-session</pre>
 
-Default
-Default number is “900”.
+<h5>Default
+<pre>Default number is “900”.</pre>
 
-Command Modes
-System Configuration Mode
+<h5>Command Modes
+<pre>System Configuration Mode</pre>
 
-Example
-N1(config)# twamp server
+<h5>Example
+<pre>N1(config)# twamp server
 N1(twamp-server)# serv-ref-wait 100
-N1(twamp-server)# no serv-ref-wait 100
+N1(twamp-server)# no serv-ref-wait 100</pre>
 
 
-2.2.10	< key-chain > command
-Key-chainserver user user-string password password-string
-Enter key-chain mode.
+<h3>1.2.10 key-chain command
+<h5>Key-chainserver user user-string password password-string
+<pre>Enter key-chain mode.</pre>
 
-key-chain
-no key-chain
+<pre>key-chain
+no key-chain</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-twamp server mode
+<h5>Command Modes
+<pre>twamp server mode</pre>
 
-Example
-N1(twamp-server)# key-chain
-N1(twamp-server)# no key-chain
+<h5>Example
+<pre>N1(twamp-server)# key-chain
+N1(twamp-server)# no key-chain</pre>
 
 
 2.2.11	< key-id > command
