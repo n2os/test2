@@ -127,76 +127,74 @@ twamp(dec)	bin	TCP/IP Stack(dec)	bin
 255	11111111	252	11111100</pre>
 
 
-2.2.2	< maximum-connections > command
-Server maximum-connections
-Specify value as the maximum number of control sessions for each TWAMP server.
+<h3>1.2.2 maximum-connections command
+<h5>Server maximum-connections
+<pre>Specify value as the maximum number of control sessions for each TWAMP server.</pre>
 
-(no) maximum-connections <1-100>
+<pre>(no) maximum-connections [1-100]</pre>
 
-Syntax Description
-<1-100>
-Maximum connections value default 10
+<h5>Syntax Description
+<pre>[1-100] Maximum connections value default 10</pre>
 
-Default
-Default value is “10”.
+<h5>Default
+<pre>Default value is “10”.</pre>
 
-Command Modes
-twamp server mode
+<h5>Command Modes
+<pre>twamp server mode</pre>
 
-Example
-N1(config)# twamp server
+<h5>Example
+<pre>N1(config)# twamp server
 N1(twamp-server)# maximum-connections 11
-N1(twamp-server)# no maximum-connections
+N1(twamp-server)# no maximum-connections</pre>
 
 
-2.2.3	< maximum-sessions-per-connection > command
-maximum-sessions-per-connection
-Limit the number of maximum number of test sessions for each control session.
+<h3>1.2.3 maximum-sessions-per-connection command
+<h5>maximum-sessions-per-connection
+<pre>Limit the number of maximum number of test sessions for each control session.</pre>
 
-(no) maximum-sessions-per-connection <1-100>
+<pre>(no) maximum-sessions-per-connection 1-100]</pre>
 
-Syntax Description
-<1-100>
-	the number of maximum number of test sessions for each control session
+<h5>Syntax Description
+<pre>[1-100] the number of maximum number of test sessions for each control session</pre>
 
-Default
-Default value is ”10”.
+<h5>Default
+<pre>Default value is ”10”.</pre>
 
-Command Modes
-twamp server Mode
+<h5>Command Modes
+<pre>twamp server Mode</pre>
 
-Example
-N1(config)# twamp server
+<h5>Example
+<pre>N1(config)# twamp server
 N1(twamp-server)# maximum-sessions-per-connection 11
-N1(twamp-server)# no maximum-sessions-per-connection
+N1(twamp-server)# no maximum-sessions-per-connection</pre>
 
 
-2.2.4	< mode > command
-server mode
-enable security mode.
+<h3>1.2.4 mode command
+<h5>server mode
+<pre>Enable security mode.</pre>
 
-(no) twamp server mode {unauthenticated | authenticated | encrypted | mixed}
+<pre>(no) twamp server mode {unauthenticated | authenticated | encrypted | mixed}</pre>
 
-Syntax Description
-unauthenticated
+<h5>Syntax Description
+<pre>unauthenticated
 	unauthenticated mode
 authenticated
 	authenticated mode
 encrypted
 	encrypted mode
 mixed
-	control packets are encrypted and test packets are unauthenticated.
+	control packets are encrypted and test packets are unauthenticated.<pre>
 
-Default
-Default value is unauthenticated mode.
+<h5>Default
+<pre>Default value is unauthenticated mode.</pre>
 
-Command Modes
-System Configuration Mode
+<h5>Command Modes
+<pre>System Configuration Mode</pre>
 
-Example
-N1(config)# twamp server
+<h5>Example
+<pre>N1(config)# twamp server
 N2(twamp-server)# mode unauthenticated authenticated encrypted mixed
-N2(twamp-server)# no mode unauthenticated authenticated encrypted mixed
+N2(twamp-server)# no mode unauthenticated authenticated encrypted mixed</pre>
 
 
 2.2.5	< server-tcp-port> command
