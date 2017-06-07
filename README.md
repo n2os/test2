@@ -846,7 +846,7 @@ N1(twamp-server-control-connection)# no max-connection</pre>
 
 <h3>1.3.4.2 listen-tcp-port command
 <h5>listen-tcp-port
-<pre>Set tcp listen port number for monitor clients to be connect
+<pre>Set tcp listen port number for monitor clients to be connect</pre>
 
 <pre>(no) listen-tcp-port [100-65535]</pre>
 
