@@ -721,7 +721,7 @@ N1(twamp-client-session-request)# no reflector-udp-port</pre>
 
 <h3>1.3.3.7.5 timeout command
 <h5>timeout
-<pre>Set timeout for twamp test.  The length of time (in seconds) that the Session-Reflector should continue to respond to packets belonging to this TWAMP-Test session after a Stop-Sessions TWAMP-Control message has been received (RFC 5357, Section 3.8). This value will be placed in the Timeout field of the Request-TW-Session message.
+<pre>Set timeout for twamp test.  The length of time (in seconds) that the Session-Reflector should continue to respond to packets belonging to this TWAMP-Test session after a Stop-Sessions TWAMP-Control message has been received (RFC 5357, Section 3.8). This value will be placed in the Timeout field of the Request-TW-Session message.</pre>
 
 <pre>timeout [0-100]
 no timeout</pre>
