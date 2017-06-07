@@ -9,22 +9,22 @@ TWAMP Command
 <pre> Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.</pre>
 
 <pre> twamp light
-no twamp light
+no twamp light</pre>
 
 <h5> Syntax Description
-<pre><h6> None
+<pre> None </pre>
 
 <h5> Default
-<pre><h6> Default is “no twamp light”.
+<pre> Default is “no twamp light”. </pre>
 
 <h5> Command Modes
-<pre> System Configuration Mode
+<pre> System Configuration Mode </pre>
 
 <h5> Example
-<pre> N1(config)# twamp light
-N1(config)# no twamp light
+<pre> N1(config)# twamp light 
+N1(config)# no twamp light </pre>
 
-<h3>1.1.1	**reflector-port** command
+<h3>1.1.1 reflector-port command
 <h5>reflector-port
 <pre><h6>reflector udp port that receive and response twamp-test packets from any client.
 <pre><h6>reflector-port <100-100000>
