@@ -244,7 +244,7 @@ N1(twamp-server)# no max-count</pre>
 
 <h3>1.2.7 count command
 <h5>count
-<pre>Parameter used in deriving a key from a shared secret as described in Section 3.1 of RFC 4656, and are communicated to the Control-Client as part of the Server Greeting message.
+<pre>Parameter used in deriving a key from a shared secret as described in Section 3.1 of RFC 4656, and are communicated to the Control-Client as part of the Server Greeting message.</pre>
 
 <pre>(no) count [1024-32768]</pre>
 
