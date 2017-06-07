@@ -3,12 +3,12 @@ TWAMP Command
 
 <h2> 1.	Configuration Mode Command
 
-<h3>1.1. 	**twamp light** command
+<h3> 1.1 twamp light command
 <h5> twamp light
 
-<pre><h6> Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.
+<pre> Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.</pre>
 
-<pre><h6>twamp light
+<pre> twamp light
 no twamp light
 
 <h5> Syntax Description
@@ -18,10 +18,10 @@ no twamp light
 <pre><h6> Default is “no twamp light”.
 
 <h5> Command Modes
-<pre><h6> System Configuration Mode
+<pre> System Configuration Mode
 
 <h5> Example
-<pre><h6>N1(config)# twamp light
+<pre> N1(config)# twamp light
 N1(config)# no twamp light
 
 <h3>1.1.1	**reflector-port** command
