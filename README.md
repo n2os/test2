@@ -987,45 +987,46 @@ N1(twamp-sender- session-request)# no number-of-packet</pre>
 <pre>N1(twamp-sender- session-request)# interval 1 sec
 N1(twamp-sender- session-request)# no interval</pre>
 
-3.	Exec Command
-3.1. 	< show twamp light > command
-3.1.1	<show twamp light status> command
-show service twamp light status
-Show twamp light parameters.
+<h2>2 Exec Command
+<h3>2.1 show twamp light command
+<h3>2.1.1 show twamp light status command
+<h5>show service twamp light status
+<pre>Show twamp light parameters.</pre>
 
-show twamp light status
+<pre>show twamp light status</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None is defined.
+<h5>Default
+<pre>None is defined.</pre>
 
-Command Modes
-System Execution Mode
+<h5>Command Modes
+<pre>System Execution Mode</pre>
 
-Example
-N1(exec)# show twamp light status
+<h5>Example
+<pre>N1(exec)# show twamp light status</pre>
 
-3.2. 	< show twamp server > command
-3.2.1	<show twamp server status> command
-show service twamp server status
-Show twamp parameters.
+<h3>2.2. show twamp server command
+<h3>2.2.1 show twamp server status command
 
-show twamp server status
-show twamp server
+<h5>show service twamp server status
+<pre>Show twamp parameters.</pre>
 
-Syntax Description
-None
+<pre>show twamp server status
+show twamp server</pre>
 
-Default
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Command Modes
-System Execution Mode
+<h5>Default
+<pre>None</pre>
 
-Example
-N2(exec)#show twamp server status 
+<h5>Command Modes
+<pre>System Execution Mode</pre>
+
+<h5>Example
+<pre>N2(exec)#show twamp server status 
   twamp server enable
   dscp value : 12
   maximum connections : 10
@@ -1036,7 +1037,7 @@ N2(exec)#show twamp server status
   control key count : 1024
   test udp base port : 20000
   control inactivity timeout : 130 seconds
-  test inactivity timeout : 65 seconds
+  test inactivity timeout : 65 seconds</pre>
 
 
 3.2.2	< show twamp server sessions > command
