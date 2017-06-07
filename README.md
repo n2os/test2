@@ -308,10 +308,10 @@ N1(twamp-server)# no serv-ref-wait 100</pre>
 
 
 <h3>1.2.10 key-chain command
-<h5>Key-chainserver user user-string password password-string
+<h5>key-chain
 <pre>Enter key-chain mode.</pre>
 
-<pre>key-chain
+<pre>(no) key-chain
 no key-chain</pre>
 
 <h5>Syntax Description
@@ -328,90 +328,90 @@ no key-chain</pre>
 N1(twamp-server)# no key-chain</pre>
 
 
-2.2.11	< key-id > command
-key-id
-Set key-id and secure-key
+<h3>1.2.11 key-id command
+<h5>key-id
+<pre>Set key-id and secure-key</pre>
 
-key-id WORD secret-key WORD
-no key-id WORD
+<pre>key-id WORD secret-key WORD
+no key-id WORD</pre>
 
-Syntax Description
-Key-id
+<h5>Syntax Description
+<pre>Key-id
 	string for key-name
 secure-key
-	string for passprase
+	string for passprase</pre>
 
-Default
-None
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-twamp server key-chain mode
+<h5>Command Modes
+<pre>twamp server key-chain mode</pre>
 
-Example
-N1(twamp-server-key-chain)# key-id KEY01 secure-id SECURE01
-N1(twamp-server-key-chain)# no key-id
-
-
-2.3. 	<twamp client> command
-twamp client
-Enter the TWAMP client configuration mode. 
-
-(no) twamp client
-
-Syntax Description
-None
-
-Default
-Default is “no twamp client”.
-
-Command Modes
-System Configuration Mode
-
-Example
-N1(config)# twamp client
-N1(config)# no twamp client
+<h5>Example
+<pre>N1(twamp-server-key-chain)# key-id KEY01 secure-id SECURE01
+N1(twamp-server-key-chain)# no key-id</pre>
 
 
-2.3.1	< mode-preference > command
-mode-preference
-Enter “twamp client mode-preference” mode. 
+<h3>1.3 twamp client command
+<h5>twamp client
+<pre>Enter the TWAMP client configuration mode. </pre>
 
-(no) mode-preference
+<pre>(no) twamp client</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None
+<h5>Default
+<pre>Default is “no twamp client”.</pre>
 
-Command Modes
-twamp client mode
+<h5>Command Modes
+<pre>System Configuration Mode</pre>
 
-Example
-N1(twamp-client)# mode-preference
-N1(twamp-client)# no mode-preference
+<h5>Example
+<pre>N1(config)# twamp client
+N1(config)# no twamp client</pre>
 
 
-2.3.1.1	< priority > command
-priority
-Specify value as the DSCP byte in the IP header of control packets sent from the server.
+<h3>1.3.1	mode-preference command
+<h5>mode-preference
+<pre>Enter “twamp client mode-preference” mode. </pre>
 
-(no) priority <0-3> mode (unauthenticated|authenticated|encrypted|mixed)
+<pre>(no) mode-preference</pre>
 
-Syntax Description
-<0-3>
-	Mode priority
-unauthenticated|authenticated|encrypted|mixed
-	Supported TWAMP Mode.
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-unauthenticated.
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-Twamp server mode-preference mode
+<h5>Command Modes
+<pre>twamp client mode</pre>
 
-Example
-N1(config)# twamp server
+<h5>Example
+<pre>N1(twamp-client)# mode-preference
+N1(twamp-client)# no mode-preference</pre>
+
+
+<h3>1.3.1.1 priority command
+<h5>priority
+<pre>Specify value as the DSCP byte in the IP header of control packets sent from the server.</pre>
+
+<pre>(no) priority [0-3] mode (unauthenticated|authenticated|encrypted|mixed)</pre>
+
+<h5>Syntax Description
+<pre>	[0-3]
+		Mode priority
+	unauthenticated|authenticated|encrypted|mixed
+		Supported TWAMP Mode.</pre>
+
+<h5>Default
+<pre>unauthenticated.</pre>
+
+<h5>Command Modes
+<pre>Twamp server mode-preference mode</pre>
+
+<h5>Example
+<pre>N1(config)# twamp server
 N1(twamp-server)# mode-preference
 N1(twamp-server-mode-preference)# priority 0 mode unauthenticated
 N1(twamp-server-mode-preference)# priority 1 mode authenticated
@@ -420,49 +420,49 @@ N1(twamp-server-mode-preference)# priority 3 mode mixed
 N1(twamp-server-mode-preference)# no priority 0
 N1(twamp-server-mode-preference)# no priority 1
 N1(twamp-server-mode-preference)# no priority 2
-N1(twamp-server-mode-preference)# no priority 3
+N1(twamp-server-mode-preference)# no priority 3</pre>
 
-2.3.2	< key-chain > command
-key-chain
-Enter “twamp client key-chain” mode. 
+<h3>1.3.2 key-chain command
+<h5>key-chain
+<pre>Enter “twamp client key-chain” mode. </pre>
 
-(no) key-chain
+<pre>(no) key-chain</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-twamp client mode
+<h5>Command Modes
+<pre>twamp client mode</pre>
 
-Example
-N1(twamp-client)# key-chain
-N1(twamp-client)# no key-chain
+<h5>Example
+<pre>N1(twamp-client)# key-chain
+N1(twamp-client)# no key-chain</pre>
 
 
-2.3.2.1	< key-id > command
-key-id
-Set key-id and secure-key
+<h3>1.3.2.1 key-id command
+<h5>key-id
+<pre>Set key-id and secure-key</pre>
 
-(no) key-id WORD secret-key WORD
+<pre>(no) key-id WORD secret-key WORD</pre>
 
-Syntax Description
-Key-id
+<h5>Syntax Description
+<pre>Key-id
 	string for key-name
 secure-key
-	string for passprase
+	string for passprase</pre>
 
-Default
-None
+<h5>Default
+<pre>None
 
-Command Modes
-twamp server key-chain mode
+<h5>Command Modes
+<pre>twamp server key-chain mode</pre>
 
-Example
-N1(twamp-server-key-chain)# key-id KEY01 secure-id SECURE01
-N1(twamp-server-key-chain)# no key-id KEY01
+<h5>Example
+<pre>N1(twamp-server-key-chain)# key-id KEY01 secure-id SECURE01
+N1(twamp-server-key-chain)# no key-id KEY01</pre>
 
 
 2.3.3	< control-connection > command
