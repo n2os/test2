@@ -200,7 +200,7 @@ N2(twamp-server)# no mode unauthenticated authenticated encrypted mixed</pre>
 
 <h3>1.2.5 server-tcp-port command
 <h5>server-tcp-port
-<pre>Specify number as the TCP port used for control sessions.
+<pre>Specify number as the TCP port used for control sessions.</pre>
 
 <pre>(no) server-tcp-port [100-100000]</pre>
 
