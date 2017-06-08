@@ -1358,7 +1358,7 @@ secret-key	: string value of passphrase</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example
-<h5>**Twping with TWAMP Light Server**
+<h5>Twping with TWAMP Light Server
 <h5>twping A.B.C.D
 <pre>N1(exec)# twping 1.1.1.12</pre>
 
@@ -1371,7 +1371,7 @@ secret-key	: string value of passphrase</pre>
 <h5>twping A.B.C.D count [1-100] reflector-port [100-65535]
 <pre>N1(exec)# twping 1.1.1.12 count 10 reflector-port 863</pre>
 
-<h5>**Twping with TWAMP Full Server**
+<h5>Twping with TWAMP Full Server
 <h5>twping A.B.C.D mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 mode unauthenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 mode authenticated key-id user01 secret-key password01
