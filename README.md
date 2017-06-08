@@ -112,8 +112,8 @@ Connected (local : 192.168.122.101/36214, server : 192.168.122.101/22222)
     Duplicated(*)               : 0
     Disordered(*)               : 0
 ...    
-<pre>
-
+</pre>
+***
 <h1>
 TWAMP Command
 
