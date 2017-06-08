@@ -1,4 +1,5 @@
-<h1>Network configuration</h1>
+<h1>Network configuration
+
 <pre>
 +---------+
 |    N1   |192.168.122.101
@@ -17,6 +18,7 @@
 <h1> TWAMP Configuration
 
 <h3>N2, N3, N4 configuration : Twamp server and reflector
+
 <pre>
 !
 twamp server
@@ -36,6 +38,7 @@ twamp server
 </pre>
 
 <h3>N1 configuration : Twamp client and sender
+
 <pre>
 !
 twamp client
@@ -87,6 +90,7 @@ twamp sender
 </pre>
 
 <h3>Start twamp control and test sessions
+
 <pre>
 N1(exec)#twping start sender-test-session TEST-N2
 N1(exec)#twping start sender-test-session TEST-N2
@@ -94,6 +98,7 @@ N1(exec)#twping start sender-test-session TEST-N3
 </pre>
 
 <h3>how to run monitor client program
+
 <pre>
 root@N1:~# cd ~~~/twampd/sample
 root@N1:~~~/twampd/sample# make
@@ -111,9 +116,10 @@ Connected (local : 192.168.122.101/36214, server : 192.168.122.101/22222)
     PDV (low-rtt, max-variation): 0 Sec 295 USec(0 Sec 456 USec, 0 Sec 6555 USec)
     Duplicated(*)               : 0
     Disordered(*)               : 0
-...    
 </pre>
-***
+
+----
+
 <h1>
 TWAMP Command
 
