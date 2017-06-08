@@ -78,7 +78,7 @@ N1(config)# no twamp server</pre>
 <pre>Default is ”0”.</pre>
 
 <h5>Command Modes
-<pre>Twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
@@ -139,7 +139,7 @@ twamp(dec)	bin	TCP/IP Stack(dec)	bin
 <pre>Default is “10”.</pre>
 
 <h5>Command Modes
-<pre>twamp server mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
@@ -161,7 +161,7 @@ N1(twamp-server)# no maximum-connections</pre>
 <pre>Default is ”10”.</pre>
 
 <h5>Command Modes
-<pre>twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
@@ -189,7 +189,7 @@ mixed
 <pre>Default is "unauthenticated mode".</pre>
 
 <h5>Command Modes
-<pre>Twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
@@ -212,7 +212,7 @@ no server-tcp-port</pre>
 <pre>Default is “862”.</pre>
 
 <h5>Command Modes
-<pre>Twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# 
@@ -235,7 +235,7 @@ no max-count</pre>
 <pre>Default is “32768”.</pre>
 
 <h5>Command Modes
-<pre>Twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# 
@@ -258,7 +258,7 @@ no count</pre>
 <pre>Default is “1024”.</pre>
 
 <h5>Command Modes
-<pre>Twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# 
@@ -281,7 +281,7 @@ no base-test-port</pre>
 <pre>Default is “20000”.</pre>
 
 <h5>Command Modes
-<pre>Twamp server Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# 
@@ -304,7 +304,7 @@ no servwait</pre>
 <pre>Default is “900”.</pre>
 
 <h5>Command Modes
-<pre>System Configuration Mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
@@ -325,7 +325,7 @@ N1(twamp-server)# no serv-ref-wait 100</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp server mode</pre>
+<pre>Twamp server mode</pre>
 
 <h5>Example
 <pre>N1(twamp-server)# key-chain
@@ -349,7 +349,7 @@ secure-key
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp server key-chain mode</pre>
+<pre>Twamp server key-chain mode</pre>
 
 <h5>Example
 <pre>N1(twamp-server-key-chain)# key-id KEY01 secure-id SECURE01
@@ -438,7 +438,7 @@ N1(twamp-client-mode-prefer)# no priority 3</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client mode</pre>
+<pre>Twamp client mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client)# key-chain
@@ -781,7 +781,7 @@ no repeat</pre>
 <pre>Default is "0"</pre>
 
 <h5>Command Modes
-<pre>Twamp client/control-connection/session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# repeat 10
