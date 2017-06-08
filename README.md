@@ -1,5 +1,5 @@
-<pre>
 <h1>Network configuration</h1>
+<pre>
 +---------+
 |    N1   |192.168.122.101
 +---------+
@@ -12,7 +12,83 @@
      | 3.3.3.11         3.3.3.12  +---------+
      |----------------------------|    N4   |192.168.122.104
      |                            +---------+
-     
+</pre>
+
+<h1> TWAMP Configuration
+<pre>
+
+<h3>N2, N3, N4 configuration : Twamp server and reflector</h3>
+!
+twamp server
+	key-chain
+		key-id key01 secret-key secret01
+		key-id key02 secret-key secret02
+		key-id key03 secret-key secret03
+	mode unauthenticated authenticated encrypted mixed
+	control-packet-dscp 0
+	maximum-connections 10
+	maximum-sessions-per-connection 10
+	server-tcp-port 862
+	count 1024
+	base-test-port 20000
+	serv-ref-wait 30
+!
+
+<h3>N1 configuration : Twamp client and sender</h3>
+!
+twamp client
+	monitor
+		listen-tcp-port 22222
+		max-connection 4
+		client-ip 192.168.122.101
+		client-ip 192.168.122.102
+	mode-preference
+		priority 0 mode authenticated
+		priority 1 mode encrypted
+		priority 2 mode mixed
+	key-chain
+		key-id key01 secret-key secret01
+	control-connection CONN-N2
+		client-ip 192.168.122.101
+		server-ip 192.168.122.102
+		key-id key01
+		session-request SESS-01
+			sender-ip 1.1.1.11
+			reflector-ip 1.1.1.12
+	control-connection CONN-N3
+		client-ip 192.168.122.101
+		server-ip 192.168.122.103
+		key-id key01
+		session-request SESS-01
+			sender-ip 2.2.2.11
+			reflector-ip 2.2.2.13
+	control-connection CONN-N4
+		client-ip 192.168.122.101
+		server-ip 192.168.122.104
+		key-id key01
+		session-request SESS-01
+			sender-ip 3.3.3.11
+			reflector-ip 3.3.3.14
+!
+twamp sender
+	test-session TEST-N2
+		control-connection-name CONN-N2
+		number-of-packet 1000000
+
+        test-session TEST-N3
+		control-connection-name CONN-N3
+		number-of-packet 1000000
+	test-session TEST-N4
+		control-connection-name CONN-N4
+		number-of-packet 1000000
+!
+
+<h3>Start twamp control and test sessions</h3>
+N1(exec)#twping start sender-test-session TEST-N2
+N1(exec)#twping start sender-test-session TEST-N2
+N1(exec)#twping start sender-test-session TEST-N3
+
+<h3>Start twamp control and test sessions</h3>
 </pre>
 
 <h1>
