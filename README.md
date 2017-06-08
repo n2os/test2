@@ -988,6 +988,7 @@ N1(twamp-sender- session-request)# no number-of-packet</pre>
 N1(twamp-sender- session-request)# no interval</pre>
 
 <h2>2 Exec Command
+
 <h3>2.1 show twamp light command
 <h3>2.1.1 show twamp light status command
 <h5>show service twamp light status
@@ -1358,6 +1359,11 @@ secret-key	: string value of passphrase</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example
+
+<h5>Twping with configuration (Background process)
+<h5>twping start sender-test-session WORD
+<pre>twping start sender-test-session TEST-N2</pre>
+
 <h5>Twping with TWAMP Light Server
 <h5>twping A.B.C.D
 <pre>N1(exec)# twping 1.1.1.12</pre>
