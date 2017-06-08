@@ -8,8 +8,7 @@ TWAMP Command
 
 <pre>Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.</pre>
 
-<pre>twamp light
-no twamp light</pre>
+<pre>(no) twamp light</pre>
 
 <h5> Syntax Description
 <pre>None </pre>
@@ -49,8 +48,7 @@ N1(twamp-light)# no reflector-port</pre>
 <h5>twamp server
 <pre>Start the TWAMP server. By default, the server accepts any connection request from any client.</pre>
 
-<pre>twamp server
-no twamp server</pre>
+<pre>(no) twamp server</pre>
 
 <h5>Syntax Description
 <pre>None</pre>
@@ -175,7 +173,7 @@ N1(twamp-server)# no maximum-sessions-per-connection</pre>
 <h5>server mode
 <pre>Enable security mode.</pre>
 
-<pre>(no) twamp server mode {unauthenticated | authenticated | encrypted | mixed}</pre>
+<pre>(no) mode {unauthenticated | authenticated | encrypted | mixed}</pre>
 
 <h5>Syntax Description
 <pre>unauthenticated
@@ -191,7 +189,7 @@ mixed
 <pre>Default value is unauthenticated mode.</pre>
 
 <h5>Command Modes
-<pre>System Configuration Mode</pre>
+<pre>Twamp server Mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
@@ -203,7 +201,8 @@ N2(twamp-server)# no mode unauthenticated authenticated encrypted mixed</pre>
 <h5>server-tcp-port
 <pre>Specify number as the TCP port used for control sessions.</pre>
 
-<pre>(no) server-tcp-port [100-100000]</pre>
+<pre>server-tcp-port [100-100000]
+no server-tcp-port</pre>
 
 <h5>Syntax Description
 <pre>[100-100000]
@@ -225,7 +224,8 @@ N1(twamp-server)# no server-tcp-port</pre>
 <h5>Max-count
 <pre>This parameter limits the maximum Count value.</pre>
 
-<pre>(no) max-count [1024-32768]</pre>
+<pre>max-count [1024-32768]
+no max-count</pre>
 
 <h5>Syntax Description
 <pre>[1024-32768]
@@ -247,7 +247,8 @@ N1(twamp-server)# no max-count</pre>
 <h5>count
 <pre>Parameter used in deriving a key from a shared secret as described in Section 3.1 of RFC 4656, and are communicated to the Control-Client as part of the Server Greeting message.</pre>
 
-<pre>(no) count [1024-32768]</pre>
+<pre>count [1024-32768]
+no count</pre>
 
 <h5>Syntax Description
 <pre>[1024-32768]
@@ -269,7 +270,8 @@ N1(twamp-server)# no count</pre>
 <h5>Max-count
 <pre>This parameter is the value of dynamic allocated UDP port of test packet.</pre>
 
-<pre>(no) base-test-port [1024-65535]</pre>
+<pre>base-test-port [1024-65535]
+no base-test-port</pre>
 
 <h5>Syntax Description
 <pre>[1024-65535]
@@ -291,7 +293,8 @@ N1(twamp-server)# no base-test-port</pre>
 <h5>servwait
 <pre>Set the timeout value for control-session inactivity in seconds. Indicates that the TWAMP-Control connection to the Control-Client is in SERVWAIT according to RFC 5357 (Section 3.1): [a] Server MAY discontinue any established control connection when no packet associated with that connection has been received within SERVWAIT seconds.</pre>
 
-<pre>(no) servwait [1-604800]</pre>
+<pre>servwait [1-604800]
+no servwait</pre>
 
 <h5>Syntax Description
 <pre>[1-604800]
@@ -313,8 +316,7 @@ N1(twamp-server)# no serv-ref-wait 100</pre>
 <h5>key-chain
 <pre>Enter key-chain mode.</pre>
 
-<pre>(no) key-chain
-no key-chain</pre>
+<pre>(no) key-chain</pre>
 
 <h5>Syntax Description
 <pre>None</pre>
@@ -374,7 +376,7 @@ N1(twamp-server-key-chain)# no key-id</pre>
 N1(config)# no twamp client</pre>
 
 
-<h3>1.3.1	mode-preference command
+<h3>1.3.1 mode-preference command
 <h5>mode-preference
 <pre>Enter “twamp client mode-preference” mode. </pre>
 
@@ -387,7 +389,7 @@ N1(config)# no twamp client</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client mode</pre>
+<pre>Twamp client mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client)# mode-preference
@@ -400,28 +402,28 @@ N1(twamp-client)# no mode-preference</pre>
 <pre>(no) priority [0-3] mode (unauthenticated|authenticated|encrypted|mixed)</pre>
 
 <h5>Syntax Description
-<pre>	[0-3]
-		Mode priority
-	unauthenticated|authenticated|encrypted|mixed
-		Supported TWAMP Mode.</pre>
+<pre>[0-3]
+	Mode priority
+unauthenticated|authenticated|encrypted|mixed
+	Supported TWAMP Mode.</pre>
 
 <h5>Default
 <pre>unauthenticated.</pre>
 
 <h5>Command Modes
-<pre>Twamp server mode-preference mode</pre>
+<pre>Twamp client mode-preference mode</pre>
 
 <h5>Example
 <pre>N1(config)# twamp server
-N1(twamp-server)# mode-preference
-N1(twamp-server-mode-preference)# priority 0 mode unauthenticated
-N1(twamp-server-mode-preference)# priority 1 mode authenticated
-N1(twamp-server-mode-preference)# priority 2 mode encrypted
-N1(twamp-server-mode-preference)# priority 3 mode mixed
-N1(twamp-server-mode-preference)# no priority 0
-N1(twamp-server-mode-preference)# no priority 1
-N1(twamp-server-mode-preference)# no priority 2
-N1(twamp-server-mode-preference)# no priority 3</pre>
+N1(twamp-client)# mode-preference
+N1(twamp-client-mode-prefer)# priority 0 mode unauthenticated
+N1(twamp-client-mode-prefer)# priority 1 mode authenticated
+N1(twamp-client-mode-prefer)# priority 2 mode encrypted
+N1(twamp-client-mode-prefer)# priority 3 mode mixed
+N1(twamp-client-mode-prefer)# no priority 0
+N1(twamp-client-mode-prefer)# no priority 1
+N1(twamp-client-mode-prefer)# no priority 2
+N1(twamp-client-mode-prefer)# no priority 3</pre>
 
 <h3>1.3.2 key-chain command
 <h5>key-chain
@@ -459,7 +461,7 @@ secure-key
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp server key-chain mode</pre>
+<pre>Twamp client key-chain mode</pre>
 
 <h5>Example
 <pre>N1(twamp-server-key-chain)# key-id KEY01 secure-id SECURE01
@@ -474,13 +476,13 @@ N1(twamp-server-key-chain)# no key-id KEY01</pre>
 
 <h5>Syntax Description
 <pre>WORD
-	String for Control-connection name</pre>
+	String for control-connection name</pre>
 
 <h5>Default
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client mode</pre>
+<pre>Twamp client mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client)# control-connection CONN-01
@@ -490,7 +492,8 @@ N1(twamp-client)# no control-connection CONN-01</pre>
 <h5>client-ip
 <pre>Set client ip address for twamp control.</pre>
 
-<pre>(no) client-ip A.B.C.D</pre>
+<pre>client-ip A.B.C.D
+no client-ip</pre>
 
 <h5>Syntax Description
 <pre>A.B.C.D
@@ -500,18 +503,19 @@ N1(twamp-client)# no control-connection CONN-01</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp server control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
-<pre>N1(twamp-server-control-connection)# client-ip 1.1.1.1
-N1(twamp-server-control-connection)# no client-ip</pre>
+<pre>N1(twamp-client-ctrl-conn)# client-ip 1.1.1.1
+N1(twamp-client-ctrl-conn)# no client-ip</pre>
 
 
 <h3>1.3.3.2 server-ip command
 <h5>server-ip
 <pre>Set server ip address for twamp control.</pre>
 
-<pre>(no) server-ip A.B.C.D</pre>
+<pre>server-ip A.B.C.D
+no server</pre>
 
 <h5>Syntax Description
 <pre>A.B.C.D
@@ -521,11 +525,11 @@ N1(twamp-server-control-connection)# no client-ip</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp server control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
-<pre>N1(twamp-server-control-connection)# server-ip 1.1.1.1
-N1(twamp-server-control-connection)# no server-ip</pre>
+<pre>N1(twamp-client-ctrl-conn)# server-ip 1.1.1.1
+N1(twamp-client-ctrl-conn)# no server-ip</pre>
 
 <h3>1.3.3.3 server-tcp-port command
 <h5>server-tcp-port
@@ -542,11 +546,11 @@ no server-tcp-port</pre>
 <pre>Default tcp port number is 862</pre>
 
 <h5>Command Modes
-<pre>twamp server control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
-<pre>N1(twamp-server-control-connection)# server-tcp-port 863
-N1(twamp-server-control-connection)# no server-tcp-port</pre>
+<pre>N1(twamp-client-ctrl-conn)# server-tcp-port 863
+N1(twamp-client-ctrl-conn)# no server-tcp-port</pre>
 
 
 <h3>1.3.3.4 control-packet-dscp command
@@ -561,14 +565,14 @@ no control-packet-dscp</pre>
 	dscp value</pre>
 
 <h5>Default
-<pre>Default tcp port number is 0</pre>
+<pre>Default is 0</pre>
 
 <h5>Command Modes
-<pre>twamp server control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
-<pre>N1(twamp-server-control-connection)# control-packet-dscp 5
-N1(twamp-server-control-connection)# no control-packet-dscp</pre>
+<pre>N1(twamp-client-ctrl-conn)# control-packet-dscp 5
+N1(twamp-client-ctrl-conn)# no control-packet-dscp</pre>
 
 
 <h3>1.3.3.5 key-id command
@@ -586,40 +590,40 @@ no key-id</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp server control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
-<pre>N1(twamp-server-control-connection)# key-id KEY-01
-N1(twamp-server-control-connection)# no key-id</pre>
+<pre>N1(twamp-client-ctrl-conn)# key-id KEY-01
+N1(twamp-client-ctrl-conn)# no key-id</pre>
 
 
-<h3>1.3.3.6	max-count command
+<h3>1.3.3.6 max-count command
 <h5>max-count
 <pre>Set max-count for count. This parameter limits the maximum Count value. If an attacking system sets the maximum value in Count (2**32), then the system under attack would stall for a significant period of time while it attempts to generate keys.</pre>
 
-<pre>(no) max-count [1024-32768]</pre>
+<pre>max-count [1024-32768]
+no max-count</pre>
 
 <h5>Syntax Description
 <pre>[1024-32768]
 	Maximum value for count.</pre>
 
 <h5>Default
-<pre>Default number is 32768</pre>
+<pre>Default is 32768</pre>
 
 <h5>Command Modes
-<pre>twamp server control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
-<pre>N1(twamp-server-control-connection)# max-count 2048
-N1(twamp-server-control-connection)# no max-count</pre>
+<pre>N1(twamp-client-ctrl-conn)# max-count 2048
+N1(twamp-client-ctrl-conn)# no max-count</pre>
 
 
 <h3>1.3.3.7 session-request command
 <h5>session-request
 <pre>Enter “twamp client control-connection session-request” mode. Information associated with the Control-Client for this test session</pre>
 
-<pre>session-request WORD
-no session-request WORD</pre>
+<pre>(no) session-request WORD</pre>
 
 <h5>Syntax Description
 <pre>WORD
@@ -629,7 +633,7 @@ no session-request WORD</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client control-connection mode</pre>
+<pre>Twamp client control-connection mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-control-connection)# session-request SESS-REQ-01
@@ -651,7 +655,7 @@ no sender-ip</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client control-connection session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# sender-ip 1.1.1.1
@@ -672,7 +676,7 @@ no sender-udp-port</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client control-connection session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# sender-udp-port 10000
@@ -693,7 +697,7 @@ no reflector-ip</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client control-connection session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# reflector-ip 1.1.1.2
@@ -714,7 +718,7 @@ no reflector-udp-port</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>Twamp client/control-connection/session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# reflector-udp-port 10000
@@ -735,7 +739,7 @@ no timeout</pre>
 <pre>Default timeout is 2 seconds</pre>
 
 <h5>Command Modes
-<pre>Twamp client/control-connection/session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# timeout 10
@@ -756,7 +760,7 @@ no test-packet-dscp</pre>
 <pre>Default test packet’s dscp is 0</pre>
 
 <h5>Command Modes
-<pre>Twamp client/control-connection/session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# test-packet-dscp 10
@@ -795,10 +799,10 @@ no repeat-interval</pre>
 	Repeat-interval time (minutes)</pre>
 
 <h5>Default
-<pre>Default repeat-interval valule is 0</pre>
+<pre>Default is 0</pre>
 
 <h5>Command Modes
-<pre>Twamp client/control-connection/session-request mode</pre>
+<pre>Twamp client control-connection session-request mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-session-request)# repeat-interval 10
@@ -818,7 +822,7 @@ N1(twamp-client-session-request)# no repeat-interval</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client mode</pre>
+<pre>Twamp client mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client)# monitor
@@ -829,17 +833,18 @@ N1(twamp-client)# no monitor</pre>
 <h5>max-connection
 <pre>Set the number of max clients to be connected</pre>
 
-<pre>(no) max-connection [1-10]</pre>
+<pre>max-connection [1-10]
+no max-connection</pre>
 
 <h5>Syntax Description
 <pre>[1-10]
 	Number of max clients</pre>
 
 <h5>Default
-<pre>5 </pre>
+<pre>Default is 5</pre>
 
 <h5>Command Modes
-<pre>twamp client monitor mode</pre>
+<pre>Twamp client monitor mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-monitor)# max-connection 6
@@ -849,17 +854,18 @@ N1(twamp-server-control-connection)# no max-connection</pre>
 <h5>listen-tcp-port
 <pre>Set tcp listen port number for monitor clients to be connect</pre>
 
-<pre>(no) listen-tcp-port [100-65535]</pre>
+<pre>listen-tcp-port [100-65535]
+no listen-tcp-port</pre>
 
 <h5>Syntax Description
 <pre>[100-65535]
 	Tcp-port number</pre>
 
 <h5>Default
-<pre>22222</pre>
+<pre>Default is 22222</pre>
 
 <h5>Command Modes
-<pre>twamp client monitor mode</pre>
+<pre>Twamp client monitor mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-monitor)# listen-tcp-port 22222
@@ -869,7 +875,8 @@ N1(twamp-server-control-connection)# no listen-tcp-port</pre>
 <h5>client-ip
 <pre>Set monitor client ip to be allowed</pre>
 
-<pre>(no) client-ip A.B.C.D</pre>
+<pre>client-ip A.B.C.D
+no client-ip</pre>
 
 <h5>Syntax Description
 <pre>A.B.C.D
@@ -879,7 +886,7 @@ N1(twamp-server-control-connection)# no listen-tcp-port</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp client monitor mode</pre>
+<pre>Twamp client monitor mode</pre>
 
 <h5>Example
 <pre>N1(twamp-client-monitor)# client-ip 1.2.3.4
@@ -908,7 +915,7 @@ N1(config)# no twamp sender</pre>
 
 <h3>1.4.1 test-session command
 <h5>test-session
-<pre>Enter “twamp sender/test-session” mode. </pre>
+<pre>Enter “twamp sender test-session” mode. </pre>
 
 <pre>(no) test-session WORD</pre>
 
@@ -920,7 +927,7 @@ N1(config)# no twamp sender</pre>
 <pre>None</pre>
 
 <h5>Command Modes
-<pre>twamp sender mode</pre>
+<pre>Twamp sender mode</pre>
 
 <h5>Example
 <pre>N1(twamp-sender)# test-session TEST-01
@@ -951,7 +958,8 @@ N1(twamp-sender- session-request)# no control-connection-name CONN-01</pre>
 <h5>number-of-packet
 <pre>Specify number of packet. The overall number of TWAMP-Test (UDP) packets to be transmitted by the Session-Sender for this test session.</pre>
 
-<pre>(no) number-of-packet ]1-4294967295]</pre>
+<pre>number-of-packet ]1-4294967295]
+no number-of-packet</pre>
 
 <h5>Syntax Description
 <pre>[1-4294967295]
@@ -972,21 +980,22 @@ N1(twamp-sender- session-request)# no number-of-packet</pre>
 <h5>interval
 <pre>Interval time between each test packets.</pre>
 
-<pre>(no) interval [1-4294967295] sec | msec</pre>
+<pre>interval [1-4294967295] sec | msec
+no interval</pre>
 
 <h5>Syntax Description
 <pre>[1-4294967295]
 	Interval time between test packets</pre>
 
 <h5>Default
-<pre>Default is 1 secconds</pre>
+<pre>Default is 1 second</pre>
 
 <h5>Command Modes
 <pre>Twamp sender test-session mode</pre>
 
 <h5>Example
-<pre>N1(twamp-sender- session-request)# interval 1 sec
-N1(twamp-sender- session-request)# no interval</pre>
+<pre>N1(twamp-sender-session-request)# interval 1 sec
+N1(twamp-sender-session-request)# no interval</pre>
 
 <h2>2 Exec Command
 
