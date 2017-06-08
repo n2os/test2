@@ -15,9 +15,9 @@
 </pre>
 
 <h1> TWAMP Configuration
-<pre>
 
-<h3>N2, N3, N4 configuration : Twamp server and reflector</h3>
+<h3>N2, N3, N4 configuration : Twamp server and reflector
+<pre>
 !
 twamp server
 	key-chain
@@ -33,8 +33,10 @@ twamp server
 	base-test-port 20000
 	serv-ref-wait 30
 !
+</pre>
 
-<h3>N1 configuration : Twamp client and sender</h3>
+<h3>N1 configuration : Twamp client and sender
+<pre>
 !
 twamp client
 	monitor
@@ -82,14 +84,35 @@ twamp sender
 		control-connection-name CONN-N4
 		number-of-packet 1000000
 !
+</pre>
 
-<h3>Start twamp control and test sessions</h3>
+<h3>Start twamp control and test sessions
+<pre>
 N1(exec)#twping start sender-test-session TEST-N2
 N1(exec)#twping start sender-test-session TEST-N2
 N1(exec)#twping start sender-test-session TEST-N3
-
-<h3>Start twamp control and test sessions</h3>
 </pre>
+
+<h3>how to run monitor client program
+<pre>
+root@N1:~# cd ~~~/twampd/sample
+root@N1:~~~/twampd/sample# make
+root@N1:~~~/twampd/sample# ./mon-client 192.168.122.101 22222
+Connect to : 192.168.122.101/22222
+Connected (local : 192.168.122.101/36214, server : 192.168.122.101/22222)
+[192.168.122.101:34850, 192.168.122.102:862]
+    RecvPackets/SentPackets     : 4456/4456
+    LastRecvSeq/LastSentSeq     : 4455/4455
+    CurrentDrop/AccumulatedDrop : 0/0
+    CurrentRtt                  : 0 Sec 751 USec
+    MeanRtt                     : 0 Sec 967 USec
+    StdDevRtt                   : 0 Sec 319 USec
+    IPDV (lowest ~ highest)     : 0 Sec -203 USec(0 Sec -6129 USec ~ 0 Sec 5990 USec)
+    PDV (low-rtt, max-variation): 0 Sec 295 USec(0 Sec 456 USec, 0 Sec 6555 USec)
+    Duplicated(*)               : 0
+    Disordered(*)               : 0
+...    
+<pre>
 
 <h1>
 TWAMP Command
