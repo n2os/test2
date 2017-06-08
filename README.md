@@ -1556,5 +1556,5 @@ N1(exec)# twping 1.1.1.12 count 5 session-count 5 server-port 863 mode mixed use
 [RFC2898] PKCS #5: Password-Based Cryptography Specification Version 2.0
 A Two-Way Active Measurement Protocol (TWAMP) [RFC5357]
 
-[RFC2898]: https://www.rfc-editor.org/info/rfc2898
-[RFC5357]: https://www.rfc-editor.org/info/rfc5357
+[RFC2898]: https://www.rfc-editor.org/info/rfc2898.
+[RFC5357]: https://www.rfc-editor.org/info/rfc5357.
