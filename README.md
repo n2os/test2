@@ -1040,23 +1040,23 @@ show twamp server</pre>
   test inactivity timeout : 65 seconds</pre>
 
 
-3.2.2	< show twamp server sessions > command
-show twamp server session
-Show all sessions of twamp connection
+<h3>2.2.2 show twamp server sessions command
+<h5>show twamp server session
+<pre>Show all sessions of twamp connection</pre>
 
-show twamp server session
+<pre>show twamp server session</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-System execution mode
+<h5>Command Modes
+<pre>System execution mode</pre>
 
-Example
-N1(exec)#show twamp server sessions
+<h5>Example
+<pre>N1(exec)#show twamp server sessions
 [client ip/port 192.168.137.253/45012 server ip/port 192.168.137.187/862]
   status : Testing
   mode : Authenticated
@@ -1067,26 +1067,26 @@ N1(exec)#show twamp server sessions
       time remaining : refwait 62 seconds
       mode : Authenticated
       sender-ip/port : 1.1.1.1/20001
-      receiver-ip/port : 1.1.1.2/30001
+      receiver-ip/port : 1.1.1.2/30001</pre>
 
 
-3.2.3	<show twamp server session detail> command
-show twamp server sessions
-Show all sessions’s detail information of twamp connections
+<h3>2.2.3 show twamp server session detail command
+<h5>show twamp server sessions
+<pre>Show all sessions’s detail information of twamp connections</pre>
 
-show twamp server session detail
+<pre>show twamp server session detail</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-System execution mode
+<h5>Command Modes
+<pre>System execution mode</pre>
 
-Example
-N1(exec)#show twamp server sessions detail
+<h5>Example
+<pre>N1(exec)#show twamp server sessions detail
 [client ip/port 192.168.137.253/47838 server ip/port 192.168.137.187/862]
   status : Testing
   mode : Authenticated
@@ -1107,28 +1107,27 @@ N1(exec)#show twamp server sessions detail
       sender-ip/port : 1.1.1.1/20001
       receiver-ip/port : 1.1.1.2/30001
       test-aes-session-key : e8df902b6cb1493e8741ad61a738aca2
-      test-hmac-sha1-session-key : fa534b41f3fe6003208df8388c8d2fdfbb05de16aaaa276e767ce571be8d2eca
+      test-hmac-sha1-session-key : fa534b41f3fe6003208df8388c8d2fdfbb05de16aaaa276e767ce571be8d2eca</pre>
 
+<h3>2.3 show twamp client command
+<h5>2.3.1 show twamp client status command
+<pre>show service twamp server status
+Show twamp client parameters.</pre>
 
-3.3. 	< show twamp client > command
-3.3.1	<show twamp client status> command
-show service twamp server status
-Show twamp client parameters.
+<pre>show twamp client
+show twamp client status</pre>
 
-show twamp client
-show twamp client status
+<h5>Syntax Description
+<pre>None</pre>
 
-Syntax Description
-None
+<h5>Default
+<pre>None</pre>
 
-Default
-None
+<h5>Command Modes
+<pre>System Execution Mode</pre>
 
-Command Modes
-System Execution Mode
-
-Example
-N1(exec)#show twamp client
+<h5>Example
+<pre>N1(exec)#show twamp client
 N1(exec)#show twamp client
 twamp client
   monitor-client
@@ -1143,26 +1142,25 @@ twamp client
     server IP : 192.168.122.102
     key-id : key01
     session request name : SESS-01
-      reflector IP : 1.1.1.12
+      reflector IP : 1.1.1.12</pre>
 
+<h3>2.3.2 show twamp client session command
+<h5>show twamp client session
+<pre>Show all information of twamp client sessions</pre>
 
-3.3.2	< show twamp client session > command
-show twamp client session
-Show all information of twamp client sessions
+<pre>show twamp client session</pre>
 
-show twamp client session
+<h5>Syntax Description
+<pre>None</pre>
 
-Syntax Description
-None
+<h5>Default
+<pre>None</pre>
 
-Default
-None
+<h5>Command Modes
+<pre>System execution mode</pre>
 
-Command Modes
-System execution mode
-
-Example
-N1(exec)#show twamp client session 
+<h5>Example
+<pre>N1(exec)#show twamp client session 
 [client ip/port 192.168.122.101/48470 server ip/port 192.168.122.102/862]
   name : CONN-N2
   status : active
@@ -1172,25 +1170,25 @@ N1(exec)#show twamp client session
     SID : 17e43a200d0f4ea8668f43a2e43344a1
       mode : Authenticated
       sender-ip/port : 1.1.1.11/20000
-      receiver-ip/port : 1.1.1.12/20000
+      receiver-ip/port : 1.1.1.12/20000</pre>
 
-3.3.3	<show twamp client session WORD> command
-show twamp client session WORD
-Show detail informations of specific twamp session.
+<h3>2.3.3 show twamp client session WORD command
+<h5>show twamp client session WORD
+<pre>Show detail informations of specific twamp session.</pre>
 
-show twamp client session WORD
+<pre>show twamp client session WORD</pre>
 
-Syntax Description
-None
+<h5>Syntax Description
+<pre>None</pre>
 
-Default
-None
+<h5>Default
+<pre>None</pre>
 
-Command Modes
-System execution mode
+<h5>Command Modes
+<pre>System execution mode</pre>
 
-Example
-N1(exec)#show twamp client session CONN-N2
+<h5>Example
+<pre>N1(exec)#show twamp client session CONN-N2
 [client ip/port 192.168.122.101/48470 server ip/port 192.168.122.102/862]
   name : CONN-N2
   status : active
@@ -1210,79 +1208,76 @@ N1(exec)#show twamp client session CONN-N2
       sender-ip/port : 1.1.1.11/20000
       receiver-ip/port : 1.1.1.12/20000
       test-aes-session-key : 57d469962fe97183378eb584df0d4bed
-      test-hmac-sha1-session-key : 3c18a35a111f2918a69080de5adf22a16d90a54d37df332afd99d6c6a65d0ae9
+      test-hmac-sha1-session-key : 3c18a35a111f2918a69080de5adf22a16d90a54d37df332afd99d6c6a65d0ae9</pre>
 
+<h3>2.4 show twamp sender command
+<h3>2.4.1 show twamp sender status command
+<h5>show service twamp sender status
+<pre>Show twamp sender parameters.</pre>
 
-3.4. 	< show twamp sender > command
-3.4.1	< show twamp sender status > command
-show service twamp sender status
-Show twamp sender parameters.
+<pre>show twamp sender
+show twamp sender status</pre>
 
-show twamp sender
-show twamp sender status
+<h5>Syntax Description
+<pre>None</pre>
 
-Syntax Description
-None
+<h5>Default
+<pre>None</pre>
 
-Default
-None
+<h5>Command Modes
+<pre>System Execution Mode</pre>
 
-Command Modes
-System Execution Mode
-
-Example
-N1(exec)#show twamp sender 
+<h5>Example
+<pre>N1(exec)#show twamp sender 
 twamp sender
   test-session TEST-N2
     control-connection-name is CONN-N2
     fill-mode : zero
     number-of-packet : 1000000
-    interval : 1 seconds
+    interval : 1 seconds</pre>
 
+<h3>2.4.2 show twamp sender session command
+<h5>show service twamp session
+<pre>Show all session’s information of twamp sender</pre>
 
-3.4.2	< show twamp sender session > command
-show service twamp session
-Show all session’s information of twamp sender
+<pre>show twamp sender session</pre>
 
-show twamp sender session
+<h5>Syntax Description
+<pre>None</pre>
 
-Syntax Description
-None
+<h5>Default
+<pre>None</pre>
 
-Default
-None
+<h5>Command Modes
+<pre>System Execution Mode</pre>
 
-Command Modes
-System Execution Mode
-
-Example
-N1(exec)#show twamp sender session 
+<h5>Example
+<pre>N1(exec)#show twamp sender session 
 twamp sender
   test-session TEST-N2
     control-connection-name is CONN-N2
   test-session TEST-N3
     control-connection-name is CONN-N3
   test-session TEST-N4
-control-connection-name is CONN-N4
+control-connection-name is CONN-N4</pre>
 
+<h3>2.4.3 show twamp sender session WORD command
+<h5>show service twamp session WORD
+<pre>Show detail information of specific twamp session</pre>
 
-3.4.3	< show twamp sender session WORD> command
-show service twamp session WORD
-Show detail information of specific twamp session
+<pre>show twamp sender session WORD</pre>
 
-show twamp sender session WORD
-
-Syntax Description
-WROD
-Twamp test-session name
+<h5>Syntax Description
+<pre>WROD
+	Twamp test-session name
 Default
-None
+	None</pre>
 
-Command Modes
-System Execution Mode
+<h5>Command Modes
+<pre>System Execution Mode</pre>
 
-Example
-N1(exec)#show twamp sender session TEST-N2
+<h5>Example
+<pre>N1(exec)#show twamp sender session TEST-N2
 test-session TEST-N2
   control-connection-name : CONN-N2
   fill-mode : zero
@@ -1299,10 +1294,9 @@ test-session TEST-N2
       highestest variation : 0 sec 1608 usec
     pdv variation : 0 sec 464 usec
       lowest rtt : 0 sec 494 usec
-      max variation : 0 sec 1761 usec
+      max variation : 0 sec 1761 usec</pre>
 
-
-3.5. 	< twping > command
+2.5. 	< twping > command
 3.5.1	<twping A.B.C.D > command
 twping A.B.C.D
 A.B.C.D : Reflector ipv4 address.
