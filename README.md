@@ -1,4 +1,4 @@
-<h1>Network configuration
+<h1>Network configuration</h1>
 
 <pre>
 +---------+
