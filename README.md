@@ -35,8 +35,7 @@ twamp server
 !
 </pre>
 
-<h3>N1 configuration : Twamp client and sender
-
+<h3>N1 configuration : Twamp client and sender<h3>
 <pre>
 !
 twamp client
@@ -87,16 +86,14 @@ twamp sender
 !
 </pre>
 
-<h3>Start twamp control and test sessions
-
+<h3>Start twamp control and test sessions</h3>
 <pre>
 N1(exec)#twping start sender-test-session TEST-N2
 N1(exec)#twping start sender-test-session TEST-N2
 N1(exec)#twping start sender-test-session TEST-N3
 </pre>
 
-<h3>how to run monitor client program
-
+<h3>how to run monitor client program</h3>
 <pre>
 root@N1:~# cd ~~~/twampd/sample
 root@N1:~~~/twampd/sample# make
