@@ -121,7 +121,7 @@ TWAMP Command
 <h2> 1.	Configuration Mode Command
 
 <h3> 1.1 twamp light command
-<h5> twamp light
+<h5> twamp light</h5>
 
 <pre>Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.</pre>
 
