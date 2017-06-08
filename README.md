@@ -1,5 +1,5 @@
 <pre>
-<h1>Network configuration
+<h1>Network configuration</h1>
 +---------+
 |    N1   |192.168.122.101
 +---------+
