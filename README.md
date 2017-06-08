@@ -124,8 +124,10 @@ TWAMP Command
 
 <h3> 1.1 twamp light command
 <h5> twamp light</h5>
+~~~
+Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.
+~~~
 
-<pre>Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.</pre>
 
 <pre>(no) twamp light</pre>
 
