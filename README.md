@@ -35,7 +35,7 @@ twamp server
 !
 </pre>
 
-<h3>N1 configuration : Twamp client and sender<h3>
+<h3>N1 configuration : Twamp client and sender</h3>
 <pre>
 !
 twamp client
