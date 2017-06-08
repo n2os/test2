@@ -185,7 +185,8 @@ N1(config)# no twamp server</pre>
 <h5>control-packet-dscp</h5>
 <pre>Specify value as the DSCP byte in the IP header of control packets sent from the server.</pre>
 
-<pre>(no) control-packet-dscp [0-255]</pre>
+<pre>control-packet-dscp [0-255]
+no control-packet-dscp</pre>
 
 <h5>Syntax Description</h5>
 <pre>[0-255]
@@ -247,10 +248,12 @@ twamp(dec)	bin	TCP/IP Stack(dec)	bin
 <h5>Server maximum-connections</h5>
 <pre>Specify value as the maximum number of control sessions for each TWAMP server.</pre>
 
-<pre>(no) maximum-connections [1-100]</pre>
+<pre>maximum-connections [1-100]
+no maximum-connections</pre>
 
 <h5>Syntax Description</h5>
-<pre>[1-100] Maximum connections value default 10</pre>
+<pre>[1-100]
+	Maximum number of connections</pre>
 
 <h5>Default</h5>
 <pre>Default is “10”.</pre>
@@ -268,11 +271,12 @@ N1(twamp-server)# no maximum-connections</pre>
 <h5>maximum-sessions-per-connection</h5>
 <pre>Limit the number of maximum number of test sessions for each control session.</pre>
 
-<pre>(no) maximum-sessions-per-connection 1-100]</pre>
+<pre>maximum-sessions-per-connection [1-100]
+no maximum-sessions-per-connection</pre>
 
 <h5>Syntax Description</h5>
 <pre>[1-100] 
-	the number of maximum number of test sessions for each control session</pre>
+	Maximum number of test sessions for each control session</pre>
 
 <h5>Default</h5>
 <pre>Default is ”10”.</pre>
