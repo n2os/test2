@@ -66,14 +66,15 @@ no twamp server</pre>
 N1(config)# no twamp server</pre>
 
 
-<h3>1.2.1	< control-packet-dscp > command
+<h3>1.2.1 control-packet-dscp command
 <h5>control-packet-dscp
 <pre>Specify value as the DSCP byte in the IP header of control packets sent from the server.</pre>
 
 <pre>(no) control-packet-dscp [0-255]</pre>
 
 <h5>Syntax Description
-<pre>[0-255] DSCP value</pre>
+<pre>[0-255]
+	DSCP value</pre>
 
 <h5>Default
 <pre>Default value is ”zero”.</pre>
@@ -613,7 +614,7 @@ N1(twamp-server-control-connection)# no key-id</pre>
 N1(twamp-server-control-connection)# no max-count</pre>
 
 
-<h3>1.3.3.7	< session-request > command
+<h3>1.3.3.7 session-request command
 <h5>session-request
 <pre>Enter “twamp client control-connection session-request” mode. Information associated with the Control-Client for this test session</pre>
 
@@ -656,7 +657,7 @@ no sender-ip</pre>
 <pre>N1(twamp-client-session-request)# sender-ip 1.1.1.1
 N1(twamp-client-session-request)# no sender-ip</pre>
 
-<h3>1.3.3.7.2	< sender-udp-port > command
+<h3>1.3.3.7.2 sender-udp-port command
 <h5>sender-udp-port
 <pre>Set sender udp port for twamp test. The UDP port number that is to be used by the Session-Sender for this TWAMP-Test session. The number is restricted to the dynamic port range. A value of zero indicates that the Control-Client SHALL auto-allocate a UDP port number for this TWAMP-Test session. The configured (or auto-allocated) value is advertized in the Sender Port field of the Request-TW-session message (see also Section 3.5 of RFC 5357. Note that in the scenario where a device auto-allocates a UDP port number for a session, and the repeat parameter for that session indicates that it should be repeated, the device is free to auto-allocate a different UDP port number when it negotiates the next (repeated) iteration of this session.</pre>
 
@@ -761,7 +762,7 @@ no test-packet-dscp</pre>
 <pre>N1(twamp-client-session-request)# test-packet-dscp 10
 N1(twamp-client-session-request)# no test-packet-dscp</pre>
 
-<h3>1.3.3.7.7	< repeat > command
+<h3>1.3.3.7.7 repeat command
 <h5>repeat
 <pre>Set repeat value for twamp test. This value determines if the TWAMP-Test session must be repeated. When a test session has completed, the repeat parameter is checked. The value of 0 indicates that the session MUST NOT be repeated. If the value is 1 through 4,294,967,294 then the test session SHALL be repeated using the information in repeat-interval parameter, and the parent TWAMP-Control connection for this test session is restarted to negotiate a new instance of this TWAMP-Test session. The implementation MUST decrement the value of repeat after determining a repeated session is expected. The value of 4,294,967,295 indicates that the test session SHALL be repeated *forever* using the information in repeat-interval parameter, and SHALL NOT decrement the value.</pre>
 
@@ -1072,7 +1073,7 @@ show twamp server</pre>
 
 
 <h3>2.2.3 show twamp server session detail command
-<h5>show twamp server sessions
+<h5>show twamp server session detail
 <pre>Show all sessions’s detail information of twamp connections</pre>
 
 <pre>show twamp server session detail</pre>
@@ -1180,7 +1181,8 @@ twamp client
 <pre>show twamp client session WORD</pre>
 
 <h5>Syntax Description
-<pre>None</pre>
+<pre>WORD
+	Twamp test-session name</pre>
 
 <h5>Default
 <pre>None</pre>
