@@ -1,6 +1,6 @@
 
 
-[TOC]<h1>Network configuration</h1>
+<h1>Network configuration</h1>
 
 <pre>
 +---------+
@@ -17,7 +17,7 @@
      |                            +---------+
 </pre>
 
-[TOC]<h1>TWAMP Configuration</h1>
+<h1>TWAMP Configuration</h1>
 <h3>N2, N3, N4 configuration : Twamp server and reflector</h3>
 <pre>
 !
