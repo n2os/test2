@@ -75,7 +75,7 @@ N1(config)# no twamp server</pre>
 	DSCP value</pre>
 
 <h5>Default
-<pre>Default value is ”zero”.</pre>
+<pre>Default is ”0”.</pre>
 
 <h5>Command Modes
 <pre>Twamp server Mode</pre>
@@ -136,7 +136,7 @@ twamp(dec)	bin	TCP/IP Stack(dec)	bin
 <pre>[1-100] Maximum connections value default 10</pre>
 
 <h5>Default
-<pre>Default value is “10”.</pre>
+<pre>Default is “10”.</pre>
 
 <h5>Command Modes
 <pre>twamp server mode</pre>
@@ -158,7 +158,7 @@ N1(twamp-server)# no maximum-connections</pre>
 	the number of maximum number of test sessions for each control session</pre>
 
 <h5>Default
-<pre>Default value is ”10”.</pre>
+<pre>Default is ”10”.</pre>
 
 <h5>Command Modes
 <pre>twamp server Mode</pre>
@@ -186,7 +186,7 @@ mixed
 	control packets are encrypted and test packets are unauthenticated.</pre>
 
 <h5>Default
-<pre>Default value is unauthenticated mode.</pre>
+<pre>Default is "unauthenticated mode".</pre>
 
 <h5>Command Modes
 <pre>Twamp server Mode</pre>
@@ -209,7 +209,7 @@ no server-tcp-port</pre>
 	number as the TCP port</pre>
 
 <h5>Default
-<pre>Default number is “862”.</pre>
+<pre>Default is “862”.</pre>
 
 <h5>Command Modes
 <pre>Twamp server Mode</pre>
@@ -232,7 +232,7 @@ no max-count</pre>
 	Count value for deriving key. default 32768</pre>
 
 <h5>Default
-<pre>Default number is “32768”.</pre>
+<pre>Default is “32768”.</pre>
 
 <h5>Command Modes
 <pre>Twamp server Mode</pre>
@@ -255,7 +255,7 @@ no count</pre>
 	Count value for deriving key. default 1024</pre>
 
 <h5>Default
-<pre>Default number is “1024”.</pre>
+<pre>Default is “1024”.</pre>
 
 <h5>Command Modes
 <pre>Twamp server Mode</pre>
@@ -278,7 +278,7 @@ no base-test-port</pre>
 	UDP port number. default 20000</pre>
 
 <h5>Default
-<pre>Default number is “20000”.</pre>
+<pre>Default is “20000”.</pre>
 
 <h5>Command Modes
 <pre>Twamp server Mode</pre>
@@ -301,7 +301,7 @@ no servwait</pre>
 	timeout value for control-session</pre>
 
 <h5>Default
-<pre>Default number is “900”.</pre>
+<pre>Default is “900”.</pre>
 
 <h5>Command Modes
 <pre>System Configuration Mode</pre>
@@ -408,7 +408,7 @@ unauthenticated|authenticated|encrypted|mixed
 	Supported TWAMP Mode.</pre>
 
 <h5>Default
-<pre>unauthenticated.</pre>
+<pre>Default is "unauthenticated".</pre>
 
 <h5>Command Modes
 <pre>Twamp client mode-preference mode</pre>
@@ -543,7 +543,7 @@ no server-tcp-port</pre>
 	server tcp port number</pre>
 
 <h5>Default
-<pre>Default tcp port number is 862</pre>
+<pre>Default is "862"</pre>
 
 <h5>Command Modes
 <pre>Twamp client control-connection mode</pre>
@@ -565,7 +565,7 @@ no control-packet-dscp</pre>
 	dscp value</pre>
 
 <h5>Default
-<pre>Default is 0</pre>
+<pre>Default is "0"</pre>
 
 <h5>Command Modes
 <pre>Twamp client control-connection mode</pre>
@@ -609,7 +609,7 @@ no max-count</pre>
 	Maximum value for count.</pre>
 
 <h5>Default
-<pre>Default is 32768</pre>
+<pre>Default is "32768"</pre>
 
 <h5>Command Modes
 <pre>Twamp client control-connection mode</pre>
@@ -736,7 +736,7 @@ no timeout</pre>
 	Timeout seconds</pre>
 
 <h5>Default
-<pre>Default timeout is 2 seconds</pre>
+<pre>Default is "2" seconds</pre>
 
 <h5>Command Modes
 <pre>Twamp client control-connection session-request mode</pre>
@@ -757,7 +757,7 @@ no test-packet-dscp</pre>
 	Test packet’s dscp value.</pre>
 
 <h5>Default
-<pre>Default test packet’s dscp is 0</pre>
+<pre>Default is "0"</pre>
 
 <h5>Command Modes
 <pre>Twamp client control-connection session-request mode</pre>
@@ -778,7 +778,7 @@ no repeat</pre>
 	Repeat number</pre>
 
 <h5>Default
-<pre>Default repeat valule is 0</pre>
+<pre>Default is "0"</pre>
 
 <h5>Command Modes
 <pre>Twamp client/control-connection/session-request mode</pre>
@@ -799,7 +799,7 @@ no repeat-interval</pre>
 	Repeat-interval time (minutes)</pre>
 
 <h5>Default
-<pre>Default is 0</pre>
+<pre>Default is "0"</pre>
 
 <h5>Command Modes
 <pre>Twamp client control-connection session-request mode</pre>
@@ -841,7 +841,7 @@ no max-connection</pre>
 	Number of max clients</pre>
 
 <h5>Default
-<pre>Default is 5</pre>
+<pre>Default is "5"</pre>
 
 <h5>Command Modes
 <pre>Twamp client monitor mode</pre>
@@ -862,7 +862,7 @@ no listen-tcp-port</pre>
 	Tcp-port number</pre>
 
 <h5>Default
-<pre>Default is 22222</pre>
+<pre>Default is "22222"</pre>
 
 <h5>Command Modes
 <pre>Twamp client monitor mode</pre>
@@ -966,7 +966,7 @@ no number-of-packet</pre>
 	Number of packet</pre>
 
 <h5>Default
-<pre>Default is 1</pre>
+<pre>Default is "1"</pre>
 
 <h5>Command Modes
 <pre>Twamp sender test-session mode</pre>
@@ -988,7 +988,7 @@ no interval</pre>
 	Interval time between test packets</pre>
 
 <h5>Default
-<pre>Default is 1 second</pre>
+<pre>Default is "1" second</pre>
 
 <h5>Command Modes
 <pre>Twamp sender test-session mode</pre>
@@ -1010,7 +1010,7 @@ N1(twamp-sender-session-request)# no interval</pre>
 <pre>None</pre>
 
 <h5>Default
-<pre>None is defined.</pre>
+<pre>None</pre>
 
 <h5>Command Modes
 <pre>System Execution Mode</pre>
@@ -1281,9 +1281,9 @@ control-connection-name is CONN-N4</pre>
 
 <h5>Syntax Description
 <pre>WROD
-	Twamp test-session name
-Default
-	None</pre>
+	Twamp test-session name</pre>
+<h5>Default
+<pre>None</pre>
 
 <h5>Command Modes
 <pre>System Execution Mode</pre>
