@@ -1300,11 +1300,11 @@ test-session TEST-N2
 <h5>twping A.B.C.D
 <pre>A.B.C.D : Reflector ipv4 address.</pre>
 
-<h5>twping A.B.C.D count <1-100>
+<h5>twping A.B.C.D count [1-100]
 <pre>A.B.C.D 	: Reflector ipv4 address.
 count 	: number of test packet.</pre>
 
-<h5>twping A.B.C.D count <1-100> reflector-port <100-65535>
+<h5>twping A.B.C.D count [1-100] reflector-port [100-65535]
 <pre>A.B.C.D 	: Reflector ipv4 address.
 count 	: number of test packet.
 reflector-port	: upd port of reflector</pre>
@@ -1315,21 +1315,21 @@ mode 	: unauthenticated|authenticated|encrypted|mixed
 key-id	: string value of key-id
 secret-key	: string value of passphrase</pre>
 
-<h5>twping A.B.C.D server-tcp-port <100-65535> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
+<h5>twping A.B.C.D server-tcp-port [100-65535] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>A.B.C.D 	: Reflector ipv4 address.
 server-tcp-port	: tcp port of server
 mode 	: unauthenticated|authenticated|encrypted|mixed
 key-id	: string value of key-id
 secret-key	: string value of passphrase</pre>
 
-<h5>twping A.B.C.D count <1-100> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
+<h5>twping A.B.C.D count [1-100] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>A.B.C.D 	: Reflector ipv4 address.
 count 	: number of test packet.
 mode 	: unauthenticated|authenticated|encrypted|mixed
 key-id	: string value of key-id
 secret-key	: string value of passphrase</pre>
 
-<h5>twping A.B.C.D count <1-100> server-tcp-port <100-65535> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
+<h5>twping A.B.C.D count [1-100] server-tcp-port [100-65535] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>A.B.C.D 	: Reflector ipv4 address.
 count 	: number of test packet.
 server-tcp-port	: tcp port of server
@@ -1337,7 +1337,7 @@ mode 	: unauthenticated|authenticated|encrypted|mixed
 key-id	: string value of key-id
 secret-key	: string value of passphrase</pre>
 
-<h5>twping A.B.C.D count <1-100> session-count <2-100> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
+<h5>twping A.B.C.D count [1-100] session-count [2-100] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>A.B.C.D 	: Reflector ipv4 address.
 count 	: number of test packet.
 session-count	: number of test sessions
@@ -1345,7 +1345,7 @@ mode 	: unauthenticated|authenticated|encrypted|mixed
 key-id	: string value of key-id
 secret-key	: string value of passphrase</pre>
 
-<h5>twping A.B.C.D count <1-100> session-count <2-100> server-tcp-port <100-65535> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
+<h5>twping A.B.C.D count [1-100] session-count [2-100] server-tcp-port [100-65535] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>A.B.C.D 	: Reflector ipv4 address.
 count 	: number of test packet.
 session-count	: number of test sessions
@@ -1359,50 +1359,50 @@ System Execution Mode
 
 <h5>Example
 <h5>Twping with TWAMP Light Server
-<h5><< twping A.B.C.D >>
+<h5>twping A.B.C.D
 <pre>N1(exec)# twping 1.1.1.12</pre>
 
-<h5><< twping A.B.C.D count <1-100> >>
+<h5>twping A.B.C.D count [1-100]
 <pre>N1(exec)# twping 1.1.1.12 count 10</pre>
 
-<h5><< twping A.B.C.D reflector-port <100-65535> >>
+<h5>twping A.B.C.D reflector-port [100-65535]
 <pre>N1(exec)# twping 1.1.1.12 reflector-port 863</pre>
 
-<h5><< twping A.B.C.D count <1-100> reflector-port <100-65535> >>
+<h5>twping A.B.C.D count [1-100] reflector-port [100-65535]
 <pre>N1(exec)# twping 1.1.1.12 count 10 reflector-port 863</pre>
 
 <h5>Twping with TWAMP Full Server
-<h5><<twping A.B.C.D mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD>>
+<h5>twping A.B.C.D mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 mode unauthenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 mode authenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 mode encrypted key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 mode mixed key-id user01 secret-key password01</pre>
 
-<h5><<twping A.B.C.D count <2-100> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD>>
+<h5>twping A.B.C.D count [2-100] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 count 5 mode unauthenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 count 5 mode authenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 count 5 mode encrypted key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 count 5 mode mixed key-id user01 secret-key password01</pre>
 
-<h5><<twping A.B.C.D count <2-100> session-count <2-100> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD>>
+<h5>twping A.B.C.D count [2-100] session-count [2-100] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 count 5 session-count 5 mode unauthenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 count 5 session-count 5 mode authenticated key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 count 5 session-count 5 mode encrypted key-id user01 secret-key password01
 N1(exec)# twping 1.1.1.12 count 5 session-count 5 mode mixed key-id user01 secret-key password01</pre>
 
-<h5><<twping A.B.C.D server-tcp-port <100-65535> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD>>
+<h5>twping A.B.C.D server-tcp-port [100-65535] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 server-port 863 mode unauthenticated user user01 password password01
 N1(exec)# twping 1.1.1.12 server-port 863 mode authenticated user user01 password password01
 N1(exec)# twping 1.1.1.12 server-port 863 mode encrypted user user01 password password01
 N1(exec)# twping 1.1.1.12 server-port 863 mode mixed user user01 password password01</pre>
 
-<h5><<twping A.B.C.D count <1-100> server-tcp-port <100-65535> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD>>
+<h5>twping A.B.C.D count [1-100] server-tcp-port [100-65535] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 count 5 server-port 863 mode unauthenticated user user01 password password01
 N1(exec)# twping 1.1.1.12 count 5 server-port 863 mode authenticated user user01 password password01
 N1(exec)# twping 1.1.1.12 count 5 server-port 863 mode encrypted user user01 password password01
 N1(exec)# twping 1.1.1.12 count 5 server-port 863 mode mixed user user01 password password01</pre>
 
-<h5><<twping A.B.C.D count <1-100> session-count <2-100> server-tcp-port <100-65535> mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD>>
+<h5>twping A.B.C.D count [1-100] session-count [2-100] server-tcp-port [100-65535] mode (unauthenticated|authenticated|encrypted|mixed) key-id WORD secret-key WORD
 <pre>N1(exec)# twping 1.1.1.12 count 5 session-count 5 server-port 863 mode unauthenticated user user01 password password01
 N1(exec)# twping 1.1.1.12 count 5 session-count 5 server-port 863 mode authenticated user user01 password password01
 N1(exec)# twping 1.1.1.12 count 5 session-count 5 server-port 863 mode encrypted user user01 password password01
