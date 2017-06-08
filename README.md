@@ -15,10 +15,9 @@
      |                            +---------+
 </pre>
 
-<h1> TWAMP Configuration
+<h1>TWAMP Configuration<h1>
 
-<h3>N2, N3, N4 configuration : Twamp server and reflector
-
+<h3>N2, N3, N4 configuration : Twamp server and reflector<h3>
 <pre>
 !
 twamp server
