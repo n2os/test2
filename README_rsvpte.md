@@ -77,6 +77,8 @@ debug rsvp
 // debug uni
 (no)debug rsvp uni if-msg</pre>
 
+<h3>Configuration Mode Command</h2>
+
 <h4>show command</h4>
 <pre>
 show rsvp	
