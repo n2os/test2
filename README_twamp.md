@@ -1,6 +1,5 @@
-0.TOC
 
-TOC<h1>Network configuration</h1>
+<h1>Network configuration</h1>
 
 <pre>
 +---------+
@@ -124,11 +123,7 @@ TWAMP Command
 
 <h3> 1.1 twamp light command
 <h5> twamp light</h5>
-~~~
-Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.
-~~~
-
-
+<pre>Start the TWAMP light server. By default, the server receive and response twamp-test packets from any client.</pre>
 <pre>(no) twamp light</pre>
 
 <h5> Syntax Description</h5>
@@ -146,7 +141,7 @@ N1(config)# no twamp light </pre>
 
 <h3>1.1.1 reflector-port command
 <h5>reflector-port</h5>
-<pre>reflector udp port that receive and response twamp-test packets from any client.</pre>
+<pre>Reflector udp port that receive and response twamp-test packets from any client.</pre>
 <pre>reflector-port [100-100000]
 no reflector-port</pre>
 
