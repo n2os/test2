@@ -22,10 +22,11 @@ router rsvp Node
     (no)explicit-null
     (no)loop-detection</pre>
         
-// install node PATH
-V(no)rsvp path PATHNAME
-V	(no)A.B.C.D
-V	(no)A.B.C.D (strict|loose)
+rsvp path Node
+<pre>
+(no)rsvp path PATHNAME
+	(no)A.B.C.D
+	(no)A.B.C.D (strict|loose)</pre>
 	
 	
 // install node TRUNK
