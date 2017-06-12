@@ -151,7 +151,7 @@ N1(config-router)# no refresh</pre>
 
 <h3>1.1.2 router-alert</h3>
 <h5>router-alert</h5>
-<pre>enable rsvpte router-alert option.</pre>
+<pre>Enable rsvpte router-alert option.</pre>
 <pre>(no) router-alert</pre>
 
 <h5> Syntax Description</h5>
@@ -169,7 +169,7 @@ N1(config-router)# no router-alert</pre>
 
 <h3>1.1.3 encap-num</h3>
 <h5>encap-num</h5>
-<pre>set encap number per summary refresh.</pre>
+<pre>Set encap number per summary refresh.</pre>
 <pre>(no) encap-num <1-350></pre>
 
 <h5> Syntax Description</h5>
@@ -188,7 +188,7 @@ N1(config-router)# no encap-num</pre>
 
 <h3>1.1.4 confirm</h3>
 <h5>confirm</h5>
-<pre>enable rsvpte confirm object at egress.</pre>
+<pre>Enable rsvpte confirm object at egress.</pre>
 <pre>(no) confirm</pre>
 
 <h5> Syntax Description</h5>
@@ -206,7 +206,7 @@ N1(config-router)# no confirm</pre>
 
 <h3>1.1.5 lsr-id</h3>
 <h5>lsr-id</h5>
-<pre>set rsvpte label-switch-router identifier.</pre>
+<pre>Set rsvpte label-switch-router identifier.</pre>
 <pre>(no) lsr-id A.B.C.D</pre>
 
 <h5> Syntax Description</h5>
@@ -226,8 +226,8 @@ N1(config-router)# no lsr-id</pre>
 
 <h3>1.1.6 refresh-interval</h3>
 <h5>refresh-interval</h5>
-<pre>set rsvpte refresh interval[sec].</pre>
-<pre>(no)refresh-interval <1-65535></pre>
+<pre>Set rsvpte refresh interval[sec].</pre>
+<pre>(no) refresh-interval <1-65535></pre>
 
 <h5> Syntax Description</h5>
 <pre><1-65535>
@@ -246,7 +246,7 @@ N1(config-router)# no refresh-interval</pre>
 
 <h3>1.1.7 refresh-multiplier</h3>
 <h5>refresh-multiplier</h5>
-<pre>set rsvpte refresh multiplier.</pre>
+<pre>Set rsvpte refresh multiplier.</pre>
 <pre>(no) refresh-multiplier <1-65535></pre>
 
 <h5> Syntax Description</h5>
@@ -266,7 +266,7 @@ N1(config-router)# no refresh-multiplier</pre>
 
 <h3>1.1.8 srefresh</h3>
 <h5>srefresh</h5>
-<pre>enable rsvpte summary refresh.</pre>
+<pre>Enable rsvpte summary refresh.</pre>
 <pre>(no) srefresh<1-65535></pre>
 
 <h5> Syntax Description</h5>
@@ -285,8 +285,8 @@ N1(config-router)# no srefresh</pre>
 
 <h3>1.1.9 srefresh-interval</h3>
 <h5>srefresh-interval</h5>
-<pre>set summary refresh interval[sec].</pre>
-<pre>(no)srefresh-interval <1-65535></pre>
+<pre>Set summary refresh interval[sec].</pre>
+<pre>(no) srefresh-interval <1-65535></pre>
 
 <h5> Syntax Description</h5>
 <pre><1-65535>
@@ -305,8 +305,8 @@ N1(config-router)# no srefresh-interval</pre>
 
 <h3>1.1.10 msgack-interval</h3>
 <h5>msgack-interval</h5>
-<pre>set rsvpte ack message interval[secs].</pre>
-<pre>(no)msgack-interval <1-65535></pre>
+<pre>Set rsvpte ack message interval[secs].</pre>
+<pre>(no) msgack-interval <1-65535></pre>
 
 <h5> Syntax Description</h5>
 <pre><1-65535>
@@ -325,8 +325,8 @@ N1(config-router)# no msgack-interval</pre>
 
 <h3>1.1.11 msgack-retry-multiplier</h3>
 <h5>msgack-retry-multiplier</h5>
-<pre>set rsvpte ack message retry multiplier.</pre>
-<pre>(no)msgack-retry-multiplier <1-65535></pre>
+<pre>Set rsvpte ack message retry multiplier.</pre>
+<pre>(no) msgack-retry-multiplier <1-65535></pre>
 
 <h5> Syntax Description</h5>
 <pre><1-65535>
@@ -345,7 +345,7 @@ N1(config-router)# no msgack-retry-multiplier</pre>
 
 <h3>1.1.12 hello-interval</h3>
 <h5>hello-interval</h5>
-<pre>set rsvpte hello interval[secs].</pre>
+<pre>Set rsvpte hello interval[secs].</pre>
 <pre>(no) hello-interval <1-65535></pre>
 
 <h5> Syntax Description</h5>
@@ -365,7 +365,7 @@ N1(config-router)# no hello-interval</pre>
 
 <h3>1.1.13 hello-multiplier</h3>
 <h5>hello-multiplier</h5>
-<pre>set rsvpte hello multiplier.</pre>
+<pre>Set rsvpte hello multiplier.</pre>
 <pre>(no) hello-multiplier <1-65535></pre>
 
 <h5> Syntax Description</h5>
@@ -385,7 +385,7 @@ N1(config-router)# no hello-multiplier</pre>
 
 <h3>1.1.14 hello-receipt</h3>
 <h5>hello-receipt</h5>
-<pre>enable rsvpte hello function.</pre>
+<pre>Enable rsvpte hello function.</pre>
 <pre>(no) hello-receipt</pre>
 
 <h5> Syntax Description</h5>
@@ -404,7 +404,7 @@ N1(config-router)# no hello-receipt</pre>
 
 <h3>1.1.15 explicit-null</h3>
 <h5>explicit-null</h5>
-<pre>enable rsvpte explicit null.</pre>
+<pre>Enable rsvpte explicit null.</pre>
 <pre>(no) explicit-null</pre>
 
 <h5> Syntax Description</h5>
@@ -423,7 +423,7 @@ N1(config-router)# no explicit-null</pre>
 
 <h3>1.1.16 loop-detection</h3>
 <h5>loop-detection</h5>
-<pre>enable rsvpte loop-detection function.</pre>
+<pre>Enable rsvpte loop-detection function.</pre>
 <pre>(no) loop-detection</pre>
 
 <h5> Syntax Description</h5>
@@ -441,12 +441,70 @@ N1(config-router)# no loop-detection</pre>
 
 ==============================================================================
 
-<h4>rsvp path Node</h4>
-<pre>
-(no)rsvp path PATHNAME			create rsvpte path info
-	(no)A.B.C.D			add hop-address to path
-	(no)A.B.C.D (strict|loose)	add hop-address to path
-</pre>
+<h3>1.2 rsvp path</h3>
+<h5>rsvp path</h5>
+<pre>Create rsvpte path info.</pre>
+<pre>(no) rsvp path PATHNAME</pre>
+
+<h5> Syntax Description</h5>
+<pre>PATHNAME
+	Rsvp-te path's name </pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>System Configuration Mode </pre>
+
+<h5> Example</h5>
+<pre>N1(config)# rsvp path PATH-01
+N1(config)# no rsvp path PATH-01</pre>
+
+
+<h3>1.2.1 A.B.C.D</h3>
+<h5>A.B.C.D</h5>
+<pre>Add hop-address to path.</pre>
+<pre>(no) A.B.C.D</pre>
+
+<h5> Syntax Description</h5>
+<pre>A.B.C.D
+	LSR's ipv4 address </pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Path Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# 1.1.1.12
+N1(config)# no 1.1.1.12</pre>
+
+
+<h3>1.2.1 A.B.C.D</h3>
+<h5>A.B.C.D</h5>
+<pre>Add hop-address to path.</pre>
+<pre>(no) A.B.C.D (strict|loose)</pre>
+
+<h5> Syntax Description</h5>
+<pre>A.B.C.D
+	LSR's ipv4 address
+strict
+	Strict node
+loose
+	Loose node</pre>
+
+<h5> Default</h5>
+<pre>Default is “strict”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Path Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# 1.1.1.12 loose
+N1(config)# no 1.1.1.12 loose</pre>
+
+==============================================================================
 	
 <h4>rsvp trunk Node</h4>
 <pre>
