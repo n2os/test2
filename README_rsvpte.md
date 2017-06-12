@@ -481,7 +481,7 @@ N1(config)# no rsvp path PATH-01</pre>
 N1(config)# no 1.1.1.12</pre>
 
 
-<h3>1.2.1 A.B.C.D</h3>
+<h3>1.2.2 A.B.C.D</h3>
 <h5>A.B.C.D</h5>
 <pre>Add hop-address to path.</pre>
 <pre>(no) A.B.C.D (strict|loose)</pre>
@@ -505,23 +505,189 @@ loose
 N1(config)# no 1.1.1.12 loose</pre>
 
 ==============================================================================
-	
-<h4>rsvp trunk Node</h4>
+
+<h3>1.3 rsvp trunk</h3>
+<h5>rsvp trunk</h5>
+<pre>Create rsvpte trunk info.</pre>
+<pre>(no)rsvp trunk TRUNKNAME
+no rsvp trunk all</pre>
+
+<h5> Syntax Description</h5>
+<pre>TRUNKNAME
+	Trunk's name</pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# rsvp trunk TRUNK-01
+N1(config)# no rsvp trunk TRUNK-01</pre>
+
+
+<h3>1.3.1 primary PATH_NAME</h3>
+<h5>primary</h5>
+<pre>Add rsvpte primary path info to trunk.</pre>
+<pre>(no) primary PATH_NAME</pre>
+
+<h5> Syntax Description</h5>
+<pre>PATH_NAME
+	Primary rsvpte path's name</pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# primary PATH-01
+N1(config)# no primary PATH-01</pre>
+
+
+<h3>1.3.2 secondary</h3>
+<h5>secondary</h5>
+<pre>Add rsvpte secondary path info to trunk.</pre>
+<pre>(no) secondary PATH_NAME</pre>
+
+<h5> Syntax Description</h5>
+<pre>PATH_NAME
+	Secondary rsvpte path's name</pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# secondary PATH-02
+N1(config)# no secondary PATH-02</pre>
+
+
+<h3>1.3.3 from</h3>
+<h5>from</h5>
+<pre>Add rsvpte ingress address to trunk.</pre>
+<pre>(no) from A.B.C.D</pre>
+
+<h5> Syntax Description</h5>
+<pre>A.B.C.D
+	Ingress ipv4 address</pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# from 1.1.1.11
+N1(config)# no from 1.1.1.11</pre>
+
+
+<h3>1.3.4 to</h3>
+<h5>to</h5>
+<pre>Add rsvpte egress address to trunk.</pre>
+<pre>(no) to A.B.C.D</pre>
+
+<h5> Syntax Description</h5>
+<pre>A.B.C.D
+	Egress ipv4 address</pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# to 3.3.3.12
+N1(config)# no to 3.3.3.12</pre>
+
+
+<h3>1.3.5 filter</h3>
+<h5>filter</h5>
+<pre>Add rsvpte filter-style to trunk.</pre>
+<pre>(no)filter (fixed-filter|shared-explicit)</pre>
+
+<h5> Syntax Description</h5>
+<pre>fixed-filter
+	Fixed filter type
+shared-explicit
+	Shared-explicit filter type</pre>
+
+<h5> Default</h5>
+<pre>Default is “fixed-filter”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# filter shared-explicit
+N1(config)# no filter</pre>
+
+
+<h3>1.3.6 bandwidth</h3>
+<h5>bandwidth</h5>
+<pre>Add rsvpte request bandwidth to trunk.</pre>
+<pre>(no) bandwidth <1-65535></pre>
+
+<h5> Syntax Description</h5>
+<pre><1-65535>
+	bandwidth</pre>
+
+<h5> Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# bandwidth 100
+N1(config)# no bandwidth</pre>
+
+
+<h3>1.3.7 hop-limit</h3>
+<h5>hop-limit</h5>
+<pre>add rsvpte hop-limit to trunk.</pre>
+<pre>(no) hop-limit <1-255></pre>
+
+<h5> Syntax Description</h5>
+<pre><1-255>
+	hop-limit value</pre>
+
+<h5> Default</h5>
+<pre>Default is “64”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# hop-limit 32
+N1(config)# no hop-limit</pre>
+
+
+<h3>1.3.8 cspf</h3>
+<h5>cspf</h5>
+<pre>Use rsvpte cspf-explicit-route to trunk.</pre>
+<pre>(no) cspf <1-255></pre>
+
+<h5> Syntax Description</h5>
+<pre>None</pre>
+
+<h5> Default</h5>
+<pre>Default is “no cspf”. </pre>
+
+<h5> Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5> Example</h5>
+<pre>N1(config)# cspf
+N1(config)# no cspf</pre>
+
 <pre>
-(no)rsvp trunk TRUNKNAME		create rsvpte trunk info
-no rsvp trunk all
-	(no)primary PATH_NAME		add rsvpte primary path info to trunk
-	(no)secondary PATH_NAME		add rsvpte secondary path info to trunk
-	(no)from A.B.C.D 		add rsvpte ingress address to trunk
-	(no)to A.B.C.D			add rsvpte egress address to trunk
-	(no)uni-srctna A.B.C.D          UNI
-	(no)uni-dsttna A.B.C.D          UNI
-	(no)uni-diversity <1-65535>     UNI
-	(no)uni-service-level <1-65535> UNI
-	(no)filter (fixed-filter|shared-explicit) add rsvpte filter-style to trunk
-	(no)bandwidth <1-65535>		add rsvpte request bandwidth to trunk
-	(no)hop-limit <1-255>		add rsvpte hop-limit to trunk
-	(no)cspf			use rsvpte cspf-explicit-route to trunk
 	(no)hold-priority <0-7>		add hold-priority to trunk
 	(no)setup-priority <0-7>	add setup-priority to trunk
 	(no)record-route		set record-route use to trunk
