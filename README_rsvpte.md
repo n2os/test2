@@ -4,29 +4,31 @@
 <h3>Configuration Mode Command</h2>
 <h4>router rsvp Node</h4>
 <pre>
-(no)router rsvp 
-(no)refresh
-    (no)router-alert
-    encap-num <1-350>
-    (no)confirm
-    (no)lsr-id A.B.C.D
-    (no)refresh-interval <1-65535>
-    (no)refresh-multiplier <1-65535>
-    (no)srefresh
-    (no)srefresh-interval <1-65535>
-    (no)msgack-interval <1-65535>
-    (no)msgack-retry-multiplier <1-65535>
-    (no)hello-interval <1-65535>
-    (no)hello-multiplier <1-65535>
-    (no)hello-receipt
-    (no)explicit-null
-    (no)loop-detection</pre>
+(no)router rsvp 			set rsvpte global configuration
+	(no)refresh			set refresh enable mode
+	(no)router-alert		enable rsvpte router-alert option
+	encap-num <1-350>		set encap number per summary refresh
+	(no)confirm			enable rsvpte confirm object at egress
+	(no)lsr-id A.B.C.D		set rsvpte label-switch-router identifier
+	(no)refresh-interval <1-65535>	set rsvpte refresh interval[sec]
+	(no)refresh-multiplier <1-65535> set rsvpte refresh multiplier
+	(no)srefresh			enable rsvpte summary refresh
+	(no)srefresh-interval <1-65535>	set summary refresh interval[sec]
+	(no)msgack-interval <1-65535>	set rsvpte ack message interval[secs]
+	(no)msgack-retry-multiplier <1-65535> set rsvpte ack message retry multiplier
+	(no)hello-interval <1-65535>	set rsvpte hello interval[secs]
+	(no)hello-multiplier <1-65535>	set rsvpte hello multiplier
+	(no)hello-receipt		enable rsvpte hello function
+	(no)explicit-null		enable rsvpte explicit null
+	(no)loop-detection		enable rsvpte loop-detection function
+</pre>
         
 <h4>rsvp path Node</h4>
 <pre>
-(no)rsvp path PATHNAME
-	(no)A.B.C.D
-	(no)A.B.C.D (strict|loose)</pre>
+(no)rsvp path PATHNAME			create rsvpte path info
+	(no)A.B.C.D			add hop-address to path
+	(no)A.B.C.D (strict|loose)	add hop-address to path
+</pre>
 	
 <h4>rsvp trunk Node</h4>
 <pre>
@@ -55,8 +57,8 @@ no rsvp trunk all
 
 <h4>interface Node</h4>
 <pre>
-interface IF-NAME
-	(no)enable-rsvp
+interface IF-NAME			
+	(no)enable-rsvp			router interface configuration enable rsvp-te
 	(no)enable-rsvp-integrity KEY_ID enable rsvp-te authentication
 	(no)enable-rsvp-integrity KEY_ID (md5|hmac-md5) enable rsvp-te integrity usage
 	(no)enable-rsvp-message-id	enable rsvp-te message-id usage
