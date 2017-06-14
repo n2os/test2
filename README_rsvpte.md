@@ -52,7 +52,7 @@ no rsvp trunk all
 	(no)label-record		set label-record use to trunk
 	(no)diffserv-elsp phb-id PHB-ID exp <0-7> set diffserv e-lsp to trunk
 	(no)diffserv-llsp psc PSC-ID	setting diffserv l-lsp info to trunk
-	(no)number <1-65536>		number of trunk that we want setup
+	number <1-65536>		number of trunk that we want setup
 	run				triggering rsvpte trunk</pre>
 
 <h4>interface Node</h4>
