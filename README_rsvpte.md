@@ -37,10 +37,6 @@ no rsvp trunk all
 	(no)secondary PATH_NAME		add rsvpte secondary path info to trunk
 	(no)from A.B.C.D 		add rsvpte ingress address to trunk
 	(no)to A.B.C.D			add rsvpte egress address to trunk
-	(no)uni-srctna A.B.C.D          UNI
-	(no)uni-dsttna A.B.C.D          UNI
-	(no)uni-diversity <1-65535>     UNI
-	(no)uni-service-level <1-65535> UNI
 	(no)filter (fixed-filter|shared-explicit) add rsvpte filter-style to trunk
 	(no)bandwidth <1-65535>		add rsvpte request bandwidth to trunk
 	(no)hop-limit <1-255>		add rsvpte hop-limit to trunk
@@ -62,8 +58,6 @@ interface IF-NAME
 	(no)enable-rsvp-integrity KEY_ID (md5|hmac-md5) enable rsvp-te integrity usage
 	(no)enable-rsvp-message-id	enable rsvp-te message-id usage
 	(no)enable-rsvp-hello		enable rsvp-te hello on this interface
-	(no)enable-rsvp-unic		UNI-C
-	(no)enable-rsvp-unin		UNI-N</pre>
 
 <h4>debug command</h4>
 <pre>
@@ -73,8 +67,6 @@ debug rsvp
 (no)debug rsvp packet
 (no)debug rsvp packet detail
 (no)debug rsvp psb-rsb-count
-// debug uni
-(no)debug rsvp uni if-msg</pre>
 
 <h3>Execution Mode Command</h2>
 
@@ -102,12 +94,6 @@ show rsvp memory-usage</pre>
 clear rsvp statistics
 clear rsvp session TRUNK_NAME
 clear rsvp session all
-
-// uni clear
-clear rsvp uni session lsp-id <1-65535> tunnel-id <1-65535> src-addr A.B.C.D dst-addr A.B.C.D
-clear rsvp uni session all
-</pre>
-***
 
 ==================================================================================
 
@@ -973,43 +959,6 @@ N1(interface)# no enable-rsvp-message-id</pre>
 N1(interface)# no enable-rsvp-hello</pre>
 
 
-<h3>1.4.6 enable-rsvp-unic</h3>
-<h5>enable-rsvp-unic</h5>
-<pre>Enable UNI-C.</pre>
-<pre>(no) enable-rsvp-unic</pre>
-
-<h5>Syntax Description</h5>
-<pre>None</pre>
-
-<h5>Default</h5>
-<pre>Default is “no enable-rsvp-unic”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Interface Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(interface)# enable-rsvp-unic
-N1(interface)# no enable-rsvp-unic</pre>
-
-
-<h3>1.4.7 enable-rsvp-unin</h3>
-<h5>enable-rsvp-unin</h5>
-<pre>Enable UNI-N.</pre>
-<pre>(no) enable-rsvp-unin</pre>
-
-<h5>Syntax Description</h5>
-<pre>None</pre>
-
-<h5>Default</h5>
-<pre>Default is “no enable-rsvp-unic”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Interface Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(interface)# enable-rsvp-unin
-N1(interface)# no enable-rsvp-unin</pre>
-
 =======================================================================
 
 <h3>1.5 debug rsvp</h3>
@@ -1124,24 +1073,6 @@ N1(interface)# no debug rsvp packet detail</pre>
 <pre>N1(interface)# debug rsvp psb-rsb-count
 N1(interface)# no debug rsvp psb-rsb-count</pre>
 
-
-<h3>1.5.6 debug rsvp uni if-msg</h3>
-<h5>debug rsvp uni if-msg</h5>
-<pre>Debugging enable rsvp uni interface msg sending/receving.</pre>
-<pre>(no) debug rsvp uni if-msg</pre>
-
-<h5>Syntax Description</h5>
-<pre>None</pre>
-
-<h5>Default</h5>
-<pre>Default is “None”. </pre>
-
-<h5>Command Modes</h5>
-<pre>System Configuration Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(interface)# debug rsvp uni if-msg
-N1(interface)# no debug rsvp uni if-msg</pre>
 
 ==========================================================
 
