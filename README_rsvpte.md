@@ -1027,7 +1027,7 @@ N1(interface)# no enable-rsvp-unin</pre>
 <pre>System Configuration Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(config)# debug rsvp
+<pre>N1(config)# debug rsvp</pre>
 
 
 <h3>1.5.1 debug rsvp event</h3>
