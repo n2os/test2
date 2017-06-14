@@ -1,6 +1,6 @@
 <h1>RSVP-TE Command Guide</h1>
-<h2>Command Summary</h2>
 <hr/>
+<h2>Command Summary</h2>
 <h3>Configuration Mode Command</h2>
 <h4>router rsvp Node</h4>
 <pre>
@@ -101,9 +101,12 @@ clear rsvp session TRUNK_NAME
 clear rsvp session all
 </pre>
 
-==================================================================================
+<hr/>
 
 <h1>Command Detail</h1>
+
+<hr/>
+
 <h2>1. Configuration Mode Command</h2>
 
 <h3>1.1 router rsvp</h3>
@@ -437,7 +440,7 @@ N1(config-router)# no explicit-null</pre>
 <pre>N1(config-router)# loop-detection
 N1(config-router)# no loop-detection</pre>
 
-==============================================================================
+<hr/>
 
 <h3>1.2 rsvp path</h3>
 <h5>rsvp path</h5>
@@ -502,7 +505,7 @@ loose
 <pre>N1(config-path)# 1.1.1.12 loose
 N1(config-path)# no 1.1.1.12 loose</pre>
 
-==============================================================================
+<hr/>
 
 <h3>1.3 rsvp trunk</h3>
 <h5>rsvp trunk</h5>
@@ -842,7 +845,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 <h5>Example</h5>
 <pre>N1(config-trunk)# run</pre>
 
-==========================================================================
+<hr/>
 
 <h3>1.4 interface</h3>
 <h5>interface</h5>
@@ -965,7 +968,7 @@ N1(interface)# no enable-rsvp-message-id</pre>
 N1(interface)# no enable-rsvp-hello</pre>
 
 
-=======================================================================
+<hr/>
 
 <h3>1.5 debug rsvp</h3>
 <h5>debug rsvp </h5>
@@ -1080,7 +1083,7 @@ N1(interface)# no debug rsvp packet detail</pre>
 N1(interface)# no debug rsvp psb-rsb-count</pre>
 
 
-==========================================================
+<hr/>
 
 <h3>2 Execution Command</h2>
 
@@ -1374,7 +1377,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# show rsvp memory-usage</pre>
 
-========================================================
+<hr/>
 
 <h3>2.2 clear rsvp</h3>
 <h5>clear rsvp</h5>
@@ -1434,3 +1437,5 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 
 <h5>Example</h5>
 <pre>N1(exec)# clear rsvp session all</pre>
+
+<hr/>
