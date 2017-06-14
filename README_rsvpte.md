@@ -852,16 +852,165 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 
 ==========================================================================
 
-<h4>interface Node</h4>
-<pre>
-interface IF-NAME			
-	(no)enable-rsvp			router interface configuration enable rsvp-te
-	(no)enable-rsvp-integrity KEY_ID enable rsvp-te authentication
-	(no)enable-rsvp-integrity KEY_ID (md5|hmac-md5) enable rsvp-te integrity usage
-	(no)enable-rsvp-message-id	enable rsvp-te message-id usage
-	(no)enable-rsvp-hello		enable rsvp-te hello on this interface
-	(no)enable-rsvp-unic		UNI-C
-	(no)enable-rsvp-unin		UNI-N</pre>
+<h3>1.4 interface</h3>
+<h5>interface</h5>
+<pre>Enter interface node.</pre>
+<pre>interface IF_NAME</pre>
+
+<h5>Syntax Description</h5>
+<pre>IF_NAME
+	Interface name </pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode </pre>
+
+<h5>Example</h5>
+<pre>N1(config)# interface swp1
+
+
+<h3>1.2.1 enable-rsvp</h3>
+<h5>enable-rsvp</h5>
+<pre>Router interface configuration enable rsvp-te.</pre>
+<pre>(no) enable-rsvp</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp
+N1(interface)# no enable-rsvp</pre>
+
+
+<h3>1.2.2 enable-rsvp-integrity</h3>
+<h5>enable-rsvp-integrity</h5>
+<pre>Enable rsvp-te authentication.</pre>
+<pre>enable-rsvp-integrity KEY_ID</pre>
+
+<h5>Syntax Description</h5>
+<pre>KEY_ID
+	Integrity key identification</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp-integrity KEY-01
+N1(interface)# no enable-rsvp-integrity</pre>
+
+
+<h3>1.2.3 enable-rsvp-integrity</h3>
+<h5>enable-rsvp-integrity</h5>
+<pre>Enable rsvp-te integrity usage.</pre>
+<pre>(no) enable-rsvp-integrity KEY_ID (md5|hmac-md5)</pre>
+
+<h5>Syntax Description</h5>
+<pre>KEY_ID
+	Integrity key identification
+md5
+	Message Digest version 5
+hmac-md5
+	Hashed Message Authentication Code - md5</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp-integrity KEY-01 md5
+N1(interface)# enable-rsvp-integrity KEY-01 hmac-md5
+N1(interface)# no enable-rsvp-integrity</pre>
+
+
+<h3>1.2.4 enable-rsvp-integrity</h3>
+<h5>enable-rsvp-message-id</h5>
+<pre>Enable rsvp-te message-id usage.</pre>
+<pre>(no) enable-rsvp-message-id</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “no enable-rsvp-message-id”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp-message-id
+N1(interface)# no enable-rsvp-message-id</pre>
+
+
+<h3>1.2.5 enable-rsvp-hello</h3>
+<h5>enable-rsvp-hello</h5>
+<pre>Enable rsvp-te hello on this interface.</pre>
+<pre>(no) enable-rsvp-hello</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “no enable-rsvp-hello”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp-hello
+N1(interface)# no enable-rsvp-hello</pre>
+
+
+<h3>1.2.6 enable-rsvp-unic</h3>
+<h5>enable-rsvp-unic</h5>
+<pre>Enable UNI-C.</pre>
+<pre>(no) enable-rsvp-unic</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “no enable-rsvp-unic”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp-unic
+N1(interface)# no enable-rsvp-unic</pre>
+
+
+<h3>1.2.7 enable-rsvp-unin</h3>
+<h5>enable-rsvp-unin</h5>
+<pre>Enable UNI-N.</pre>
+<pre>(no) enable-rsvp-unin</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “no enable-rsvp-unic”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Interface Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# enable-rsvp-unin
+N1(interface)# no enable-rsvp-unin</pre>
+
+=======================================================================
 
 <h4>debug command</h4>
 <pre>
