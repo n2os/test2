@@ -1,5 +1,5 @@
 <h1>RSVP-TE Command Guide</h1>
-><h2>Command Summary</h2>
+> <h2>Command Summary</h2>
 <h3>Configuration Mode Command</h2>
 <h4>router rsvp Node</h4>
 <pre>
