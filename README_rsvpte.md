@@ -48,7 +48,8 @@ no rsvp trunk all
 	(no)diffserv-elsp phb-id PHB-ID exp <0-7> set diffserv e-lsp to trunk
 	(no)diffserv-llsp psc PSC-ID	setting diffserv l-lsp info to trunk
 	number <1-65536>		number of trunk that we want setup
-	run				triggering rsvpte trunk</pre>
+	run				triggering rsvpte trunk
+</pre>
 
 <h4>interface Node</h4>
 <pre>
@@ -58,6 +59,7 @@ interface IF-NAME
 	(no)enable-rsvp-integrity KEY_ID (md5|hmac-md5) enable rsvp-te integrity usage
 	(no)enable-rsvp-message-id	enable rsvp-te message-id usage
 	(no)enable-rsvp-hello		enable rsvp-te hello on this interface
+</pre>
 
 <h4>debug command</h4>
 <pre>
@@ -67,6 +69,7 @@ debug rsvp
 (no)debug rsvp packet
 (no)debug rsvp packet detail
 (no)debug rsvp psb-rsb-count
+</pre>
 
 <h3>Execution Mode Command</h2>
 
@@ -87,13 +90,15 @@ show rsvp interface
 show rsvp interface IF_NAME
 show rsvp neighbor status
 show rsvp statistics
-show rsvp memory-usage</pre>
+show rsvp memory-usage
+</pre>
 
 <h4>clear command</h4>
 <pre>
 clear rsvp statistics
 clear rsvp session TRUNK_NAME
 clear rsvp session all
+</pre>
 
 ==================================================================================
 
