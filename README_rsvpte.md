@@ -871,7 +871,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 <pre>N1(config)# interface swp1
 
 
-<h3>1.2.1 enable-rsvp</h3>
+<h3>1.4.1 enable-rsvp</h3>
 <h5>enable-rsvp</h5>
 <pre>Router interface configuration enable rsvp-te.</pre>
 <pre>(no) enable-rsvp</pre>
@@ -890,7 +890,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 N1(interface)# no enable-rsvp</pre>
 
 
-<h3>1.2.2 enable-rsvp-integrity</h3>
+<h3>1.4.2 enable-rsvp-integrity</h3>
 <h5>enable-rsvp-integrity</h5>
 <pre>Enable rsvp-te authentication.</pre>
 <pre>enable-rsvp-integrity KEY_ID</pre>
@@ -910,7 +910,7 @@ N1(interface)# no enable-rsvp</pre>
 N1(interface)# no enable-rsvp-integrity</pre>
 
 
-<h3>1.2.3 enable-rsvp-integrity</h3>
+<h3>1.4.3 enable-rsvp-integrity</h3>
 <h5>enable-rsvp-integrity</h5>
 <pre>Enable rsvp-te integrity usage.</pre>
 <pre>(no) enable-rsvp-integrity KEY_ID (md5|hmac-md5)</pre>
@@ -935,7 +935,7 @@ N1(interface)# enable-rsvp-integrity KEY-01 hmac-md5
 N1(interface)# no enable-rsvp-integrity</pre>
 
 
-<h3>1.2.4 enable-rsvp-integrity</h3>
+<h3>1.4.4 enable-rsvp-integrity</h3>
 <h5>enable-rsvp-message-id</h5>
 <pre>Enable rsvp-te message-id usage.</pre>
 <pre>(no) enable-rsvp-message-id</pre>
@@ -954,7 +954,7 @@ N1(interface)# no enable-rsvp-integrity</pre>
 N1(interface)# no enable-rsvp-message-id</pre>
 
 
-<h3>1.2.5 enable-rsvp-hello</h3>
+<h3>1.4.5 enable-rsvp-hello</h3>
 <h5>enable-rsvp-hello</h5>
 <pre>Enable rsvp-te hello on this interface.</pre>
 <pre>(no) enable-rsvp-hello</pre>
@@ -973,7 +973,7 @@ N1(interface)# no enable-rsvp-message-id</pre>
 N1(interface)# no enable-rsvp-hello</pre>
 
 
-<h3>1.2.6 enable-rsvp-unic</h3>
+<h3>1.4.6 enable-rsvp-unic</h3>
 <h5>enable-rsvp-unic</h5>
 <pre>Enable UNI-C.</pre>
 <pre>(no) enable-rsvp-unic</pre>
@@ -992,7 +992,7 @@ N1(interface)# no enable-rsvp-hello</pre>
 N1(interface)# no enable-rsvp-unic</pre>
 
 
-<h3>1.2.7 enable-rsvp-unin</h3>
+<h3>1.4.7 enable-rsvp-unin</h3>
 <h5>enable-rsvp-unin</h5>
 <pre>Enable UNI-N.</pre>
 <pre>(no) enable-rsvp-unin</pre>
@@ -1012,14 +1012,141 @@ N1(interface)# no enable-rsvp-unin</pre>
 
 =======================================================================
 
+<h3>1.5 debug rsvp</h3>
+<h5>debug rsvp </h5>
+<pre>Set rsvp debug function.</pre>
+<pre>debug rsvp</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config)# debug rsvp
+
+
+<h3>1.5.1 debug rsvp event</h3>
+<h5>debug rsvp event</h5>
+<pre>Debugging rsvp event.</pre>
+<pre>(no) debug rsvp event</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# debug rsvp event
+N1(interface)# no debug rsvp event</pre>
+
+
+<h3>1.5.2 debug rsvp hexdump</h3>
+<h5>debug rsvp hexdump</h5>
+<pre>Debugging enable rsvp event using hexadump.</pre>
+<pre>(no) debug rsvp hexdump</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# debug rsvp hexdump
+N1(interface)# no debug rsvp hexdump</pre>
+
+
+<h3>1.5.3 debug rsvp packet</h3>
+<h5>debug rsvp packet</h5>
+<pre>Debugging enable rsvp packet sending/receving.</pre>
+<pre>(no) debug rsvp packet</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# debug rsvp packet
+N1(interface)# no debug rsvp packet</pre>
+
+
+<h3>1.5.4 debug rsvp packet detail</h3>
+<h5>debug rsvp packet detail</h5>
+<pre>Debugging enable rsvp packet-detail sending/receiving.</pre>
+<pre>(no) debug rsvp packet detail</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# debug rsvp packet detail
+N1(interface)# no debug rsvp packet detail</pre>
+
+
+<h3>1.5.5 debug rsvp psb-rsb-count</h3>
+<h5>debug rsvp psb-rsb-count</h5>
+<pre>debugging enable rsvp psb and rsb count.</pre>
+<pre>(no) debug rsvp psb-rsb-count</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# debug rsvp psb-rsb-count
+N1(interface)# no debug rsvp psb-rsb-count</pre>
+
+
+<h3>1.5.6 debug rsvp uni if-msg</h3>
+<h5>debug rsvp uni if-msg</h5>
+<pre>Debugging enable rsvp uni interface msg sending/receving.</pre>
+<pre>(no) debug rsvp uni if-msg</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Configuration Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# debug rsvp uni if-msg
+N1(interface)# no debug rsvp uni if-msg</pre>
+
+==========================================================
+
 <h4>debug command</h4>
 <pre>
-debug rsvp
-(no)debug rsvp event
-(no)debug rsvp hexdump
-(no)debug rsvp packet
-(no)debug rsvp packet detail
-(no)debug rsvp psb-rsb-count
 // debug uni
 (no)debug rsvp uni if-msg</pre>
 
