@@ -1145,26 +1145,299 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 
 ==========================================================
 
-<h3>Execution Command</h2>
+<h3>2 Execution Command</h2>
 
-<h4>show command</h4>
-<pre>
-show rsvp	
-show rsvp version
-show rsvp debug
-show rsvp path
-show rsvp path PATH_NAME
-show rsvp trunk
-show rsvp trunk TRUNK_NAME
-show rsvp session
-show rsvp session summary
-show rsvp session detail
-show rsvp psb-rsb
-show rsvp interface
-show rsvp interface IF_NAME
-show rsvp neighbor status
-show rsvp statistics
-show rsvp memory-usage</pre>
+<h3>1.1 show rsvp</h3>
+<h5>show rsvp</h5>
+<pre>Display rsvp-te global setting.</pre>
+<pre>show rsvp</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp</pre>
+
+
+<h3>1.2 show rsvp version</h3>
+<h5>show rsvp version</h5>
+<pre>Display rsvp-te version.</pre>
+<pre>show rsvp version</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp version</pre>
+
+
+<h3>1.3 show rsvp debug</h3>
+<h5>show rsvp debug</h5>
+<pre>Display rsvp-te debugging status infomation.</pre>
+<pre>show rsvp debug</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp debug</pre>
+
+
+<h3>1.4 show rsvp path</h3>
+<h5>show rsvp path</h5>
+<pre>Display rsvp-te all path infomation.</pre>
+<pre>show rsvp path</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp path</pre>
+
+
+<h3>1.5 show rsvp path PATH_NAME</h3>
+<h5>show rsvp path PATH_NAME</h5>
+<pre>Display rsvp-te path infomation.</pre>
+<pre>show rsvp path PATH_NAME</pre>
+
+<h5>Syntax Description</h5>
+<pre>PATH_NAME
+	Rsvp-te path name</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp path PATH-01</pre>
+
+
+<h3>1.6 show rsvp trunk</h3>
+<h5>show rsvp trunk</h5>
+<pre>Display rsvp-te trunk all provisioned infomation.</pre>
+<pre>show rsvp trunk</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp trunk</pre>
+
+
+<h3>1.7 show rsvp trunk TRUNK_NAME</h3>
+<h5>show rsvp trunk TRUNK_NAME</h5>
+<pre>Display rsvp-te trunk provisioned infomation.</pre>
+<pre>show rsvp trunk TRUNK_NAME</pre>
+
+<h5>Syntax Description</h5>
+<pre>TRUNK_NAME
+	Rsvp-te trunk name</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp trunk TRUNK-01</pre>
+
+
+<h3>1.8 show rsvp session</h3>
+<h5>show rsvp session</h5>
+<pre>Display rsvp-te all installed sessions abstract infomation.</pre>
+<pre>show rsvp session</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp session</pre>
+
+
+<h3>1.9 show rsvp session summary</h3>
+<h5>show rsvp session summary</h5>
+<pre>Display rsvp-te sessions summary infomation.</pre>
+<pre>show rsvp session summary</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)#show rsvp session summary</pre>
+
+
+<h3>1.10 show rsvp session detail</h3>
+<h5>show rsvp session detail</h5>
+<pre>Display rsvp-te all sessions detail infomation.</pre>
+<pre>show rsvp session detail</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp session detail</pre>
+
+
+<h3>1.11 show rsvp psb-rsb</h3>
+<h5>show rsvp psb-rsb</h5>
+<pre>Display rsvp-te all Path/Resv status infomation.</pre>
+<pre>show rsvp psb-rsb</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp psb-rsb</pre>
+
+
+<h3>1.13 show rsvp interface</h3>
+<h5>show rsvp interface</h5>
+<pre>Display all rsvp-te all interface infomation.</pre>
+<pre>show rsvp interface</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp interface</pre>
+
+
+<h3>1.14 show rsvp interface IF_NAME</h3>
+<h5>show rsvp interface IF_NAME</h5>
+<pre>Display rsvp-te interface infomation.</pre>
+<pre>show rsvp interface IF_NAME</pre>
+
+<h5>Syntax Description</h5>
+<pre>IF_NAME
+	Rsvp-te interface name</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp interface swp1</pre>
+
+
+<h3>1.15 show rsvp neighbor status</h3>
+<h5>show rsvp neighbor status</h5>
+<pre>Display rsvp-te neighbor infomation.</pre>
+<pre>show rsvp neighbor status</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp neighbor status</pre>
+
+
+<h3>1.16 show rsvp statistics</h3>
+<h5>show rsvp statistics</h5>
+<pre>Display rsvp-te send and receive message statistics.</pre>
+<pre>show rsvp statistics</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp statistics</pre>
+
+
+<h3>1.16 show rsvp memory-usage</h3>
+<h5>show rsvp memory-usage</h5>
+<pre>Display rsvp-te memory usage information.</pre>
+<pre>show rsvp memory-usage</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(interface)# show rsvp memory-usage</pre>
+
+========================================================
 
 <h4>clear command</h4>
 <pre>
