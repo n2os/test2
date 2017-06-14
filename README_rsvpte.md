@@ -110,6 +110,7 @@ clear rsvp uni session all
 </pre>
 
 ==================================================================================
+
 <h1>Command Detail</h1>
 <h2>1. Configuration Mode Command</h2>
 
@@ -118,108 +119,113 @@ clear rsvp uni session all
 <pre>Set rsvpte global configuration.</pre>
 <pre>(no) router rsvp</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None </pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no router rsvp”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>System Configuration Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config)# router rsvp
 N1(config)# no router rsvp</pre>
+
 
 <h3>1.1.1 refresh</h3>
 <h5>refresh</h5>
 <pre>Set refresh enable mode.</pre>
 <pre>(no) refresh</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “refresh”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# refresh
 N1(config-router)# no refresh</pre>
+
 
 <h3>1.1.2 router-alert</h3>
 <h5>router-alert</h5>
 <pre>Enable rsvpte router-alert option.</pre>
 <pre>(no) router-alert</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “router-alert”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# router-alert
 N1(config-router)# no router-alert</pre>
+
 
 <h3>1.1.3 encap-num</h3>
 <h5>encap-num</h5>
 <pre>Set encap number per summary refresh.</pre>
 <pre>(no) encap-num <1-350></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-350>
 	Number per summary refresh</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “350”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# encap-num 100
 N1(config-router)# no encap-num</pre>
+
 
 <h3>1.1.4 confirm</h3>
 <h5>confirm</h5>
 <pre>Enable rsvpte confirm object at egress.</pre>
 <pre>(no) confirm</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no confirm”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# confirm
 N1(config-router)# no confirm</pre>
+
 
 <h3>1.1.5 lsr-id</h3>
 <h5>lsr-id</h5>
 <pre>Set rsvpte label-switch-router identifier.</pre>
 <pre>(no) lsr-id A.B.C.D</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>A.B.C.D
 	LSR Identifier</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no lsr-id”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# lsr-id 1.1.1.11
 N1(config-router)# no lsr-id</pre>
 
@@ -229,17 +235,17 @@ N1(config-router)# no lsr-id</pre>
 <pre>Set rsvpte refresh interval[sec].</pre>
 <pre>(no) refresh-interval <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Refresh interval(sec)</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “30 sec”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# refresh-interval 10
 N1(config-router)# no refresh-interval</pre>
 
@@ -249,17 +255,17 @@ N1(config-router)# no refresh-interval</pre>
 <pre>Set rsvpte refresh multiplier.</pre>
 <pre>(no) refresh-multiplier <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Refresh multiplier</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “3”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# refresh-multiplier 10
 N1(config-router)# no refresh-multiplier</pre>
 
@@ -269,16 +275,16 @@ N1(config-router)# no refresh-multiplier</pre>
 <pre>Enable rsvpte summary refresh.</pre>
 <pre>(no) srefresh<1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no srefresh”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# srefresh
 N1(config-router)# no srefresh</pre>
 
@@ -288,17 +294,17 @@ N1(config-router)# no srefresh</pre>
 <pre>Set summary refresh interval[sec].</pre>
 <pre>(no) srefresh-interval <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Summary refresh interval[sec]</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “3”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# srefresh-interval 10
 N1(config-router)# no srefresh-interval</pre>
 
@@ -308,17 +314,17 @@ N1(config-router)# no srefresh-interval</pre>
 <pre>Set rsvpte ack message interval[secs].</pre>
 <pre>(no) msgack-interval <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Ack mesage interval[sec]</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “1”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# msgack-interval 3
 N1(config-router)# no msgack-interval</pre>
 
@@ -328,17 +334,17 @@ N1(config-router)# no msgack-interval</pre>
 <pre>Set rsvpte ack message retry multiplier.</pre>
 <pre>(no) msgack-retry-multiplier <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Ack mesage multiplier</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “3”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# msgack-retry-multiplier 10
 N1(config-router)# no msgack-retry-multiplier</pre>
 
@@ -348,17 +354,17 @@ N1(config-router)# no msgack-retry-multiplier</pre>
 <pre>Set rsvpte hello interval[secs].</pre>
 <pre>(no) hello-interval <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Hello interval[secs]</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “3”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# hello-interval 1
 N1(config-router)# no hello-interval</pre>
 
@@ -368,17 +374,17 @@ N1(config-router)# no hello-interval</pre>
 <pre>Set rsvpte hello multiplier.</pre>
 <pre>(no) hello-multiplier <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	Hello multiplier</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “3”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# hello-multiplier 10
 N1(config-router)# no hello-multiplier</pre>
 
@@ -388,16 +394,16 @@ N1(config-router)# no hello-multiplier</pre>
 <pre>Enable rsvpte hello function.</pre>
 <pre>(no) hello-receipt</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “hello-recipt”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# hello-receipt
 N1(config-router)# no hello-receipt</pre>
 
@@ -407,16 +413,16 @@ N1(config-router)# no hello-receipt</pre>
 <pre>Enable rsvpte explicit null.</pre>
 <pre>(no) explicit-null</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no explicit-null”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# explicit-null
 N1(config-router)# no explicit-null</pre>
 
@@ -426,16 +432,16 @@ N1(config-router)# no explicit-null</pre>
 <pre>Enable rsvpte loop-detection function.</pre>
 <pre>(no) loop-detection</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no loop-detection”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config-router)# loop-detection
 N1(config-router)# no loop-detection</pre>
 
@@ -446,17 +452,17 @@ N1(config-router)# no loop-detection</pre>
 <pre>Create rsvpte path info.</pre>
 <pre>(no) rsvp path PATHNAME</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>PATHNAME
 	Rsvp-te path's name </pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>System Configuration Mode </pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config)# rsvp path PATH-01
 N1(config)# no rsvp path PATH-01</pre>
 
@@ -466,19 +472,19 @@ N1(config)# no rsvp path PATH-01</pre>
 <pre>Add hop-address to path.</pre>
 <pre>(no) A.B.C.D</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>A.B.C.D
 	LSR's ipv4 address </pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Path Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# 1.1.1.12
-N1(config)# no 1.1.1.12</pre>
+<h5>Example</h5>
+<pre>N1(config-path)# 1.1.1.12
+N1(config-path)# no 1.1.1.12</pre>
 
 
 <h3>1.2.2 A.B.C.D</h3>
@@ -486,7 +492,7 @@ N1(config)# no 1.1.1.12</pre>
 <pre>Add hop-address to path.</pre>
 <pre>(no) A.B.C.D (strict|loose)</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>A.B.C.D
 	LSR's ipv4 address
 strict
@@ -494,35 +500,35 @@ strict
 loose
 	Loose node</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “strict”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Path Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# 1.1.1.12 loose
-N1(config)# no 1.1.1.12 loose</pre>
+<h5>Example</h5>
+<pre>N1(config-path)# 1.1.1.12 loose
+N1(config-path)# no 1.1.1.12 loose</pre>
 
 ==============================================================================
 
 <h3>1.3 rsvp trunk</h3>
 <h5>rsvp trunk</h5>
 <pre>Create rsvpte trunk info.</pre>
-<pre>(no)rsvp trunk TRUNKNAME
+<pre>(no) rsvp trunk TRUNKNAME
 no rsvp trunk all</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>TRUNKNAME
 	Trunk's name</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>System Configuration Mode</pre>
 
-<h5> Example</h5>
+<h5>Example</h5>
 <pre>N1(config)# rsvp trunk TRUNK-01
 N1(config)# no rsvp trunk TRUNK-01</pre>
 
@@ -532,19 +538,19 @@ N1(config)# no rsvp trunk TRUNK-01</pre>
 <pre>Add rsvpte primary path info to trunk.</pre>
 <pre>(no) primary PATH_NAME</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>PATH_NAME
 	Primary rsvpte path's name</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# primary PATH-01
-N1(config)# no primary PATH-01</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# primary PATH-01
+N1(config-trunk)# no primary PATH-01</pre>
 
 
 <h3>1.3.2 secondary</h3>
@@ -552,19 +558,19 @@ N1(config)# no primary PATH-01</pre>
 <pre>Add rsvpte secondary path info to trunk.</pre>
 <pre>(no) secondary PATH_NAME</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>PATH_NAME
 	Secondary rsvpte path's name</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# secondary PATH-02
-N1(config)# no secondary PATH-02</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# secondary PATH-02
+N1(config-trunk)# no secondary PATH-02</pre>
 
 
 <h3>1.3.3 from</h3>
@@ -572,19 +578,19 @@ N1(config)# no secondary PATH-02</pre>
 <pre>Add rsvpte ingress address to trunk.</pre>
 <pre>(no) from A.B.C.D</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>A.B.C.D
 	Ingress ipv4 address</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# from 1.1.1.11
-N1(config)# no from 1.1.1.11</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# from 1.1.1.11
+N1(config-trunk)# no from 1.1.1.11</pre>
 
 
 <h3>1.3.4 to</h3>
@@ -592,41 +598,41 @@ N1(config)# no from 1.1.1.11</pre>
 <pre>Add rsvpte egress address to trunk.</pre>
 <pre>(no) to A.B.C.D</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>A.B.C.D
 	Egress ipv4 address</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# to 3.3.3.12
-N1(config)# no to 3.3.3.12</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# to 3.3.3.12
+N1(config-trunk)# no to 3.3.3.12</pre>
 
 
 <h3>1.3.5 filter</h3>
 <h5>filter</h5>
 <pre>Add rsvpte filter-style to trunk.</pre>
-<pre>(no)filter (fixed-filter|shared-explicit)</pre>
+<pre>(no) filter (fixed-filter|shared-explicit)</pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>fixed-filter
 	Fixed filter type
 shared-explicit
 	Shared-explicit filter type</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “fixed-filter”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# filter shared-explicit
-N1(config)# no filter</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# filter shared-explicit
+N1(config-trunk)# no filter</pre>
 
 
 <h3>1.3.6 bandwidth</h3>
@@ -634,39 +640,39 @@ N1(config)# no filter</pre>
 <pre>Add rsvpte request bandwidth to trunk.</pre>
 <pre>(no) bandwidth <1-65535></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre><1-65535>
 	bandwidth</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “None”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# bandwidth 100
-N1(config)# no bandwidth</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# bandwidth 100
+N1(config-trunk)# no bandwidth</pre>
 
 
 <h3>1.3.7 hop-limit</h3>
 <h5>hop-limit</h5>
-<pre>add rsvpte hop-limit to trunk.</pre>
+<pre>Add rsvpte hop-limit to trunk.</pre>
 <pre>(no) hop-limit <1-255></pre>
 
 <h5> Syntax Description</h5>
 <pre><1-255>
 	hop-limit value</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “64”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# hop-limit 32
-N1(config)# no hop-limit</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# hop-limit 32
+N1(config-trunk)# no hop-limit</pre>
 
 
 <h3>1.3.8 cspf</h3>
@@ -674,28 +680,177 @@ N1(config)# no hop-limit</pre>
 <pre>Use rsvpte cspf-explicit-route to trunk.</pre>
 <pre>(no) cspf <1-255></pre>
 
-<h5> Syntax Description</h5>
+<h5>Syntax Description</h5>
 <pre>None</pre>
 
-<h5> Default</h5>
+<h5>Default</h5>
 <pre>Default is “no cspf”. </pre>
 
-<h5> Command Modes</h5>
+<h5>Command Modes</h5>
 <pre>Rsvp Trunk Mode</pre>
 
-<h5> Example</h5>
-<pre>N1(config)# cspf
-N1(config)# no cspf</pre>
+<h5>Example</h5>
+<pre>N1(config-trunk)# cspf
+N1(config-trunk)# no cspf</pre>
 
-<pre>
-	(no)hold-priority <0-7>		add hold-priority to trunk
-	(no)setup-priority <0-7>	add setup-priority to trunk
-	(no)record-route		set record-route use to trunk
-	(no)label-record		set label-record use to trunk
-	(no)diffserv-elsp phb-id PHB-ID exp <0-7> set diffserv e-lsp to trunk
-	(no)diffserv-llsp psc PSC-ID	setting diffserv l-lsp info to trunk
-	(no)number <1-65536>		number of trunk that we want setup
-	run				triggering rsvpte trunk</pre>
+
+<h3>1.3.9 hold-priority</h3>
+<h5>hold-priority</h5>
+<pre>Add hold-priority to trunk.</pre>
+<pre>(no) hold-priority <0-7></pre>
+
+<h5>Syntax Description</h5>
+<pre><0-7>
+	Hold priority value</pre>
+
+<h5>Default</h5>
+<pre>Default is “0”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# hold-priority 1
+N1(config-trunk)# no hold-priority</pre>
+
+
+<h3>1.3.10 setup-priority</h3>
+<h5>setup-priority</h5>
+<pre>Add setup-priority to trunk.</pre>
+<pre>(no) setup-priority <0-7></pre>
+
+<h5>Syntax Description</h5>
+<pre><0-7>
+	setup-priority value</pre>
+
+<h5>Default</h5>
+<pre>Default is “0”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# setup-priority 1
+N1(config-trunk)# no setup-priority</pre>
+
+
+<h3>1.3.11 record-route</h3>
+<h5>record-route</h5>
+<pre>Set record-route use to trunk.</pre>
+<pre>(no) record-route</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “no record-route”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# record-route
+N1(config-trunk)# no record-route</pre>
+
+
+<h3>1.3.12 label-record</h3>
+<h5>label-record</h5>
+<pre>Set label-record use to trunk.</pre>
+<pre>(no) label-record</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “no label-record”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# label-record
+N1(config-trunk)# no label-record</pre>
+
+
+<h3>1.3.13 diffserv-elsp</h3>
+<h5>diffserv-elsp</h5>
+<pre>Set diffserv e-lsp to trunk.</pre>
+<pre>(no) diffserv-elsp phb-id PHB-ID exp <0-7></pre>
+
+<h5>Syntax Description</h5>
+<pre>PHB-ID
+	???
+<0-7>
+	???</pre>
+
+<h5>Default</h5>
+<pre>Default is “(no) diffserv-elsp”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# (no) diffserv-elsp phb-id PHB-01 exp 3
+N1(config-trunk)# (no) diffserv-elsp</pre>
+
+
+<h3>1.3.14 diffserv-llsp</h3>
+<h5>diffserv-llsp</h5>
+<pre>Setting diffserv l-lsp info to trunk.</pre>
+<pre>(no) diffserv-llsp psc PSC-ID</pre>
+
+<h5>Syntax Description</h5>
+<pre>PSC-ID
+	???</pre>
+
+<h5>Default</h5>
+<pre>Default is “(no) diffserv-llsp”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# diffserv-llsp PSC-01
+N1(config-trunk)# (no) diffserv-llsp</pre>
+
+
+<h3>1.3.15 number</h3>
+<h5>number</h5>
+<pre>Number of trunk that we want setup.</pre>
+<pre>number <1-65536></pre>
+
+<h5>Syntax Description</h5>
+<pre><1-65536>
+	Number of trunk</pre>
+
+<h5>Default</h5>
+<pre>Default is “0”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# number 100
+
+
+<h3>1.3.16 run</h3>
+<h5>run</h5>
+<pre>Triggering rsvpte trunk.</pre>
+<pre>run</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# run
+
+==========================================================================
 
 <h4>interface Node</h4>
 <pre>
