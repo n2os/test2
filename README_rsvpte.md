@@ -1,6 +1,7 @@
 <h1>RSVP-TE Command Guide</h1>
-
+***
 <h2>Command Summary</h2>
+***
 <h3>Configuration Mode Command</h2>
 <h4>router rsvp Node</h4>
 <pre>
@@ -77,7 +78,7 @@ debug rsvp
 // debug uni
 (no)debug rsvp uni if-msg</pre>
 
-<h3>Configuration Mode Command</h2>
+<h3>Execution Mode Command</h2>
 
 <h4>show command</h4>
 <pre>
@@ -108,6 +109,7 @@ clear rsvp session all
 clear rsvp uni session lsp-id <1-65535> tunnel-id <1-65535> src-addr A.B.C.D dst-addr A.B.C.D
 clear rsvp uni session all
 </pre>
+***
 
 ==================================================================================
 
