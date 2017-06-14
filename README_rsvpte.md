@@ -848,7 +848,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 <pre>Rsvp Trunk Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(config-trunk)# run
+<pre>N1(config-trunk)# run</pre>
 
 ==========================================================================
 
