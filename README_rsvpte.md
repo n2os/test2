@@ -868,7 +868,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 <pre>System Configuration Mode </pre>
 
 <h5>Example</h5>
-<pre>N1(config)# interface swp1
+<pre>N1(config)# interface swp1</pre>
 
 
 <h3>1.4.1 enable-rsvp</h3>
