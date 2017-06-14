@@ -1,5 +1,4 @@
 <h1>RSVP-TE Command Guide</h1>
-<hr/>
 <h2>Command Summary</h2>
 <h3>Configuration Mode Command</h2>
 <h4>router rsvp Node</h4>
@@ -104,8 +103,6 @@ clear rsvp session all
 <hr/>
 
 <h1>Command Detail</h1>
-
-<hr/>
 
 <h2>1. Configuration Mode Command</h2>
 
