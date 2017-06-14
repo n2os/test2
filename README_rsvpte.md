@@ -1147,7 +1147,7 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 
 <h3>2 Execution Command</h2>
 
-<h3>1.1 show rsvp</h3>
+<h3>2.1 show rsvp</h3>
 <h5>show rsvp</h5>
 <pre>Display rsvp-te global setting.</pre>
 <pre>show rsvp</pre>
@@ -1162,10 +1162,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp</pre>
+<pre>N1(exec)# show rsvp</pre>
 
 
-<h3>1.2 show rsvp version</h3>
+<h3>2.1.1 show rsvp version</h3>
 <h5>show rsvp version</h5>
 <pre>Display rsvp-te version.</pre>
 <pre>show rsvp version</pre>
@@ -1180,10 +1180,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp version</pre>
+<pre>N1(exec)# show rsvp version</pre>
 
 
-<h3>1.3 show rsvp debug</h3>
+<h3>2.1.2 show rsvp debug</h3>
 <h5>show rsvp debug</h5>
 <pre>Display rsvp-te debugging status infomation.</pre>
 <pre>show rsvp debug</pre>
@@ -1198,10 +1198,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp debug</pre>
+<pre>N1(exec)# show rsvp debug</pre>
 
 
-<h3>1.4 show rsvp path</h3>
+<h3>2.1.3 show rsvp path</h3>
 <h5>show rsvp path</h5>
 <pre>Display rsvp-te all path infomation.</pre>
 <pre>show rsvp path</pre>
@@ -1216,10 +1216,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp path</pre>
+<pre>N1(exec)# show rsvp path</pre>
 
 
-<h3>1.5 show rsvp path PATH_NAME</h3>
+<h3>2.1.4 show rsvp path PATH_NAME</h3>
 <h5>show rsvp path PATH_NAME</h5>
 <pre>Display rsvp-te path infomation.</pre>
 <pre>show rsvp path PATH_NAME</pre>
@@ -1235,10 +1235,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp path PATH-01</pre>
+<pre>N1(exec)# show rsvp path PATH-01</pre>
 
 
-<h3>1.6 show rsvp trunk</h3>
+<h3>2.1.5 show rsvp trunk</h3>
 <h5>show rsvp trunk</h5>
 <pre>Display rsvp-te trunk all provisioned infomation.</pre>
 <pre>show rsvp trunk</pre>
@@ -1253,10 +1253,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp trunk</pre>
+<pre>N1(exec)# show rsvp trunk</pre>
 
 
-<h3>1.7 show rsvp trunk TRUNK_NAME</h3>
+<h3>2.1.6 show rsvp trunk TRUNK_NAME</h3>
 <h5>show rsvp trunk TRUNK_NAME</h5>
 <pre>Display rsvp-te trunk provisioned infomation.</pre>
 <pre>show rsvp trunk TRUNK_NAME</pre>
@@ -1272,10 +1272,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp trunk TRUNK-01</pre>
+<pre>N1(exec)# show rsvp trunk TRUNK-01</pre>
 
 
-<h3>1.8 show rsvp session</h3>
+<h3>2.1.7 show rsvp session</h3>
 <h5>show rsvp session</h5>
 <pre>Display rsvp-te all installed sessions abstract infomation.</pre>
 <pre>show rsvp session</pre>
@@ -1290,10 +1290,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp session</pre>
+<pre>N1(exec)# show rsvp session</pre>
 
 
-<h3>1.9 show rsvp session summary</h3>
+<h3>2.1.8 show rsvp session summary</h3>
 <h5>show rsvp session summary</h5>
 <pre>Display rsvp-te sessions summary infomation.</pre>
 <pre>show rsvp session summary</pre>
@@ -1308,10 +1308,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)#show rsvp session summary</pre>
+<pre>N1(exec)#show rsvp session summary</pre>
 
 
-<h3>1.10 show rsvp session detail</h3>
+<h3>2.1.9 show rsvp session detail</h3>
 <h5>show rsvp session detail</h5>
 <pre>Display rsvp-te all sessions detail infomation.</pre>
 <pre>show rsvp session detail</pre>
@@ -1326,10 +1326,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp session detail</pre>
+<pre>N1(exec)# show rsvp session detail</pre>
 
 
-<h3>1.11 show rsvp psb-rsb</h3>
+<h3>2.1.10 show rsvp psb-rsb</h3>
 <h5>show rsvp psb-rsb</h5>
 <pre>Display rsvp-te all Path/Resv status infomation.</pre>
 <pre>show rsvp psb-rsb</pre>
@@ -1344,10 +1344,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp psb-rsb</pre>
+<pre>N1(exec)# show rsvp psb-rsb</pre>
 
 
-<h3>1.13 show rsvp interface</h3>
+<h3>2.1.11 show rsvp interface</h3>
 <h5>show rsvp interface</h5>
 <pre>Display all rsvp-te all interface infomation.</pre>
 <pre>show rsvp interface</pre>
@@ -1362,10 +1362,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp interface</pre>
+<pre>N1(exec)# show rsvp interface</pre>
 
 
-<h3>1.14 show rsvp interface IF_NAME</h3>
+<h3>2.1.12 show rsvp interface IF_NAME</h3>
 <h5>show rsvp interface IF_NAME</h5>
 <pre>Display rsvp-te interface infomation.</pre>
 <pre>show rsvp interface IF_NAME</pre>
@@ -1381,10 +1381,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp interface swp1</pre>
+<pre>N1(exec)# show rsvp interface swp1</pre>
 
 
-<h3>1.15 show rsvp neighbor status</h3>
+<h3>2.1.13 show rsvp neighbor status</h3>
 <h5>show rsvp neighbor status</h5>
 <pre>Display rsvp-te neighbor infomation.</pre>
 <pre>show rsvp neighbor status</pre>
@@ -1399,10 +1399,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp neighbor status</pre>
+<pre>N1(exec)# show rsvp neighbor status</pre>
 
 
-<h3>1.16 show rsvp statistics</h3>
+<h3>2.1.14 show rsvp statistics</h3>
 <h5>show rsvp statistics</h5>
 <pre>Display rsvp-te send and receive message statistics.</pre>
 <pre>show rsvp statistics</pre>
@@ -1417,10 +1417,10 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp statistics</pre>
+<pre>N1(exec)# show rsvp statistics</pre>
 
 
-<h3>1.16 show rsvp memory-usage</h3>
+<h3>2.1.15 show rsvp memory-usage</h3>
 <h5>show rsvp memory-usage</h5>
 <pre>Display rsvp-te memory usage information.</pre>
 <pre>show rsvp memory-usage</pre>
@@ -1435,17 +1435,65 @@ N1(interface)# no debug rsvp uni if-msg</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(interface)# show rsvp memory-usage</pre>
+<pre>N1(exec)# show rsvp memory-usage</pre>
 
 ========================================================
 
-<h4>clear command</h4>
-<pre>
-clear rsvp statistics
-clear rsvp session TRUNK_NAME
-clear rsvp session all
+<h3>2.2 clear rsvp</h3>
+<h5>clear rsvp</h5>
+<pre>Clear rsvp-te information.</pre>
 
-// uni clear
-clear rsvp uni session lsp-id <1-65535> tunnel-id <1-65535> src-addr A.B.C.D dst-addr A.B.C.D
-clear rsvp uni session all
-</pre>
+
+<h3>2.2.1 clear rsvp statistics</h3>
+<h5>clear rsvp statistics</h5>
+<pre>Clear rsvp-te send and receive message statistics.</pre>
+<pre>clear rsvp statistics</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# clear rsvp statistics</pre>
+
+
+<h3>2.2.2 clear rsvp session TRUNK_NAME</h3>
+<h5>clear rsvp session TRUNK_NAME</h5>
+<pre>Clear rsvp-te session by trunk-name.</pre>
+<pre>clear rsvp session TRUNK_NAME</pre>
+
+<h5>Syntax Description</h5>
+<pre>TRUNK_NAME
+	Rsvp-te trunk name</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# clear rsvp session TRUNK-01</pre>
+
+
+<h3>2.2.3 clear rsvp session all</h3>
+<h5>clear rsvp session</h5>
+<pre>Clear rsvp-te all sessions.</pre>
+<pre>clear rsvp session all</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# clear rsvp session all</pre>
