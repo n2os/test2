@@ -1,3 +1,5 @@
+valgrind --leak-check=yes --log-file="./bgpd.debug" bgpd
+
 테스트코드
 <pre>
 #include <stdio.h>
