@@ -3,13 +3,11 @@
 <h3>Configuration Mode Command</h2>
 
 <h4>bfd monitor server</h4>
-
 <pre>
   (no)bfd montor server A.B.C.D port <1001-65535>
 </pre>
 
 <h4>bfd monitor client</h4>
-
 <pre>
   (no)bfd montor client A.B.C.D   Client ipv4 address (e.g. 1.2.3.4)
 </pre>
@@ -59,7 +57,7 @@
 <h4>bfd monitor server</h4>
 Set Ipv4 address and UDP port number of monitoring server.
 <pre>
-  (no)bfd montor server [ServerIP] port [ServerUdpPort]
+(no)bfd montor server [ServerIP] port [ServerUdpPort]
 </pre>
 
 <h5>Syntax Description</h5>
@@ -82,13 +80,14 @@ System Configuration Mode
 
 <h5>Example</h5>
 <pre>
-N1(config)#  bfd monitor server 192.168.2.200 port 1005
+N1(config)#bfd monitor server 192.168.2.200 port 1005
 </pre>
+
 
 <h4>bfd monitor client</h4>
 Set monitoring client’s Ipv4 address that will be allowed.
 <pre>
-(no)bfd montor client <ClientIP>
+(no)bfd montor client [ClientIP]
 </pre>
 
 <h5>Syntax Description</h5>
@@ -109,25 +108,26 @@ System Configuration Mode
 
 <h5>Example</h5>
 <pre>
-N1(config)#  bfd monitor client 192.168.2.200
+N1(config)#bfd monitor client 192.168.2.200
 </pre>
+
 
 <h4>bfd session</h4>
 “bfd session” will set session information to be learned with peer node.
 <pre>
-(no)bfd session <Peer-IP> <Local-IP>
-(no)bfd session <Peer-IP> <Peer-Port> <Local-IP> <Local-Port>
+(no)bfd session [PeerIP] [LocalIP]
+(no)bfd session [PeerIP] [PeerPort] [LocalIP] [LocalPort]
 </pre>
 
 <h5>Syntax Description</h5>
 <pre>
-<PeerIP>
+PeerIP
 	Peer ipv4 address.
-<PeerPort>
+PeerPort
 	Peer UDP Port (1001 ~ 65535).
-<LocalIP>
+LocalIP
 	Local ipv4 address.
-<LocalPort>
+LocalPort
 	Local UDP Port (1001 ~ 65535).
 </pre>
 
@@ -149,21 +149,20 @@ N1(config)# bfd session 1.1.1.12 1002 1.1.1.11 1001
 N1(config)# no bfd session 1.1.1.12 1002 1.1.1.11 1001
 </pre>
 
------------------------------
 
 <h4>bfd debug</h4>
 debug bfd will show bfdd’s event, packet, and session related debugging message through log file.
 <pre>
-  (no)debug bfd {event|packet|session}
+(no)debug bfd {event|packet|session}
 </pre>
 
 <h5>Syntax Description</h5>
 <pre>
-<event>
+event
 	event related message, ipc, socket, timer etc.
-<packet>
+packet
 	BFD protocol related message, Tx and Rx packets.
-<session>
+session
 	sesstion DOWN/INIT/UP state related message.
 </pre>
 
@@ -183,23 +182,23 @@ N1(config)#debug bfd event
 N1(config)#debug bfd packet
 N1(config)#debug bfd session
 </pre>
------------------------------
+
 
 <h3>Interface Mode Command</h2>
 
 <h4>bfd interval</h4>
 Set BFD’s operational parameters per each interfaces.
 <pre>
-  (no) bfd interval INTERVAL min-rx <MIN-RX> multiplier <MULTIPLIER>
+(no) bfd interval [INTERVAL] min-rx [MIN-RX] multiplier [MULTIPLIER]
 </pre>
 
 <h5>Syntax Description</h5>
 <pre>
-<INTERVAL>
+INTERVAL
 	Minimum transmitting time of bfd protocol messages(milisecond)(10-10000).
-<MIN-RX>
+MIN-RX
 	Minimum receiving time of bfd protocol message (milisecond)(10-10000).
-<MULTIPLIER>
+MULTIPLIER
 	Multiplier number(1-10).
 </pre>
 
@@ -219,14 +218,14 @@ N1(config)#interface swp1
 N1(interface)# bfd interval 300 min-rx 150 multiplier 3
 </pre>
 
------------------------------
+
 
 <h3>Execution Mode Command</h2>
 
 <h4>show bfd status</h4>
 “show bfd status” will show bfdd default parameters.
 <pre>
-  show bfd status
+show bfd status
 </pre>
 
 <h5>Syntax Description</h5>
@@ -249,24 +248,24 @@ Execution Mode
 N1(exec)#show bfd status
 </pre>
 
------------------------------------
+
 <h4>show bfd session</h4>
 “show bfd status” will show sessions and status.
 <pre>
 show bfd session
-show bfd session <PeerIP> <LocalIP>
-show bfd session <PeerIP> <PeerPort> <LocalIP> <LocalPort>
+show bfd session [PeerIP] [LocalIP]
+show bfd session [PeerIP] [PeerPort] [LocalIP] [LocalPort]
 </pre>
 
 <h5>Syntax Description</h5>
 <pre>
-<PeerIP>
+PeerIP
 	Peer ipv4 address.
-<PeerPort>
+PeerPort
 	Peer UDP Port (1001 ~ 65535).
-<LocalIP>
+LocalIP
 	Local ipv4 address.
-<LocalPort>
+LocalPort
 	Local UDP Port (1001 ~ 65535).
 </pre>
 
@@ -293,7 +292,7 @@ N1(exec)#show bfd sessions 1.1.1.12 1002 1.1.1.11 1001
 <h4>show bfd client</h4>
 “show bfd client” will show client list and each requested session information.
 <pre>
-  show bfd client
+show bfd client
 </pre>
 
 <h5>Syntax Description</h5>
