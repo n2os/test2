@@ -85,8 +85,6 @@ System Configuration Mode
 N1(config)#  bfd monitor server 192.168.2.200 port 1005
 </pre>
 
------------------------------
-
 <h4>bfd monitor client</h4>
 Set monitoring client’s Ipv4 address that will be allowed.
 <pre>
@@ -114,13 +112,11 @@ System Configuration Mode
 N1(config)#  bfd monitor client 192.168.2.200
 </pre>
 
------------------------------
-
 <h4>bfd session</h4>
 “bfd session” will set session information to be learned with peer node.
 <pre>
-(no)bfd session <PeerIP> <LocalIP>
-(no)bfd session <PeerIP> <PeerPort> LocalIP <LocalPort>
+(no)bfd session <Peer-IP> <Local-IP>
+(no)bfd session <Peer-IP> <Peer-Port> <Local-IP> <Local-Port>
 </pre>
 
 <h5>Syntax Description</h5>
