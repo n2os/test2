@@ -54,7 +54,7 @@
 
 <h3>Configuration Mode Command</h2>
 
-<h4><U>bfd monitor server</U></h4>
+<U><h4>bfd monitor server</h4></U>
 Set Ipv4 address and UDP port number of monitoring server.
 <pre>
 (no)bfd montor server [ServerIP] port [ServerUdpPort]
