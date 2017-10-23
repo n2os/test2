@@ -59,7 +59,7 @@
 <h4>bfd monitor server</h4>
 Set Ipv4 address and UDP port number of monitoring server.
 <pre>
-  (no)bfd montor server <ServerIP> port <ServerUdpPort>
+  (no)bfd montor server [ServerIP] port [ServerUdpPort]
 </pre>
 
 <h5>Syntax Description</h5>
