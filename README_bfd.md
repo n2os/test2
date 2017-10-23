@@ -9,10 +9,14 @@
   (no)bfd montor server A.B.C.D port <1001-65535>
 </pre>
 
+***
+
 <h4>bfd monitor client</h4>
 <pre>
   (no)bfd montor client A.B.C.D   Client ipv4 address (e.g. 1.2.3.4)
 </pre>
+
+***
 
 <h4>bfd session</h4>
 <pre>
@@ -20,24 +24,35 @@
   (no)bfd session A.B.C.D <1001-65535> A.B.C.D <1001-65535>
 </pre>
 
+***
+
 <h4>bfd debug</h4>
 <pre>
   (no)debug bfd {event|packet|session}
 </pre>
 
+***
+
 <h3>Interface Mode Command</h2>
+
+***
 
 <h4>bfd interval</h4>
 <pre>
   (no) bfd interval <10-10000> min-rx <10-10000> multiplier <1-10>
 </pre>
 
+***
+
 <h3>Execution Mode Command</h2>
 
+***
 <h4>show bfd status</h4>
 <pre>
   show bfd status
 </pre>
+
+***
 
 <h4>show bfd session</h4>
 <pre>
@@ -46,15 +61,20 @@
   show bfd session <PeerPort> <LocalPort>
 </pre>
 
+***
+
 <h4>show bfd client</h4>
 <pre>
   show bfd client
 </pre>
 
+***
 
 <h2>Command Detail</h2>
 
 <h3>Configuration Mode Command</h2>
+
+***
 
 <U><h4>bfd monitor server</h4></U>
 Set Ipv4 address and UDP port number of monitoring server.
@@ -85,6 +105,7 @@ System Configuration Mode
 N1(config)#bfd monitor server 192.168.2.200 port 1005
 </pre>
 
+***
 
 <h4>bfd monitor client</h4>
 Set monitoring client’s Ipv4 address that will be allowed.
@@ -113,6 +134,7 @@ System Configuration Mode
 N1(config)#bfd monitor client 192.168.2.200
 </pre>
 
+***
 
 <h4>bfd session</h4>
 “bfd session” will set session information to be learned with peer node.
@@ -151,6 +173,7 @@ N1(config)# bfd session 1.1.1.12 1002 1.1.1.11 1001
 N1(config)# no bfd session 1.1.1.12 1002 1.1.1.11 1001
 </pre>
 
+***
 
 <h4>bfd debug</h4>
 debug bfd will show bfdd’s event, packet, and session related debugging message through log file.
@@ -186,7 +209,11 @@ N1(config)#debug bfd session
 </pre>
 
 
+***
+
 <h3>Interface Mode Command</h2>
+
+***
 
 <h4>bfd interval</h4>
 Set BFD’s operational parameters per each interfaces.
@@ -220,9 +247,11 @@ N1(config)#interface swp1
 N1(interface)# bfd interval 300 min-rx 150 multiplier 3
 </pre>
 
-
+***
 
 <h3>Execution Mode Command</h2>
+
+***
 
 <h4>show bfd status</h4>
 “show bfd status” will show bfdd default parameters.
@@ -250,6 +279,7 @@ Execution Mode
 N1(exec)#show bfd status
 </pre>
 
+***
 
 <h4>show bfd session</h4>
 “show bfd status” will show sessions and status.
@@ -290,6 +320,7 @@ N1(exec)#show bfd sessions 1.1.1.12 1.1.1.11
 N1(exec)#show bfd sessions 1.1.1.12 1002 1.1.1.11 1001
 ...
 
+***
 
 <h4>show bfd client</h4>
 “show bfd client” will show client list and each requested session information.
