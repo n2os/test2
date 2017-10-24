@@ -77,7 +77,6 @@ debug rsvp
 <pre>
 show rsvp	
 show rsvp version
-show rsvp debug
 show rsvp path
 show rsvp path PATH_NAME
 show rsvp trunk
@@ -88,9 +87,9 @@ show rsvp session detail
 show rsvp psb-rsb
 show rsvp interface
 show rsvp interface IF_NAME
+show rsvp neighbor
 show rsvp neighbor status
 show rsvp statistics
-show rsvp memory-usage
 </pre>
 
 <h4>clear command</h4>
