@@ -124,7 +124,7 @@ clear rsvp session all
 N1(config)# no router rsvp</pre>
 
 
-<h3>1.1.1 refresh</h3>
+<h3>refresh</h3>
 <h5>refresh</h5>
 <pre>Set refresh enable mode.</pre>
 <pre>(no) refresh</pre>
@@ -143,7 +143,7 @@ N1(config)# no router rsvp</pre>
 N1(config-router)# no refresh</pre>
 
 
-<h3>1.1.2 router-alert</h3>
+<h3>router-alert</h3>
 <h5>router-alert</h5>
 <pre>Enable rsvpte router-alert option.</pre>
 <pre>(no) router-alert</pre>
@@ -162,7 +162,7 @@ N1(config-router)# no refresh</pre>
 N1(config-router)# no router-alert</pre>
 
 
-<h3>1.1.3 encap-num</h3>
+<h3>encap-num</h3>
 <h5>encap-num</h5>
 <pre>Set encap number per summary refresh.</pre>
 <pre>(no) encap-num <1-350></pre>
@@ -182,7 +182,7 @@ N1(config-router)# no router-alert</pre>
 N1(config-router)# no encap-num</pre>
 
 
-<h3>1.1.4 confirm</h3>
+<h3>confirm</h3>
 <h5>confirm</h5>
 <pre>Enable rsvpte confirm object at egress.</pre>
 <pre>(no) confirm</pre>
@@ -201,7 +201,7 @@ N1(config-router)# no encap-num</pre>
 N1(config-router)# no confirm</pre>
 
 
-<h3>1.1.5 lsr-id</h3>
+<h3>lsr-id</h3>
 <h5>lsr-id</h5>
 <pre>Set rsvpte label-switch-router identifier.</pre>
 <pre>(no) lsr-id A.B.C.D</pre>
@@ -221,7 +221,7 @@ N1(config-router)# no confirm</pre>
 N1(config-router)# no lsr-id</pre>
 
 
-<h3>1.1.6 refresh-interval</h3>
+<h3>refresh-interval</h3>
 <h5>refresh-interval</h5>
 <pre>Set rsvpte refresh interval[sec].</pre>
 <pre>(no) refresh-interval <1-65535></pre>
@@ -241,7 +241,7 @@ N1(config-router)# no lsr-id</pre>
 N1(config-router)# no refresh-interval</pre>
 
 
-<h3>1.1.7 refresh-multiplier</h3>
+<h3>refresh-multiplier</h3>
 <h5>refresh-multiplier</h5>
 <pre>Set rsvpte refresh multiplier.</pre>
 <pre>(no) refresh-multiplier <1-65535></pre>
@@ -261,7 +261,7 @@ N1(config-router)# no refresh-interval</pre>
 N1(config-router)# no refresh-multiplier</pre>
 
 
-<h3>1.1.8 srefresh</h3>
+<h3>srefresh</h3>
 <h5>srefresh</h5>
 <pre>Enable rsvpte summary refresh.</pre>
 <pre>(no) srefresh<1-65535></pre>
@@ -280,7 +280,7 @@ N1(config-router)# no refresh-multiplier</pre>
 N1(config-router)# no srefresh</pre>
 
 
-<h3>1.1.9 srefresh-interval</h3>
+<h3>srefresh-interval</h3>
 <h5>srefresh-interval</h5>
 <pre>Set summary refresh interval[sec].</pre>
 <pre>(no) srefresh-interval <1-65535></pre>
@@ -300,7 +300,7 @@ N1(config-router)# no srefresh</pre>
 N1(config-router)# no srefresh-interval</pre>
 
 
-<h3>1.1.10 msgack-interval</h3>
+<h3>msgack-interval</h3>
 <h5>msgack-interval</h5>
 <pre>Set rsvpte ack message interval[secs].</pre>
 <pre>(no) msgack-interval <1-65535></pre>
@@ -320,7 +320,7 @@ N1(config-router)# no srefresh-interval</pre>
 N1(config-router)# no msgack-interval</pre>
 
 
-<h3>1.1.11 msgack-retry-multiplier</h3>
+<h3>msgack-retry-multiplier</h3>
 <h5>msgack-retry-multiplier</h5>
 <pre>Set rsvpte ack message retry multiplier.</pre>
 <pre>(no) msgack-retry-multiplier <1-65535></pre>
@@ -340,7 +340,7 @@ N1(config-router)# no msgack-interval</pre>
 N1(config-router)# no msgack-retry-multiplier</pre>
 
 
-<h3>1.1.12 hello-interval</h3>
+<h3>hello-interval</h3>
 <h5>hello-interval</h5>
 <pre>Set rsvpte hello interval[secs].</pre>
 <pre>(no) hello-interval <1-65535></pre>
@@ -360,7 +360,7 @@ N1(config-router)# no msgack-retry-multiplier</pre>
 N1(config-router)# no hello-interval</pre>
 
 
-<h3>1.1.13 hello-multiplier</h3>
+<h3>hello-multiplier</h3>
 <h5>hello-multiplier</h5>
 <pre>Set rsvpte hello multiplier.</pre>
 <pre>(no) hello-multiplier <1-65535></pre>
@@ -380,7 +380,7 @@ N1(config-router)# no hello-interval</pre>
 N1(config-router)# no hello-multiplier</pre>
 
 
-<h3>1.1.14 hello-receipt</h3>
+<h3>hello-receipt</h3>
 <h5>hello-receipt</h5>
 <pre>Enable rsvpte hello function.</pre>
 <pre>(no) hello-receipt</pre>
@@ -399,7 +399,7 @@ N1(config-router)# no hello-multiplier</pre>
 N1(config-router)# no hello-receipt</pre>
 
 
-<h3>1.1.15 explicit-null</h3>
+<h3>explicit-null</h3>
 <h5>explicit-null</h5>
 <pre>Enable rsvpte explicit null.</pre>
 <pre>(no) explicit-null</pre>
@@ -418,7 +418,7 @@ N1(config-router)# no hello-receipt</pre>
 N1(config-router)# no explicit-null</pre>
 
 
-<h3>1.1.16 loop-detection</h3>
+<h3>loop-detection</h3>
 <h5>loop-detection</h5>
 <pre>Enable rsvpte loop-detection function.</pre>
 <pre>(no) loop-detection</pre>
@@ -458,7 +458,7 @@ N1(config-router)# no loop-detection</pre>
 N1(config)# no rsvp path PATH-01</pre>
 
 
-<h3>1.2.1 A.B.C.D</h3>
+<h3>A.B.C.D</h3>
 <h5>A.B.C.D</h5>
 <pre>Add hop-address to path.</pre>
 <pre>(no) A.B.C.D</pre>
@@ -478,7 +478,7 @@ N1(config)# no rsvp path PATH-01</pre>
 N1(config-path)# no 1.1.1.12</pre>
 
 
-<h3>1.2.2 A.B.C.D</h3>
+<h3>A.B.C.D</h3>
 <h5>A.B.C.D</h5>
 <pre>Add hop-address to path.</pre>
 <pre>(no) A.B.C.D (strict|loose)</pre>
@@ -524,7 +524,7 @@ no rsvp trunk all</pre>
 N1(config)# no rsvp trunk TRUNK-01</pre>
 
 
-<h3>1.3.1 primary PATH_NAME</h3>
+<h3>primary PATH_NAME</h3>
 <h5>primary</h5>
 <pre>Add rsvpte primary path info to trunk.</pre>
 <pre>(no) primary PATH_NAME</pre>
@@ -544,7 +544,7 @@ N1(config)# no rsvp trunk TRUNK-01</pre>
 N1(config-trunk)# no primary PATH-01</pre>
 
 
-<h3>1.3.2 secondary</h3>
+<h3>secondary</h3>
 <h5>secondary</h5>
 <pre>Add rsvpte secondary path info to trunk.</pre>
 <pre>(no) secondary PATH_NAME</pre>
@@ -564,7 +564,7 @@ N1(config-trunk)# no primary PATH-01</pre>
 N1(config-trunk)# no secondary PATH-02</pre>
 
 
-<h3>1.3.3 from</h3>
+<h3>from</h3>
 <h5>from</h5>
 <pre>Add rsvpte ingress address to trunk.</pre>
 <pre>(no) from A.B.C.D</pre>
@@ -584,7 +584,7 @@ N1(config-trunk)# no secondary PATH-02</pre>
 N1(config-trunk)# no from 1.1.1.11</pre>
 
 
-<h3>1.3.4 to</h3>
+<h3>to</h3>
 <h5>to</h5>
 <pre>Add rsvpte egress address to trunk.</pre>
 <pre>(no) to A.B.C.D</pre>
@@ -604,7 +604,7 @@ N1(config-trunk)# no from 1.1.1.11</pre>
 N1(config-trunk)# no to 3.3.3.12</pre>
 
 
-<h3>1.3.5 filter</h3>
+<h3>filter</h3>
 <h5>filter</h5>
 <pre>Add rsvpte filter-style to trunk.</pre>
 <pre>(no) filter (fixed-filter|shared-explicit)</pre>
@@ -626,7 +626,7 @@ shared-explicit
 N1(config-trunk)# no filter</pre>
 
 
-<h3>1.3.6 bandwidth</h3>
+<h3>bandwidth</h3>
 <h5>bandwidth</h5>
 <pre>Add rsvpte request bandwidth to trunk.</pre>
 <pre>(no) bandwidth <1-65535></pre>
@@ -646,7 +646,7 @@ N1(config-trunk)# no filter</pre>
 N1(config-trunk)# no bandwidth</pre>
 
 
-<h3>1.3.7 hop-limit</h3>
+<h3>hop-limit</h3>
 <h5>hop-limit</h5>
 <pre>Add rsvpte hop-limit to trunk.</pre>
 <pre>(no) hop-limit <1-255></pre>
@@ -666,7 +666,7 @@ N1(config-trunk)# no bandwidth</pre>
 N1(config-trunk)# no hop-limit</pre>
 
 
-<h3>1.3.8 cspf</h3>
+<h3>cspf</h3>
 <h5>cspf</h5>
 <pre>Use rsvpte cspf-explicit-route to trunk.</pre>
 <pre>(no) cspf <1-255></pre>
@@ -685,7 +685,7 @@ N1(config-trunk)# no hop-limit</pre>
 N1(config-trunk)# no cspf</pre>
 
 
-<h3>1.3.9 hold-priority</h3>
+<h3>hold-priority</h3>
 <h5>hold-priority</h5>
 <pre>Add hold-priority to trunk.</pre>
 <pre>(no) hold-priority <0-7></pre>
@@ -705,7 +705,7 @@ N1(config-trunk)# no cspf</pre>
 N1(config-trunk)# no hold-priority</pre>
 
 
-<h3>1.3.10 setup-priority</h3>
+<h3>setup-priority</h3>
 <h5>setup-priority</h5>
 <pre>Add setup-priority to trunk.</pre>
 <pre>(no) setup-priority <0-7></pre>
@@ -725,7 +725,7 @@ N1(config-trunk)# no hold-priority</pre>
 N1(config-trunk)# no setup-priority</pre>
 
 
-<h3>1.3.11 record-route</h3>
+<h3>record-route</h3>
 <h5>record-route</h5>
 <pre>Set record-route use to trunk.</pre>
 <pre>(no) record-route</pre>
@@ -744,7 +744,7 @@ N1(config-trunk)# no setup-priority</pre>
 N1(config-trunk)# no record-route</pre>
 
 
-<h3>1.3.12 label-record</h3>
+<h3>label-record</h3>
 <h5>label-record</h5>
 <pre>Set label-record use to trunk.</pre>
 <pre>(no) label-record</pre>
@@ -785,7 +785,7 @@ N1(config-trunk)# no label-record</pre>
 N1(config-trunk)# (no) diffserv-elsp</pre>
 
 
-<h3>1.3.14 diffserv-llsp</h3>
+<h3>diffserv-llsp</h3>
 <h5>diffserv-llsp</h5>
 <pre>Setting diffserv l-lsp info to trunk.</pre>
 <pre>(no) diffserv-llsp psc PSC-ID</pre>
@@ -805,7 +805,7 @@ N1(config-trunk)# (no) diffserv-elsp</pre>
 N1(config-trunk)# (no) diffserv-llsp</pre>
 
 
-<h3>1.3.15 number</h3>
+<h3>number</h3>
 <h5>number</h5>
 <pre>Number of trunk that we want setup.</pre>
 <pre>number <1-65536></pre>
@@ -824,7 +824,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 <pre>N1(config-trunk)# number 100</pre>
 
 
-<h3>1.3.16 run</h3>
+<h3>run</h3>
 <h5>run</h5>
 <pre>Triggering rsvpte trunk.</pre>
 <pre>run</pre>
@@ -862,7 +862,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 <pre>N1(config)# interface swp1</pre>
 
 
-<h3>1.4.1 enable-rsvp</h3>
+<h3>enable-rsvp</h3>
 <h5>enable-rsvp</h5>
 <pre>Router interface configuration enable rsvp-te.</pre>
 <pre>(no) enable-rsvp</pre>
@@ -881,7 +881,7 @@ N1(config-trunk)# (no) diffserv-llsp</pre>
 N1(interface)# no enable-rsvp</pre>
 
 
-<h3>1.4.2 enable-rsvp-integrity</h3>
+<h3>enable-rsvp-integrity</h3>
 <h5>enable-rsvp-integrity</h5>
 <pre>Enable rsvp-te authentication.</pre>
 <pre>enable-rsvp-integrity KEY_ID</pre>
@@ -901,7 +901,7 @@ N1(interface)# no enable-rsvp</pre>
 N1(interface)# no enable-rsvp-integrity</pre>
 
 
-<h3>1.4.3 enable-rsvp-integrity</h3>
+<h3>enable-rsvp-integrity</h3>
 <h5>enable-rsvp-integrity</h5>
 <pre>Enable rsvp-te integrity usage.</pre>
 <pre>(no) enable-rsvp-integrity KEY_ID (md5|hmac-md5)</pre>
@@ -926,7 +926,7 @@ N1(interface)# enable-rsvp-integrity KEY-01 hmac-md5
 N1(interface)# no enable-rsvp-integrity</pre>
 
 
-<h3>1.4.4 enable-rsvp-integrity</h3>
+<h3>enable-rsvp-integrity</h3>
 <h5>enable-rsvp-message-id</h5>
 <pre>Enable rsvp-te message-id usage.</pre>
 <pre>(no) enable-rsvp-message-id</pre>
@@ -945,7 +945,7 @@ N1(interface)# no enable-rsvp-integrity</pre>
 N1(interface)# no enable-rsvp-message-id</pre>
 
 
-<h3>1.4.5 enable-rsvp-hello</h3>
+<h3>enable-rsvp-hello</h3>
 <h5>enable-rsvp-hello</h5>
 <pre>Enable rsvp-te hello on this interface.</pre>
 <pre>(no) enable-rsvp-hello</pre>
@@ -962,7 +962,6 @@ N1(interface)# no enable-rsvp-message-id</pre>
 <h5>Example</h5>
 <pre>N1(interface)# enable-rsvp-hello
 N1(interface)# no enable-rsvp-hello</pre>
-
 
 <hr/>
 
@@ -984,7 +983,7 @@ N1(interface)# no enable-rsvp-hello</pre>
 <pre>N1(config)# debug rsvp</pre>
 
 
-<h3>1.5.1 debug rsvp event</h3>
+<h3>debug rsvp event</h3>
 <h5>debug rsvp event</h5>
 <pre>Debugging rsvp event.</pre>
 <pre>(no) debug rsvp event</pre>
@@ -1003,7 +1002,7 @@ N1(interface)# no enable-rsvp-hello</pre>
 N1(interface)# no debug rsvp event</pre>
 
 
-<h3>1.5.2 debug rsvp hexdump</h3>
+<h3>debug rsvp hexdump</h3>
 <h5>debug rsvp hexdump</h5>
 <pre>Debugging enable rsvp event using hexadump.</pre>
 <pre>(no) debug rsvp hexdump</pre>
@@ -1022,7 +1021,7 @@ N1(interface)# no debug rsvp event</pre>
 N1(interface)# no debug rsvp hexdump</pre>
 
 
-<h3>1.5.3 debug rsvp packet</h3>
+<h3>debug rsvp packet</h3>
 <h5>debug rsvp packet</h5>
 <pre>Debugging enable rsvp packet sending/receving.</pre>
 <pre>(no) debug rsvp packet</pre>
@@ -1041,7 +1040,7 @@ N1(interface)# no debug rsvp hexdump</pre>
 N1(interface)# no debug rsvp packet</pre>
 
 
-<h3>1.5.4 debug rsvp packet detail</h3>
+<h3>debug rsvp packet detail</h3>
 <h5>debug rsvp packet detail</h5>
 <pre>Debugging enable rsvp packet-detail sending/receiving.</pre>
 <pre>(no) debug rsvp packet detail</pre>
@@ -1060,7 +1059,7 @@ N1(interface)# no debug rsvp packet</pre>
 N1(interface)# no debug rsvp packet detail</pre>
 
 
-<h3>1.5.5 debug rsvp psb-rsb-count</h3>
+<h3>debug rsvp psb-rsb-count</h3>
 <h5>debug rsvp psb-rsb-count</h5>
 <pre>debugging enable rsvp psb and rsb count.</pre>
 <pre>(no) debug rsvp psb-rsb-count</pre>
@@ -1100,8 +1099,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# show rsvp</pre>
 
-
-<h3>2.1.1 show rsvp version</h3>
+<h3>show rsvp version</h3>
 <h5>show rsvp version</h5>
 <pre>Display rsvp-te version.</pre>
 <pre>show rsvp version</pre>
@@ -1118,12 +1116,6 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# show rsvp version</pre>
 
-
-<h3>2.1.2 show rsvp debug</h3>
-<h5>show rsvp debug</h5>
-<pre>Display rsvp-te debugging status infomation.</pre>
-<pre>show rsvp debug</pre>
-
 <h5>Syntax Description</h5>
 <pre>None</pre>
 
@@ -1137,7 +1129,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp debug</pre>
 
 
-<h3>2.1.3 show rsvp path</h3>
+<h3>show rsvp path</h3>
 <h5>show rsvp path</h5>
 <pre>Display rsvp-te all path infomation.</pre>
 <pre>show rsvp path</pre>
@@ -1155,7 +1147,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp path</pre>
 
 
-<h3>2.1.4 show rsvp path PATH_NAME</h3>
+<h3>show rsvp path PATH_NAME</h3>
 <h5>show rsvp path PATH_NAME</h5>
 <pre>Display rsvp-te path infomation.</pre>
 <pre>show rsvp path PATH_NAME</pre>
@@ -1174,7 +1166,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp path PATH-01</pre>
 
 
-<h3>2.1.5 show rsvp trunk</h3>
+<h3>show rsvp trunk</h3>
 <h5>show rsvp trunk</h5>
 <pre>Display rsvp-te trunk all provisioned infomation.</pre>
 <pre>show rsvp trunk</pre>
@@ -1192,7 +1184,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp trunk</pre>
 
 
-<h3>2.1.6 show rsvp trunk TRUNK_NAME</h3>
+<h3>show rsvp trunk TRUNK_NAME</h3>
 <h5>show rsvp trunk TRUNK_NAME</h5>
 <pre>Display rsvp-te trunk provisioned infomation.</pre>
 <pre>show rsvp trunk TRUNK_NAME</pre>
@@ -1210,8 +1202,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# show rsvp trunk TRUNK-01</pre>
 
-
-<h3>2.1.7 show rsvp session</h3>
+<h3>show rsvp session</h3>
 <h5>show rsvp session</h5>
 <pre>Display rsvp-te all installed sessions abstract infomation.</pre>
 <pre>show rsvp session</pre>
@@ -1229,7 +1220,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp session</pre>
 
 
-<h3>2.1.8 show rsvp session summary</h3>
+<h3>show rsvp session summary</h3>
 <h5>show rsvp session summary</h5>
 <pre>Display rsvp-te sessions summary infomation.</pre>
 <pre>show rsvp session summary</pre>
@@ -1247,7 +1238,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)#show rsvp session summary</pre>
 
 
-<h3>2.1.9 show rsvp session detail</h3>
+<h3>show rsvp session detail</h3>
 <h5>show rsvp session detail</h5>
 <pre>Display rsvp-te all sessions detail infomation.</pre>
 <pre>show rsvp session detail</pre>
@@ -1265,7 +1256,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp session detail</pre>
 
 
-<h3>2.1.10 show rsvp psb-rsb</h3>
+<h3>show rsvp psb-rsb</h3>
 <h5>show rsvp psb-rsb</h5>
 <pre>Display rsvp-te all Path/Resv status infomation.</pre>
 <pre>show rsvp psb-rsb</pre>
@@ -1283,7 +1274,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp psb-rsb</pre>
 
 
-<h3>2.1.11 show rsvp interface</h3>
+<h3>show rsvp interface</h3>
 <h5>show rsvp interface</h5>
 <pre>Display all rsvp-te all interface infomation.</pre>
 <pre>show rsvp interface</pre>
@@ -1301,7 +1292,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp interface</pre>
 
 
-<h3>2.1.12 show rsvp interface IF_NAME</h3>
+<h3>show rsvp interface IF_NAME</h3>
 <h5>show rsvp interface IF_NAME</h5>
 <pre>Display rsvp-te interface infomation.</pre>
 <pre>show rsvp interface IF_NAME</pre>
@@ -1319,8 +1310,24 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# show rsvp interface swp1</pre>
 
+<h3>show rsvp neighbor</h3>
+<h5>show rsvp neighbor</h5>
+<pre>Display rsvp-te neighbor infomations.</pre>
+<pre>show rsvp neighbor status</pre>
 
-<h3>2.1.13 show rsvp neighbor status</h3>
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# show rsvp neighbor</pre>
+
+<h3>show rsvp neighbor status</h3>
 <h5>show rsvp neighbor status</h5>
 <pre>Display rsvp-te neighbor infomation.</pre>
 <pre>show rsvp neighbor status</pre>
@@ -1338,7 +1345,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# show rsvp neighbor status</pre>
 
 
-<h3>2.1.14 show rsvp statistics</h3>
+<h3>show rsvp statistics</h3>
 <h5>show rsvp statistics</h5>
 <pre>Display rsvp-te send and receive message statistics.</pre>
 <pre>show rsvp statistics</pre>
@@ -1354,12 +1361,6 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 
 <h5>Example</h5>
 <pre>N1(exec)# show rsvp statistics</pre>
-
-
-<h3>2.1.15 show rsvp memory-usage</h3>
-<h5>show rsvp memory-usage</h5>
-<pre>Display rsvp-te memory usage information.</pre>
-<pre>show rsvp memory-usage</pre>
 
 <h5>Syntax Description</h5>
 <pre>None</pre>
@@ -1380,7 +1381,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>Clear rsvp-te information.</pre>
 
 
-<h3>2.2.1 clear rsvp statistics</h3>
+<h3>clear rsvp statistics</h3>
 <h5>clear rsvp statistics</h5>
 <pre>Clear rsvp-te send and receive message statistics.</pre>
 <pre>clear rsvp statistics</pre>
@@ -1398,7 +1399,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)# clear rsvp statistics</pre>
 
 
-<h3>2.2.2 clear rsvp session TRUNK_NAME</h3>
+<h3>clear rsvp session TRUNK_NAME</h3>
 <h5>clear rsvp session TRUNK_NAME</h5>
 <pre>Clear rsvp-te session by trunk-name.</pre>
 <pre>clear rsvp session TRUNK_NAME</pre>
@@ -1416,8 +1417,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# clear rsvp session TRUNK-01</pre>
 
-
-<h3>2.2.3 clear rsvp session all</h3>
+<h3>clear rsvp session all</h3>
 <h5>clear rsvp session</h5>
 <pre>Clear rsvp-te all sessions.</pre>
 <pre>clear rsvp session all</pre>
