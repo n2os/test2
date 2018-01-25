@@ -158,8 +158,8 @@ N1(config-router)# no refresh</pre>
 N1(config-router)# no router-alert</pre>
 
 
-<h3>encap-num</h3>
-<h5>encap-num</h5>
+<h3>srefresh-encap-num</h3>
+<h5>srefresh-encap-num</h5>
 <pre>Set encap number per summary refresh.</pre>
 <pre>(no) encap-num <1-350></pre>
 
@@ -174,8 +174,8 @@ N1(config-router)# no router-alert</pre>
 <pre>Router Rsvp Mode </pre>
 
 <h5>Example</h5>
-<pre>N1(config-router)# encap-num 100
-N1(config-router)# no encap-num</pre>
+<pre>N1(config-router)# srefresh-encap-num 100
+N1(config-router)# no srefresh-encap-num</pre>
 
 
 <h3>confirm</h3>
@@ -519,6 +519,27 @@ no rsvp trunk all</pre>
 <pre>N1(config)# rsvp trunk TRUNK-01
 N1(config)# no rsvp trunk TRUNK-01</pre>
 
+<h3>map-route</h3>
+<h5>map-route</h5>
+<pre>Add map-route(FEC) to trunk.</pre>
+<pre>(no) map-route A.B.C.D/M</pre>
+
+<h5>Syntax Description</h5>
+<pre>A.B.C.D
+	Forwarding equivalence class</pre>
+<pre>M
+	Prefix length</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# map-route 1.0.0.0/8
+N1(config-trunk)# no map-route 1.0.0.0/8</pre>
+
 
 <h3>primary PATH_NAME</h3>
 <h5>primary</h5>
@@ -600,28 +621,6 @@ N1(config-trunk)# no from 1.1.1.11</pre>
 N1(config-trunk)# no to 3.3.3.12</pre>
 
 
-<h3>filter</h3>
-<h5>filter</h5>
-<pre>Add rsvpte filter-style to trunk.</pre>
-<pre>(no) filter (fixed-filter|shared-explicit)</pre>
-
-<h5>Syntax Description</h5>
-<pre>fixed-filter
-	Fixed filter type
-shared-explicit
-	Shared-explicit filter type</pre>
-
-<h5>Default</h5>
-<pre>Default is “fixed-filter”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# filter shared-explicit
-N1(config-trunk)# no filter</pre>
-
-
 <h3>bandwidth</h3>
 <h5>bandwidth</h5>
 <pre>Add rsvpte request bandwidth to trunk.</pre>
@@ -662,65 +661,6 @@ N1(config-trunk)# no bandwidth</pre>
 N1(config-trunk)# no hop-limit</pre>
 
 
-<h3>cspf</h3>
-<h5>cspf</h5>
-<pre>Use rsvpte cspf-explicit-route to trunk.</pre>
-<pre>(no) cspf <1-255></pre>
-
-<h5>Syntax Description</h5>
-<pre>None</pre>
-
-<h5>Default</h5>
-<pre>Default is “no cspf”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# cspf
-N1(config-trunk)# no cspf</pre>
-
-
-<h3>hold-priority</h3>
-<h5>hold-priority</h5>
-<pre>Add hold-priority to trunk.</pre>
-<pre>(no) hold-priority <0-7></pre>
-
-<h5>Syntax Description</h5>
-<pre><0-7>
-	Hold priority value</pre>
-
-<h5>Default</h5>
-<pre>Default is “0”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# hold-priority 1
-N1(config-trunk)# no hold-priority</pre>
-
-
-<h3>setup-priority</h3>
-<h5>setup-priority</h5>
-<pre>Add setup-priority to trunk.</pre>
-<pre>(no) setup-priority <0-7></pre>
-
-<h5>Syntax Description</h5>
-<pre><0-7>
-	setup-priority value</pre>
-
-<h5>Default</h5>
-<pre>Default is “0”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# setup-priority 1
-N1(config-trunk)# no setup-priority</pre>
-
-
 <h3>record-route</h3>
 <h5>record-route</h5>
 <pre>Set record-route use to trunk.</pre>
@@ -758,71 +698,10 @@ N1(config-trunk)# no record-route</pre>
 <pre>N1(config-trunk)# label-record
 N1(config-trunk)# no label-record</pre>
 
-
-<h3>1.3.13 diffserv-elsp</h3>
-<h5>diffserv-elsp</h5>
-<pre>Set diffserv e-lsp to trunk.</pre>
-<pre>(no) diffserv-elsp phb-id PHB-ID exp <0-7></pre>
-
-<h5>Syntax Description</h5>
-<pre>PHB-ID
-	???
-<0-7>
-	???</pre>
-
-<h5>Default</h5>
-<pre>Default is “(no) diffserv-elsp”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# (no) diffserv-elsp phb-id PHB-01 exp 3
-N1(config-trunk)# (no) diffserv-elsp</pre>
-
-
-<h3>diffserv-llsp</h3>
-<h5>diffserv-llsp</h5>
-<pre>Setting diffserv l-lsp info to trunk.</pre>
-<pre>(no) diffserv-llsp psc PSC-ID</pre>
-
-<h5>Syntax Description</h5>
-<pre>PSC-ID
-	???</pre>
-
-<h5>Default</h5>
-<pre>Default is “(no) diffserv-llsp”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# diffserv-llsp PSC-01
-N1(config-trunk)# (no) diffserv-llsp</pre>
-
-
-<h3>number</h3>
-<h5>number</h5>
-<pre>Number of trunk that we want setup.</pre>
-<pre>number <1-65536></pre>
-
-<h5>Syntax Description</h5>
-<pre><1-65536>
-	Number of trunk</pre>
-
-<h5>Default</h5>
-<pre>Default is “0”. </pre>
-
-<h5>Command Modes</h5>
-<pre>Rsvp Trunk Mode</pre>
-
-<h5>Example</h5>
-<pre>N1(config-trunk)# number 100</pre>
-
-
 <h3>run</h3>
 <h5>run</h5>
 <pre>Triggering rsvpte trunk.</pre>
+<pre>no run</pre>
 <pre>run</pre>
 
 <h5>Syntax Description</h5>
@@ -1234,10 +1113,10 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>N1(exec)#show rsvp session summary</pre>
 
 
-<h3>show rsvp session detail</h3>
-<h5>show rsvp session detail</h5>
-<pre>Display rsvp-te all sessions detail infomation.</pre>
-<pre>show rsvp session detail</pre>
+<h3>show rsvp session SESSION_NAME</h3>
+<h5>show rsvp session SESSION_NAME</h5>
+<pre>Display rsvp-te session's detail infomation.</pre>
+<pre>show rsvp session SESSION_NAME</pre>
 
 <h5>Syntax Description</h5>
 <pre>None</pre>
@@ -1249,7 +1128,25 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(exec)# show rsvp session detail</pre>
+<pre>N1(exec)# show rsvp session SESSION_01</pre>
+
+
+<h3>show rsvp msgid</h3>
+<h5>show rsvp msgid</h5>
+<pre>Display received message-id from neighbor node.</pre>
+<pre>show rsvp msgid</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# show rsvp msgid
 
 
 <h3>show rsvp psb-rsb</h3>
@@ -1394,11 +1291,10 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <h5>Example</h5>
 <pre>N1(exec)# clear rsvp statistics</pre>
 
-
-<h3>clear rsvp session TRUNK_NAME</h3>
-<h5>clear rsvp session TRUNK_NAME</h5>
-<pre>Clear rsvp-te session by trunk-name.</pre>
-<pre>clear rsvp session TRUNK_NAME</pre>
+<h3>clear rsvp trunk TRUNK_NAME</h3>
+<h5>clear rsvp trunk TRUNK_NAME</h5>
+<pre>Clear rsvp-te trunk by trunk-name.</pre>
+<pre>clear rsvp trunk TRUNK_NAME</pre>
 
 <h5>Syntax Description</h5>
 <pre>TRUNK_NAME
@@ -1411,7 +1307,43 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(exec)# clear rsvp session TRUNK-01</pre>
+<pre>N1(exec)# clear rsvp trunk TRUNK-01</pre>
+
+<h3>clear rsvp trunk all</h3>
+<h5>clear rsvp trunk all</h5>
+<pre>Clear rsvp-te all trunks.</pre>
+<pre>clear rsvp trunk all</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# clear rsvp trunk all</pre>
+
+
+<h3>clear rsvp session SESSION_NAME</h3>
+<h5>clear rsvp session SESSION_NAME</h5>
+<pre>Clear rsvp-te session by trunk-name.</pre>
+<pre>clear rsvp session TRUNK_NAME</pre>
+
+<h5>Syntax Description</h5>
+<pre>SESSION_NAME
+	Rsvp-te trunk name</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>System Execution Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(exec)# clear rsvp session SESSION-01</pre>
 
 <h3>clear rsvp session all</h3>
 <h5>clear rsvp session</h5>
