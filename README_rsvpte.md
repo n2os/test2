@@ -1329,7 +1329,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 
 <h3>clear rsvp session SESSION_NAME</h3>
 <h5>clear rsvp session SESSION_NAME</h5>
-<pre>Clear rsvp-te session by trunk-name.</pre>
+<pre>Clear rsvp-te session by session-name.</pre>
 <pre>clear rsvp session TRUNK_NAME</pre>
 
 <h5>Syntax Description</h5>
