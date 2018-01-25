@@ -6,7 +6,7 @@
 (no)router rsvp 			set rsvpte global configuration
 	(no)refresh			set refresh enable mode
 	(no)router-alert		enable rsvpte router-alert option
-	encap-num <1-350>		set encap number per summary refresh
+	(no)encap-num <1-350>		set encap number per summary refresh
 	(no)confirm			enable rsvpte confirm object at egress
 	(no)lsr-id A.B.C.D		set rsvpte label-switch-router identifier
 	(no)refresh-interval <1-65535>	set rsvpte refresh interval[sec]
