@@ -41,6 +41,7 @@ no rsvp trunk all
 	(no)hop-limit <1-255>		add rsvpte hop-limit to trunk
 	(no)record-route		set record-route use to trunk
 	(no)label-record		set label-record use to trunk
+	(no)switchover			switchover primary and secondary path of trunk
 	(no)run				triggering rsvpte trunk
 </pre>
 
@@ -697,6 +698,26 @@ N1(config-trunk)# no record-route</pre>
 <h5>Example</h5>
 <pre>N1(config-trunk)# label-record
 N1(config-trunk)# no label-record</pre>
+
+
+<h3>switchover</h3>
+<h5>run</h5>
+<pre>Switchover primary and secondary path of trunk.</pre>
+<pre>switchover</pre>
+<pre>switchover</pre>
+
+<h5>Syntax Description</h5>
+<pre>None</pre>
+
+<h5>Default</h5>
+<pre>Default is “None”. </pre>
+
+<h5>Command Modes</h5>
+<pre>Rsvp Trunk Mode</pre>
+
+<h5>Example</h5>
+<pre>N1(config-trunk)# switchover</pre>
+
 
 <h3>run</h3>
 <h5>run</h5>
