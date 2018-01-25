@@ -56,7 +56,6 @@ interface IF-NAME
 
 <h4>debug command</h4>
 <pre>
-debug rsvp
 (no)debug rsvp event
 (no)debug rsvp hexdump
 (no)debug rsvp packet
@@ -76,7 +75,8 @@ show rsvp trunk
 show rsvp trunk TRUNK_NAME
 show rsvp session
 show rsvp session summary
-show rsvp session detail
+show rsvp session SESSION_NAME
+show rsvp msgid
 show rsvp psb-rsb
 show rsvp interface
 show rsvp interface IF_NAME
@@ -88,8 +88,11 @@ show rsvp statistics
 <h4>clear command</h4>
 <pre>
 clear rsvp statistics
-clear rsvp session TRUNK_NAME
+clear rsvp trunk TRUNK_NAME
+clear rsvp trunk all
+clear rsvp session SESSION_NAME
 clear rsvp session all
+
 </pre>
 
 <hr/>
