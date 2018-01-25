@@ -1146,7 +1146,7 @@ N1(interface)# no debug rsvp psb-rsb-count</pre>
 <pre>System Execution Mode</pre>
 
 <h5>Example</h5>
-<pre>N1(exec)# show rsvp msgid
+<pre>N1(exec)# show rsvp msgid</pre>
 
 
 <h3>show rsvp psb-rsb</h3>
