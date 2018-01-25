@@ -6,7 +6,7 @@
 (no)router rsvp 			set rsvpte global configuration
 	(no)refresh			set refresh enable mode
 	(no)router-alert		enable rsvpte router-alert option
-	encap-num <1-350>		set encap number per summary refresh
+	(no)srefresh-encap-num <1-350>	set encap number per summary refresh
 	(no)confirm			enable rsvpte confirm object at egress
 	(no)lsr-id A.B.C.D		set rsvpte label-switch-router identifier
 	(no)refresh-interval <1-65535>	set rsvpte refresh interval[sec]
@@ -33,22 +33,16 @@
 <pre>
 (no)rsvp trunk TRUNKNAME		create rsvpte trunk info
 no rsvp trunk all
+	(no)map-route A.B.C.D/M		add map-route(FEC) to trunk
 	(no)primary PATH_NAME		add rsvpte primary path info to trunk
 	(no)secondary PATH_NAME		add rsvpte secondary path info to trunk
 	(no)from A.B.C.D 		add rsvpte ingress address to trunk
 	(no)to A.B.C.D			add rsvpte egress address to trunk
-	(no)filter (fixed-filter|shared-explicit) add rsvpte filter-style to trunk
 	(no)bandwidth <1-65535>		add rsvpte request bandwidth to trunk
 	(no)hop-limit <1-255>		add rsvpte hop-limit to trunk
-	(no)cspf			use rsvpte cspf-explicit-route to trunk
-	(no)hold-priority <0-7>		add hold-priority to trunk
-	(no)setup-priority <0-7>	add setup-priority to trunk
 	(no)record-route		set record-route use to trunk
 	(no)label-record		set label-record use to trunk
-	(no)diffserv-elsp phb-id PHB-ID exp <0-7> set diffserv e-lsp to trunk
-	(no)diffserv-llsp psc PSC-ID	setting diffserv l-lsp info to trunk
-	number <1-65536>		number of trunk that we want setup
-	run				triggering rsvpte trunk
+	(no)run				triggering rsvpte trunk
 </pre>
 
 <h4>interface Node</h4>
@@ -83,7 +77,8 @@ show rsvp trunk
 show rsvp trunk TRUNK_NAME
 show rsvp session
 show rsvp session summary
-show rsvp session detail
+show rsvp session SESSION_NAME
+show rsvp msgid
 show rsvp psb-rsb
 show rsvp interface
 show rsvp interface IF_NAME
@@ -95,6 +90,8 @@ show rsvp statistics
 <h4>clear command</h4>
 <pre>
 clear rsvp statistics
+clear rsvp trunk TRUNK_NAME
+clear rsvp trunk all
 clear rsvp session TRUNK_NAME
 clear rsvp session all
 </pre>
@@ -163,7 +160,7 @@ N1(config-router)# no router-alert</pre>
 
 
 <h3>encap-num</h3>
-<h5>encap-num</h5>
+<h5>srefresh-encap-num</h5>
 <pre>Set encap number per summary refresh.</pre>
 <pre>(no) encap-num <1-350></pre>
 
