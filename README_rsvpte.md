@@ -15,7 +15,7 @@
 	(no)srefresh-interval <1-65535>	set summary refresh interval[sec]
 	(no)msgack-interval <1-65535>	set rsvpte ack message interval[secs]
 	(no)msgack-retry-multiplier <1-65535> set rsvpte ack message retry multiplier
-	(no)hello-interval <1-65535>	set rsvpte hello interval[secs]
+	(no)hello-interval <1-30>	set rsvpte hello interval[secs]
 	(no)hello-multiplier <1-65535>	set rsvpte hello multiplier
 	(no)hello-receipt		enable rsvpte hello function
 	(no)explicit-null		enable rsvpte explicit null
@@ -343,14 +343,14 @@ N1(config-router)# no msgack-retry-multiplier</pre>
 <h3>hello-interval</h3>
 <h5>hello-interval</h5>
 <pre>Set rsvpte hello interval[secs].</pre>
-<pre>(no) hello-interval <1-65535></pre>
+<pre>(no) hello-interval <1-30></pre>
 
 <h5>Syntax Description</h5>
 <pre><1-65535>
 	Hello interval[secs]</pre>
 
 <h5>Default</h5>
-<pre>Default is “3”. </pre>
+<pre>Default is “10” seconds. </pre>
 
 <h5>Command Modes</h5>
 <pre>Router Rsvp Mode </pre>
